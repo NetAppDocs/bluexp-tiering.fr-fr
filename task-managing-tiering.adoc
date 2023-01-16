@@ -104,7 +104,7 @@ Assurez-vous de disposer d'un espace suffisant dans le Tier de performance pour 
 
 . Dans le menu de navigation de gauche, sélectionnez *mobilité > hiérarchisation*.
 . Dans *Cluster Dashboard*, cliquez sur *Tier volumes* pour le cluster.
-. Cliquez sur le bouton image:screenshot_edit_icon.gif["Capture d'écran de l'icône d'édition qui apparaît à la fin de chaque ligne du tableau pour les volumes de Tiering"] Pour le volume, choisissez l'option de récupération que vous souhaitez utiliser, puis cliquez sur *appliquer*.
+. Cliquez sur le bouton image:screenshot_edit_icon.gif["icône modifier qui apparaît à la fin de chaque ligne de la table pour les volumes de tiering"] Pour le volume, choisissez l'option de récupération que vous souhaitez utiliser, puis cliquez sur *appliquer*.
 +
 image:screenshot_tiering_policy_settings_with_retrieve.png["Capture d'écran affichant les paramètres de règle de Tiering configurables."]
 
@@ -180,10 +180,7 @@ Les défaillances peuvent survenir. Et le cas fois, Cloud Tiering affiche l'éta
 
 .Étapes
 . Identifiez tous les clusters dont l'état opérationnel est « en panne ».
-+
-image:screenshot_tiering_health.gif["Capture d'écran indiquant l'état d'intégrité d'un Tiering échec pour un cluster."]
-
-. Placez le pointeur de la souris sur le image:screenshot_info_icon.gif["Capture d'écran de l'icône i indiquant la raison de l'échec"] pour voir la raison de l'échec.
+. Passez le curseur sur l'icône d'information « i » pour voir la raison de l'échec.
 . Corriger le problème :
 +
 .. Vérifiez que le cluster ONTAP est opérationnel et qu'il dispose d'une connexion entrante et sortante avec votre fournisseur de stockage objet.

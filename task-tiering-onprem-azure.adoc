@@ -160,9 +160,9 @@ Un point de terminaison du service VNet pour le stockage Azure est recommandé s
 
 Lorsque vous configurez le Tiering, vous devez identifier le groupe de ressources à utiliser, ainsi que le compte de stockage et le conteneur Azure appartenant au groupe de ressources. Un compte de stockage permet à NetApp Cloud Tiering d'authentifier et d'accéder au conteneur Blob utilisé pour le Tiering des données.
 
-NetApp Cloud Tiering ne prend en charge que les types General Purpose v2 et Premium Block Blob de comptes de stockage.
+NetApp Cloud Tiering prend en charge le Tiering sur tous les comptes de stockage de toutes les régions accessibles via le connecteur.
 
-Le conteneur Blob doit se trouver dans un link:reference-azure-support.html#supported-azure-regions["Région prenant en charge NetApp Cloud Tiering"].
+NetApp Cloud Tiering ne prend en charge que les types General Purpose v2 et Premium Block Blob de comptes de stockage.
 
 
 NOTE: Si vous prévoyez de configurer NetApp Cloud Tiering pour utiliser un Tier d'accès moins onéreux là où vos données hiérarchisées seront conservées après un certain nombre de jours, vous ne devez pas sélectionner de règles de cycle de vie lors de la configuration du conteneur dans votre compte Azure. Le Tiering dans le cloud gère les transitions de cycle de vie.
