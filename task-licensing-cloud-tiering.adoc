@@ -14,7 +14,7 @@ summary: 'Une version d"essai gratuite de 30 jours de Cloud Tiering commence lor
 
 
 [role="lead"]
-Une version d'essai gratuite de 30 jours de Cloud Tiering commence lorsque vous configurez le Tiering à partir du premier cluster. Après la fin de l'essai gratuit, vous devrez payer le prix Cloud Tiering par le biais d'un abonnement annuel ou à l'utilisation sur le marché de votre fournisseur cloud, d'une licence BYOL de NetApp ou d'une combinaison des deux.
+Une version d'essai gratuite de 30 jours de Cloud Tiering commence lorsque vous configurez le Tiering à partir du premier cluster. Après la fin de l'essai gratuit, vous devrez payer le paiement à l'utilisation ou un abonnement annuel par le biais de l'utilisation sur le marché de votre fournisseur cloud, d'une licence BYOL de NetApp, ou d'une combinaison des deux.
 
 Quelques remarques avant de lire plus loin :
 
@@ -215,7 +215,7 @@ Vous pouvez mettre à jour votre licence Cloud Tiering avant son expiration afin
 +
 Une fois que vous avez payé la licence et qu'elle est enregistrée sur le site de support NetApp, BlueXP met automatiquement à jour la licence dans Digital Wallet et et la page des licences des services de données reflétera la modification dans 5 à 10 minutes.
 
-. Si BlueXP ne peut pas mettre automatiquement à jour la licence, vous devrez charger manuellement le fichier de licence.
+. Si BlueXP ne peut pas mettre à jour automatiquement la licence, vous devrez charger manuellement le fichier de licence.
 +
 .. C'est possible <<Procurez-vous votre fichier de licence Cloud Tiering,Procurez-vous le fichier de licence sur le site de support NetApp>>.
 .. Sur la page porte-monnaie numérique de l'onglet _Data Services Licenses_, cliquez sur image:screenshot_horizontal_more_button.gif["Plus d'icône"] Pour le numéro de série de service que vous mettez à jour, cliquez sur *mettre à jour la licence*.

@@ -22,7 +22,7 @@ Découvrez les nouveautés de NetApp Cloud Tiering.
 
 
 
-=== Modifications du point de terminaison d'accès Internet sortant du connecteur requises
+=== Modifications du point de terminaison de l'accès Internet sortant du connecteur
 
 Du fait d'un changement dans le Tiering cloud, il est nécessaire de modifier les terminaux de connecteur suivants pour assurer la réussite des opérations de Tiering dans le cloud :
 

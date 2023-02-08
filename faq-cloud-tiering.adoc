@@ -62,13 +62,13 @@ Oui, les fonctionnalités d'efficacité du stockage au niveau des volumes ONTAP,
 
 === Quelle est la différence entre FabricPool et NetApp Cloud Tiering ?
 
-FabricPool est la technologie de Tiering d'ONTAP qui peut être gérée de manière automatique via l'interface de ligne de commande et System Manager d'ONTAP, ou gérée en tant que service via le Tiering dans le cloud. Cloud Tiering transforme FabricPool en service géré grâce à des processus d'automatisation avancés, aussi bien sur ONTAP que dans le cloud, pour une meilleure visibilité et un plus grand contrôle sur le Tiering dans les déploiements hybrides et multicloud.
+FabricPool est la technologie de Tiering ONTAP qui peut être gérée en libre-service via l'interface de ligne de commande et System Manager d'ONTAP, ou être gérée en tant que service via le Tiering dans le cloud. Cloud Tiering transforme FabricPool en service géré grâce à des processus d'automatisation avancés, aussi bien sur ONTAP que dans le cloud, pour une meilleure visibilité et un plus grand contrôle sur le Tiering dans les déploiements hybrides et multicloud.
 
 
 
 === Est-il possible d'utiliser les données hiérarchisées vers le cloud pour la reprise après incident ou pour la sauvegarde/l'archivage ?
 
-Non Les métadonnées du volume ne sont jamais hiérarchisées à partir du Tier de performance, ce qui permet d'accéder directement aux données stockées dans le stockage objet.
+Non Les métadonnées du volume ne sont jamais hiérarchisées depuis le Tier de performance, c'est pourquoi les données stockées dans le stockage objet sont inaccessibles.
 
 Toutefois, il est possible d'utiliser Cloud Tiering pour réaliser des sauvegardes et des reprises après incident à moindre coût en les activant sur des systèmes secondaires et sur des volumes de destination SnapMirror (volumes DP), afin de procéder au Tiering de toutes les données (sans métadonnées), ce qui réduit l'empreinte du data Center et le TCO.
 
@@ -158,7 +158,7 @@ Oui. Fait https://aws.amazon.com/s3/pricing/["Tarification Amazon S3"], https://
 
 
 
-=== Comment estimer les économies de mes volumes et obtenir un rapport sur les données inactives avant d'activer la solution Cloud Tiering ?
+=== Comment estimer les économies de mes volumes et obtenir un rapport de données inactives avant d'activer NetApp Cloud Tiering ?
 
 Pour obtenir un devis, il vous suffit d'ajouter votre cluster ONTAP à BlueXP et de le vérifier via le tableau de bord des clusters NetApp Cloud Tiering, qui se trouve dans l'onglet Tiering. Lorsque le reporting de données inactives est désactivé ou n'a pas encore été activé depuis longtemps, Cloud Tiering utilise une constante de 70 % pour calculer les économies estimées. Une fois les données IDR disponibles, Cloud Tiering met à jour les économies réalisées et permet de réaliser des chiffres précis.
 
@@ -324,11 +324,11 @@ L'écriture différée est généralement effectuée sur les lectures et dépend
 
 === En cas de remplacement d'un contrôleur AFF/FAS existant par un nouveau contrôleur, les données hiérarchisées seront-elles migrées sur site ?
 
-Non Au cours de la procédure de « remplacement de tête », la seule chose qui change est la propriété de l'agrégat. Il sera alors remplacé par le nouveau contrôleur sans déplacer de données.
+Non Pendant la procédure de « remplacement de tête », la seule chose qui change est la propriété de l'agrégat. Il sera alors remplacé par le nouveau contrôleur sans déplacer de données.
 
 
 
-=== Est-il possible d'utiliser la console du fournisseur cloud ou les explorateurs de stockage objet pour examiner les données à plusieurs niveaux dans le compartiment ? Puis-je utiliser les données stockées dans le stockage objet directement sans ONTAP ?
+=== Est-il possible d'utiliser la console du fournisseur cloud ou les explorateurs de stockage objet pour examiner les données à plusieurs niveaux dans un compartiment ? Puis-je utiliser les données stockées dans le stockage objet directement sans ONTAP ?
 
 Non Les objets construits et hiérarchisés dans le cloud ne contiennent pas un seul fichier mais jusqu'à 1,024 blocs de 4 Ko à partir de plusieurs fichiers. Les métadonnées d'un volume restent toujours sur le niveau local.
 
@@ -394,7 +394,7 @@ link:concept-cloud-tiering.html#volume-tiering-policies["En savoir plus sur les 
 
 === À quel moment mes données sont-elles considérées comme inactives ?
 
-Étant donné que le Tiering des données s'effectue au niveau des blocs, un bloc de données est considéré comme froid après l'avoir accédé pendant une certaine période, qui est défini par l'attribut minimum-refroidissement-jours de la règle de hiérarchisation. La plage applicable est de 2-63 jours avec ONTAP 9.7 et versions antérieures, ou 2-183 jours avec ONTAP 9.8.
+Étant donné que le Tiering est réalisé au niveau des blocs, un bloc de données est considéré comme froid après l'absence d'accès pendant une certaine période, définie par l'attribut « minimum-refroidissement-jours » de la règle de Tiering. La plage applicable est de 2-63 jours avec ONTAP 9.7 et versions antérieures, ou 2-183 jours avec ONTAP 9.8.
 
 
 

@@ -170,8 +170,8 @@ Une fois votre environnement prêt, commencez le Tiering des données inactives 
 
 
 .Étapes
-. Sélectionnez un cluster sur site.
-. Dans le panneau de droite, cliquez sur *Activer* pour le service Tiering.
+. Sélectionnez l'environnement de travail ONTAP sur site.
+. Cliquez sur *Activer* pour le service Tiering dans le panneau de droite.
 +
 image:screenshot_setup_tiering_onprem.png["Capture d'écran affichant l'option Tiering, située sur la droite de l'écran, après avoir sélectionné un environnement de travail ONTAP sur site."]
 

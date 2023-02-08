@@ -177,8 +177,8 @@ Une fois votre environnement Google Cloud prêt, commencez le Tiering des donné
 
 
 .Étapes
-. Sélectionnez un cluster sur site.
-. Cliquez sur *Activer* pour le service Tiering.
+. Sélectionnez l'environnement de travail ONTAP sur site.
+. Cliquez sur *Activer* pour le service Tiering dans le panneau de droite.
 +
 Si la destination de Tiering Google Cloud Storage existe en tant qu'environnement de travail dans Canvas, vous pouvez faire glisser le cluster dans l'environnement de travail Google Cloud Storage pour lancer l'assistant d'installation.
 

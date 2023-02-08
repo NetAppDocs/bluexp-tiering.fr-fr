@@ -299,8 +299,8 @@ Une fois votre environnement AWS prêt, commencez le Tiering des données inacti
 
 
 .Étapes
-. Sélectionnez un cluster sur site.
-. Cliquez sur *Activer* pour le service Tiering.
+. Sélectionnez l'environnement de travail ONTAP sur site.
+. Cliquez sur *Activer* pour le service Tiering dans le panneau de droite.
 +
 Si la destination de Tiering Amazon S3 existe en tant qu'environnement de travail sur la Canvas, vous pouvez faire glisser le cluster vers l'environnement de travail pour lancer l'assistant d'installation.
 

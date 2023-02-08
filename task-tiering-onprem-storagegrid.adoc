@@ -164,8 +164,8 @@ Une fois votre environnement prêt, commencez le Tiering des données inactives 
 
 
 .Étapes
-. Sélectionnez un cluster sur site.
-. Cliquez sur *Activer* pour le service Tiering.
+. Sélectionnez l'environnement de travail ONTAP sur site.
+. Cliquez sur *Activer* pour le service Tiering dans le panneau de droite.
 +
 Si la destination StorageGRID Tiering existe en tant qu'environnement de travail dans la zone de travail, vous pouvez faire glisser le cluster vers l'environnement de travail StorageGRID pour lancer l'assistant d'installation.
 
