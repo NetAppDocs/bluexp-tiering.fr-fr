@@ -18,6 +18,16 @@ Découvrez les nouveautés de NetApp Cloud Tiering.
 
 
 
+== 5 mars 2023
+
+
+
+=== Vous pouvez désormais générer un rapport de hiérarchisation pour vos volumes
+
+Vous pouvez télécharger un rapport depuis la page volumes de Tier pour consulter l'état de Tiering de tous les volumes des clusters que vous gérez. Cloud Tiering génère un fichier .CSV que vous pouvez consulter et envoyer à d'autres personnes de votre entreprise selon les besoins. https://docs.netapp.com/us-en/cloud-manager-tiering/task-managing-tiering.html#download-a-tiering-report-for-your-volumes["Téléchargez le rapport sur la hiérarchisation"].
+
+
+
 == 6 décembre 2022
 
 

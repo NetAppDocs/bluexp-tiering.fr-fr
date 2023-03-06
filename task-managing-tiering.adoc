@@ -78,6 +78,14 @@ La règle de Tiering est modifiée et les données commencent à être hiérarch
 
 
 
+== Téléchargez un rapport de hiérarchisation pour vos volumes
+
+Vous pouvez télécharger un rapport de la page volumes de Tier pour consulter l'état de Tiering de tous les volumes des clusters que vous gérez. Cliquez simplement sur le image:button_download.png["Télécharger"] bouton. Cloud Tiering génère un fichier .CSV que vous pouvez vérifier et envoyer à d'autres groupes selon vos besoins. Le fichier .CSV contient jusqu'à 10,000 lignes de données.
+
+image:screenshot_tiering_report_download.png["Capture d'écran montrant comment générer un fichier CSV répertoriant l'état de hiérarchisation de tous vos volumes."]
+
+
+
 == Migration des données depuis le Tier cloud vers le Tier de performance
 
 Les données hiérarchisées accessibles depuis le cloud sont parfois « re-chauffées » et rétrogradées au niveau de performance. Toutefois, si vous souhaitez promouvoir de façon proactive les données vers le Tier de performance à partir du Tier cloud, vous pouvez le faire dans la boîte de dialogue _Tiering Policy_. Cette fonctionnalité est disponible lors de l'utilisation d'ONTAP 9.8 et versions supérieures.
