@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-tiering-onprem-s3-compat.html 
-keywords: data tiering, fabricpool, cloud tiering, tiering cold data, tiering inactive data, tiering aff, tiering fas, tiering ontap, tiering volumes, tier data, tier cold data, tier fas, tier aff, tier ontap, s3, tier to s3, fabricpool s3 
+keywords: data tiering, fabricpool, cloud tiering, tiering cold data, tiering inactive data, tiering aff, tiering fas, tiering ontap, tiering volumes, tier data, tier cold data, tier fas, tier aff, tier ontap, s3, tier to s3, minio 
 summary: 'Libérez de l"espace sur vos clusters ONTAP sur site en transférant les données inactives vers n"importe quel service de stockage objet qui utilise le protocole S3 (simple Storage Service).' 
 ---
 = Tiering des données depuis des clusters ONTAP sur site vers un stockage objet S3
@@ -15,6 +15,8 @@ summary: 'Libérez de l"espace sur vos clusters ONTAP sur site en transférant l
 
 [role="lead"]
 Libérez de l'espace sur vos clusters ONTAP sur site en transférant les données inactives vers n'importe quel service de stockage objet qui utilise le protocole S3 (simple Storage Service).
+
+Le stockage objet MiniO a été qualifié pour l'instant.
 
 [CAUTION]
 ====

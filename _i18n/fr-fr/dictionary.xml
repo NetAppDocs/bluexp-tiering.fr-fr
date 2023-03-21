@@ -62,10 +62,7 @@
   <block id="465ec6d5eafa3524c948c99d8bfcd306" category="list-text">Sur la page de connexion, indiquez l'adresse e-mail et le mot de passe que vous avez enregistrés sur le site de support NetApp pour réaliser le processus d'authentification.</block>
   <block id="cbc6cc3bb022583403171b447b2a962c" category="paragraph">Ces actions permettent à BlueXP d'utiliser votre compte NSS pour des opérations telles que le téléchargement de licences, la vérification de la mise à niveau logicielle et les inscriptions de support futures.</block>
   <block id="cf3a2d2c139bf5c9cc87fe714bfff3b1" category="paragraph">Notez ce qui suit :</block>
-  <block id="0f0a0d646a020cf3a65ce82ada4cfb01" category="list-text">Le compte doit être un compte de niveau client (et non un compte invité ou temporaire).</block>
   <block id="1dcb63fd55c4d22e87cb32275b8cc808" category="inline-image-macro">Une icône de trois points horizontaux</block>
-  <block id="ff67299785d475e87002751aa6ab5eb8" category="list-text">Une fois la connexion établie, NetApp stockera le nom d'utilisateur NSS. Il s'agit d'un ID généré par le système qui correspond à votre courrier électronique. Sur la page *NSS Management*, vous pouvez afficher votre courriel à partir du <block ref="0d0843f26c0819e5369f690fefbf68b7" category="inline-image-macro-rx" type="image"></block> menu.</block>
-  <block id="505da61efe6bebebbaf092da18f64613" category="list-text">Si vous avez besoin d'actualiser vos jetons d'identification de connexion, il existe également une option *mettre à jour les informations d'identification* dans le <block ref="0d0843f26c0819e5369f690fefbf68b7" category="inline-image-macro-rx" type="image"></block> menu. Cette option vous invite à vous reconnecter.</block>
   <block id="ad56c7289bc13dcf4f78c285f7f03878" category="section-title">Inscrivez-vous auprès de NetApp</block>
   <block id="f1bac79c2c71fbd93863b9fbd718094c" category="paragraph">Le fait de vous inscrire au support NetApp dépend de la présence ou non d'un compte sur le site de support NetApp (NSS).</block>
   <block id="bf4c731c0ee7f60c8018ad8f96828dda" category="section-title">Client existant avec un compte NSS</block>
@@ -493,7 +490,6 @@
   <block id="6a51ed7bcacdfb13f78abc1e0f69c201" category="list-text">Microsoft Azure Blob</block>
   <block id="833c2c211a541e50ad94433664e4b5c1" category="list-text">Google Cloud Storage</block>
   <block id="55cf1a0f0fce69fd543500e5761dd26d" category="list-text">NetApp StorageGRID</block>
-  <block id="29fc78ad7b30ceab82a6fad5327f5e05" category="list-text">Stockage objet compatible S3</block>
   <block id="eeb240bdbe8975d674a61e517f39633f" category="list-text">Stockage objet IBM Cloud (la configuration FabricPool doit être effectuée via System Manager ou l'interface de ligne de commande ONTAP)</block>
   <block id="aebd5d0546886eb95ec68319ef820add" category="section-title">Est-il possible d'utiliser un compartiment/conteneur adapté à mes besoins ?</block>
   <block id="810cfe74648d752af199cb664dfa9bfe" category="paragraph">Oui, c'est possible. Une fois le Tiering configuré, vous avez la possibilité d'ajouter un nouveau compartiment/conteneur ou de sélectionner un compartiment/conteneur existant.</block>
@@ -506,7 +502,6 @@
   <block id="5599b78f1c4021d635a48942fd659db7" category="paragraph">Cloud Tiering prend en charge le Tiering des données vers les classes de stockage _Standard_, _Standard-Infrequent Access_, _One zone-Infrequent Access_, _Intelligent Tiering_ et _Glacier Instant Retrieval_. Voir <block ref="f693663c1e0f361f1f4405a9653a3c4b" category="inline-link-macro-rx"></block> pour en savoir plus.</block>
   <block id="2c08a1d27d6545c0ad01ad140562498b" category="section-title">Pourquoi Amazon S3 Glacier est-il flexible et S3 Glacier Deep Archive non pris en charge par le Tiering cloud ?</block>
   <block id="f69e1396e6ee64547d56719752b81f87" category="paragraph">La raison principale pour laquelle Amazon S3 Glacier flexible et S3 Glacier Deep Archive ne sont pas pris en charge est que Cloud Tiering est conçu comme une solution de Tiering haute performance. Les données doivent donc être disponibles en continu et rapidement accessibles pour être récupérées. Avec les fonctionnalités flexibles de S3 Glacier et d'archivage profond S3 Glacier, la récupération des données peut durer entre quelques minutes et 48 heures.</block>
-  <block id="af7dafa9f010fa91db93c80604be8582" category="section-title">Est-il possible d'utiliser d'autres services de stockage objet compatibles S3, comme Wasabi, avec Cloud Tiering ?</block>
   <block id="84a20b13e3ea8fe117cd487b10cafd14" category="inline-link-macro">Pour en savoir plus, cliquez ici</block>
   <block id="de6d6c00be7f38cc0fb58e604e31efe9" category="paragraph">Oui. La configuration du stockage objet compatible S3 via l'interface de Tiering est prise en charge pour les clusters qui utilisent ONTAP 9.8 et versions ultérieures. <block ref="dfc215f15d0188a75116c167a2fbbc9d" category="inline-link-macro-rx"></block>.</block>
   <block id="0bb4b033070227409733db8bfee0da13" category="section-title">Quels tiers d'accès Azure Blob sont pris en charge ?</block>
@@ -1330,4 +1325,47 @@
   <block id="b92f2131d3d225c3c3327daaa8862624" category="section-title">Vous pouvez désormais générer un rapport de hiérarchisation pour vos volumes</block>
   <block id="f86857f0a51fde5819da3a17258b5448" category="inline-link">Téléchargez le rapport sur la hiérarchisation</block>
   <block id="10607665fc9de51ae2bf29927d3673b9" category="paragraph">Vous pouvez télécharger un rapport depuis la page volumes de Tier pour consulter l'état de Tiering de tous les volumes des clusters que vous gérez. Cloud Tiering génère un fichier .CSV que vous pouvez consulter et envoyer à d'autres personnes de votre entreprise selon les besoins.<block ref="b6be70acd3f28aaa18a7e212c9bc7736" category="inline-link-rx"></block>.</block>
+  <block id="898e35e1a4bf4b025c3edec879439b08" category="section-title">Gestion de vos dossiers de demande de support (aperçu)</block>
+  <block id="8b74b053fbeeff5c3b6f4991cb1d028d" category="paragraph">Vous pouvez afficher et gérer les dossiers de support actifs et résolus directement à partir de BlueXP. Vous pouvez gérer les dossiers associés à votre compte NSS et à votre entreprise.</block>
+  <block id="394ef093ad3259b9ff0fe7406f015b83" category="paragraph">La gestion des dossiers est disponible en tant qu'aperçu. Nous prévoyons d'affiner cette expérience et d'ajouter des améliorations dans les prochaines versions. Envoyez-nous vos commentaires à l'aide de l'outil de chat In-Product.</block>
+  <block id="5e4e7672ec2ba2b8a763da7f6714e212" category="list-text">Le tableau de bord de gestion des dossiers en haut de la page propose deux vues :</block>
+  <block id="01c3ffea552d74a5ae390b10e71a1f26" category="list-text">La vue de gauche affiche le nombre total de dossiers ouverts au cours des 3 derniers mois par le compte NSS utilisateur que vous avez fourni.</block>
+  <block id="e3b6c09a5686233f72ce1ea60a1eb088" category="list-text">La vue de droite affiche le nombre total de dossiers ouverts au cours des 3 derniers mois au niveau de votre entreprise en fonction de votre compte NSS utilisateur.</block>
+  <block id="b19b168cc8a2b8c984465e140256b3a2" category="paragraph">Les résultats du tableau reflètent les cas liés à la vue que vous avez sélectionnée.</block>
+  <block id="56dcadeee6b0e5c47a52673f9b5a0bb3" category="list-text">Vous pouvez ajouter ou supprimer des colonnes d'intérêt et filtrer le contenu des colonnes telles que priorité et Statut. D'autres colonnes offrent uniquement des fonctions de tri.</block>
+  <block id="6f936762e1223311f031685422fcd3a4" category="paragraph">Pour plus d'informations, consultez les étapes ci-dessous.</block>
+  <block id="b14929795a61440e9b4ec9f8a4885ae3" category="list-text">Au niveau de chaque dossier, nous offrons la possibilité de mettre à jour les notes de dossier ou de fermer un dossier qui n'est pas déjà à l'état fermé ou en attente fermée.</block>
+  <block id="34b1296d31cefa72dae9b3a364b1f444" category="list-text">Cliquez sur *case Management* et si vous y êtes invité, ajoutez votre compte NSS à BlueXP.</block>
+  <block id="d8ce1865cf1fe3cffd60300b4b86ad63" category="paragraph">La page *gestion des cas* affiche les cas ouverts associés au compte NSS associé à votre compte utilisateur BlueXP. Il s'agit du même compte NSS qui apparaît en haut de la page *gestion NSS*.</block>
+  <block id="2ae5ae78bdb2d222f15fd8e89248709c" category="list-text">Modifiez éventuellement les informations qui s'affichent dans le tableau :</block>
+  <block id="27635a52fe4c34c39ffc6430f4244ec6" category="list-text">Sous *cas de l'organisation*, cliquez sur *Afficher* pour afficher tous les cas associés à votre société.</block>
+  <block id="059e856250b59be3069246887b74a23c" category="list-text">Modifiez la plage de dates en choisissant une plage de dates exacte ou en choisissant une autre période.</block>
+  <block id="dfb3764bce2548df4e06357403f9c7d0" category="inline-image-macro">Capture d'écran de l'option au-dessus du tableau de la page gestion des cas qui vous permet de choisir une plage de dates exacte ou les 7 derniers jours, 30 derniers jours ou 3 derniers mois.</block>
+  <block id="7fcba8aeefa9960d3fc3fa08b360ba2e" category="paragraph"><block ref="7fcba8aeefa9960d3fc3fa08b360ba2e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a1bb576be9e5a356290f231efb51b3f5" category="list-text">Filtrez le contenu des colonnes.</block>
+  <block id="3753f10a59e21f58b30e3e67d416453e" category="inline-image-macro">Capture d'écran de l'option de filtre dans la colonne État qui vous permet de filtrer les dossiers correspondant à un état spécifique, comme actif ou fermé.</block>
+  <block id="37709be3a43df07d5975287545d0ba12" category="paragraph"><block ref="37709be3a43df07d5975287545d0ba12" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1c6ea5ef583389e18e7d7bda70beaa71" category="inline-image-macro">Icône plus qui apparaît dans le tableau</block>
+  <block id="1614dc8e47c0492434152c990d6c1040" category="list-text">Modifiez les colonnes qui apparaissent dans le tableau en cliquant sur <block ref="effeab06130cddc8360822b2b706805b" category="inline-image-macro-rx" type="image"></block> puis choisissez les colonnes que vous souhaitez afficher.</block>
+  <block id="370b44009f1b82d0b6b178bb80cc62fa" category="inline-image-macro">Capture d'écran affichant les colonnes que vous pouvez afficher dans le tableau.</block>
+  <block id="5de408d7cbad49634fb25f9047498132" category="paragraph"><block ref="5de408d7cbad49634fb25f9047498132" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ad0ae9ea1f2e8d973a9a0f6bb169f494" category="inline-image-macro">Icône avec trois points qui apparaît dans la dernière colonne du tableau</block>
+  <block id="98efef1c8a47ed5791b41944e8ff4ec2" category="list-text">Pour gérer un dossier de demande de support existant, cliquez sur <block ref="a0b152b50a56901a75affebabc26ed61" category="inline-image-macro-rx" type="image"></block> et en sélectionnant l'une des options disponibles :</block>
+  <block id="6d9dd74e7709ef802d299966f7898f6b" category="list-text">*Voir cas*: Afficher tous les détails sur un cas spécifique.</block>
+  <block id="482429810c2b00a4fa04f9900c560232" category="list-text">*Mettre à jour les notes de cas* : fournir des détails supplémentaires sur votre problème.</block>
+  <block id="f791bc685c526af8296381acff10f6a0" category="list-text">*Fermer le cas* : fournissez des détails sur la raison pour laquelle vous fermez le cas et cliquez sur *Fermer le cas*.</block>
+  <block id="e93217b2f709a398ce3c0fb753beb05f" category="inline-image-macro">Capture d'écran qui montre les actions que vous pouvez effectuer après avoir sélectionné le menu dans la dernière colonne du tableau.</block>
+  <block id="e9a5c374fb47ed2ae5cc6108fb36d829" category="paragraph"><block ref="e9a5c374fb47ed2ae5cc6108fb36d829" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ec084bb25ed5b934c09b361069c246b2" category="list-text">Le compte NSS doit être un compte de niveau client (pas un compte invité ou temporaire). Vous pouvez avoir plusieurs comptes NSS de niveau client.</block>
+  <block id="27387009488fe78dcc7cb7e3e432792f" category="list-text">Il ne peut y avoir qu'un seul compte NSS si ce compte est un compte de niveau partenaire. Si vous essayez d'ajouter des comptes NSS de niveau client et qu'un compte de niveau partenaire existe, le message d'erreur suivant s'affiche :</block>
+  <block id="d926847e4634e19a1aa7358becc0fa27" category="paragraph">"Le type de client NSS n'est pas autorisé pour ce compte car il existe déjà des utilisateurs NSS de type différent."</block>
+  <block id="a04a3a5322782e8c18d0d64be7e1ccbc" category="paragraph">Il en va de même si vous possédez des comptes NSS client préexistants et que vous essayez d'ajouter un compte de niveau partenaire.</block>
+  <block id="1afe8a81cfddc9fa9559e272bb6b9496" category="list-text">Une fois la connexion établie, NetApp stockera le nom d'utilisateur NSS.</block>
+  <block id="452cd4df7b0d5eb1156519a2f3b0206b" category="paragraph">Il s'agit d'un ID généré par le système qui correspond à votre courrier électronique. Sur la page *NSS Management*, vous pouvez afficher votre courriel à partir du <block ref="0d0843f26c0819e5369f690fefbf68b7" category="inline-image-macro-rx" type="image"></block> menu.</block>
+  <block id="fd02e84624a2fdfd58787131aa2820b5" category="list-text">Si vous avez besoin d'actualiser vos jetons d'identification de connexion, il existe également une option *mettre à jour les informations d'identification* dans le <block ref="0d0843f26c0819e5369f690fefbf68b7" category="inline-image-macro-rx" type="image"></block> menu.</block>
+  <block id="b14d512a3c64fb5df16f6721b0603c63" category="paragraph">Cette option vous invite à vous reconnecter. Notez que le jeton de ces comptes expire après 90 jours. Une notification sera publiée pour vous en informer.</block>
+  <block id="ad8e06edf5256a509aa4b626821aded3" category="list-text">Stockage objet compatible S3 (par exemple, MiniO)</block>
+  <block id="0748730b16e2af0499abfb4f8fbcd91a" category="section-title">Puis-je utiliser d'autres services de stockage objet compatibles S3, tels que MiniO, avec Cloud Tiering ?</block>
+  <block id="5f25ca5749124089f38921fb40d73668" category="paragraph">Étant donné que Cloud Tiering préserve les fonctionnalités d'efficacité du stockage du volume source, vous payez les coûts de stockage objet du fournisseur cloud pour les données hiérarchisées après les fonctionnalités d'efficacité du stockage ONTAP (pour la quantité de données réduite après la déduplication et la compression).</block>
+  <block id="ad54fbabce5f384433a02d947362a539" category="paragraph">Le stockage objet MiniO a été qualifié pour l'instant.</block>
 </blocks>

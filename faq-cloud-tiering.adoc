@@ -227,7 +227,7 @@ NetApp Cloud Tiering prend en charge plusieurs fournisseurs de stockage objet :
 * Microsoft Azure Blob
 * Google Cloud Storage
 * NetApp StorageGRID
-* Stockage objet compatible S3
+* Stockage objet compatible S3 (par exemple, MiniO)
 * Stockage objet IBM Cloud (la configuration FabricPool doit être effectuée via System Manager ou l'interface de ligne de commande ONTAP)
 
 
@@ -260,7 +260,7 @@ La raison principale pour laquelle Amazon S3 Glacier flexible et S3 Glacier Deep
 
 
 
-=== Est-il possible d'utiliser d'autres services de stockage objet compatibles S3, comme Wasabi, avec Cloud Tiering ?
+=== Puis-je utiliser d'autres services de stockage objet compatibles S3, tels que MiniO, avec Cloud Tiering ?
 
 Oui. La configuration du stockage objet compatible S3 via l'interface de Tiering est prise en charge pour les clusters qui utilisent ONTAP 9.8 et versions ultérieures. link:task-tiering-onprem-s3-compat.html["Pour en savoir plus, cliquez ici"].
 

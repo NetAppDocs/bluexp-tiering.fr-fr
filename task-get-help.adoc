@@ -90,3 +90,64 @@ Cette erreur peut signifier que le compte NSS et la société d'enregistrement a
 * Utilisez le chat du produit
 * Soumettre un dossier non technique à https://mysupport.netapp.com/site/help[]
 
+
+
+
+== Gestion de vos dossiers de demande de support (aperçu)
+
+Vous pouvez afficher et gérer les dossiers de support actifs et résolus directement à partir de BlueXP. Vous pouvez gérer les dossiers associés à votre compte NSS et à votre entreprise.
+
+La gestion des dossiers est disponible en tant qu'aperçu. Nous prévoyons d'affiner cette expérience et d'ajouter des améliorations dans les prochaines versions. Envoyez-nous vos commentaires à l'aide de l'outil de chat In-Product.
+
+Notez ce qui suit :
+
+* Le tableau de bord de gestion des dossiers en haut de la page propose deux vues :
++
+** La vue de gauche affiche le nombre total de dossiers ouverts au cours des 3 derniers mois par le compte NSS utilisateur que vous avez fourni.
+** La vue de droite affiche le nombre total de dossiers ouverts au cours des 3 derniers mois au niveau de votre entreprise en fonction de votre compte NSS utilisateur.
+
+
++
+Les résultats du tableau reflètent les cas liés à la vue que vous avez sélectionnée.
+
+* Vous pouvez ajouter ou supprimer des colonnes d'intérêt et filtrer le contenu des colonnes telles que priorité et Statut. D'autres colonnes offrent uniquement des fonctions de tri.
++
+Pour plus d'informations, consultez les étapes ci-dessous.
+
+* Au niveau de chaque dossier, nous offrons la possibilité de mettre à jour les notes de dossier ou de fermer un dossier qui n'est pas déjà à l'état fermé ou en attente fermée.
+
+
+.Étapes
+. Dans BlueXP, cliquez sur *aide > support*.
+. Cliquez sur *case Management* et si vous y êtes invité, ajoutez votre compte NSS à BlueXP.
++
+La page *gestion des cas* affiche les cas ouverts associés au compte NSS associé à votre compte utilisateur BlueXP. Il s'agit du même compte NSS qui apparaît en haut de la page *gestion NSS*.
+
+. Modifiez éventuellement les informations qui s'affichent dans le tableau :
++
+** Sous *cas de l'organisation*, cliquez sur *Afficher* pour afficher tous les cas associés à votre société.
+** Modifiez la plage de dates en choisissant une plage de dates exacte ou en choisissant une autre période.
++
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-case-management-date-range.png["Capture d'écran de l'option au-dessus du tableau de la page gestion des cas qui vous permet de choisir une plage de dates exacte ou les 7 derniers jours, 30 derniers jours ou 3 derniers mois."]
+
+** Filtrez le contenu des colonnes.
++
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-case-management-filter.png["Capture d'écran de l'option de filtre dans la colonne État qui vous permet de filtrer les dossiers correspondant à un état spécifique, comme actif ou fermé."]
+
+** Modifiez les colonnes qui apparaissent dans le tableau en cliquant sur image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/icon-table-columns.png["Icône plus qui apparaît dans le tableau"] puis choisissez les colonnes que vous souhaitez afficher.
++
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-case-management-columns.png["Capture d'écran affichant les colonnes que vous pouvez afficher dans le tableau."]
+
+
+
+. Pour gérer un dossier de demande de support existant, cliquez sur image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/icon-table-action.png["Icône avec trois points qui apparaît dans la dernière colonne du tableau"] et en sélectionnant l'une des options disponibles :
++
+** *Voir cas*: Afficher tous les détails sur un cas spécifique.
+** *Mettre à jour les notes de cas* : fournir des détails supplémentaires sur votre problème.
+** *Fermer le cas* : fournissez des détails sur la raison pour laquelle vous fermez le cas et cliquez sur *Fermer le cas*.
+
+
++
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-case-management-actions.png["Capture d'écran qui montre les actions que vous pouvez effectuer après avoir sélectionné le menu dans la dernière colonne du tableau."]
+
+

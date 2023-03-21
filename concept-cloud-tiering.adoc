@@ -53,7 +53,7 @@ Vous pouvez effectuer le Tiering des données inactives à partir d'un système 
 * Microsoft Azure Blob
 * Google Cloud Storage
 * NetApp StorageGRID
-* Stockage objet compatible S3
+* Stockage objet compatible S3 (par exemple, MiniO)
 
 
 Il est également possible de partager les licences Cloud Tiering avec vos clusters qui transfèrent les données vers une solution IBM Cloud Object Storage. La configuration FabricPool doit être définie au moyen de System Manager ou de l'interface de ligne de commandes ONTAP, mais https://docs.netapp.com/us-en/cloud-manager-tiering/task-licensing-cloud-tiering.html#apply-cloud-tiering-licenses-to-clusters-in-special-configurations["La licence pour ce type de configuration est terminée avec Cloud Tiering."]
@@ -86,6 +86,8 @@ Le paiement pour le Tiering dans le cloud s'effectue via un abonnement avec paie
 Le Tiering des données vers StorageGRID n'est pas payant. Une licence BYOL ou un enregistrement PAYGO ne sont pas nécessaires.
 
 https://bluexp.netapp.com/pricing#tiering["Voir les détails des tarifs"^].
+
+Étant donné que Cloud Tiering préserve les fonctionnalités d'efficacité du stockage du volume source, vous payez les coûts de stockage objet du fournisseur cloud pour les données hiérarchisées après les fonctionnalités d'efficacité du stockage ONTAP (pour la quantité de données réduite après la déduplication et la compression).
 
 
 
