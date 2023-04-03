@@ -18,6 +18,22 @@ Découvrez les nouveautés de NetApp Cloud Tiering.
 
 
 
+== 3 avril 2023
+
+
+
+=== L'onglet licences a été supprimé
+
+L'onglet Licensing a été supprimé de l'interface de NetApp Cloud Tiering. Toutes les licences pour les abonnements basés sur l'utilisation (PAYGO) sont disponibles dès maintenant sur le tableau de bord sur site de Cloud Tiering. Vous trouverez également un lien vers le portefeuille digital qui vous permet d'afficher et de gérer n'importe quelle licence BYOL (Bring Your Own License) de Cloud Tiering.
+
+
+
+=== Les onglets de hiérarchisation ont été renommés et le contenu a été mis à jour
+
+L'onglet « clusters » a été renommé « clusters » et l'onglet « Présentation sur site » a été renommé « Tableau de bord sur site ». Ces pages ont ajouté des informations qui vous aideront à déterminer si vous pouvez optimiser votre espace de stockage avec une configuration de hiérarchisation supplémentaire.
+
+
+
 == 5 mars 2023
 
 

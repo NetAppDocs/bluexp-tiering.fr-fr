@@ -18,14 +18,14 @@ Exécutez un test de performances cloud pour mesurer la latence du réseau et le
 
 Voici quelques exemples de résultats de performances :
 
-image:screenshot_cloud_performance_test.gif["Copie d'écran des résultats du cluster pour le test de performance du cloud."]
+image:screenshot_cloud_performance_test.png["Copie d'écran des résultats du cluster pour le test de performance du cloud."]
 
 .Avant de commencer
 Il est recommandé d'exécuter ce contrôle lorsque le cluster est inférieur à 50 % d'utilisation du CPU.
 
 .Étapes d'un cluster qui n'a pas été configuré pour la hiérarchisation
 . Dans le menu de navigation de gauche, sélectionnez *mobilité > hiérarchisation*.
-. Dans *Cluster Dashboard*, cliquez sur l'icône de menu d'un cluster et sélectionnez *Cloud Performance Test*.
+. Sur la page *clusters*, cliquez sur l'icône de menu d'un cluster et sélectionnez *Test de performances du Cloud*.
 . Vérifiez les détails et cliquez sur *Continuer*.
 . Suivez les invites pour fournir les informations requises.
 +
@@ -36,7 +36,7 @@ Les informations que vous devez fournir sont les mêmes que si vous deviez confi
 
 .Étapes d'un cluster qui a été configuré pour la hiérarchisation
 . Dans le menu de navigation de gauche, sélectionnez *mobilité > hiérarchisation*.
-. Dans *Cluster Dashboard*, cliquez sur l'icône de menu d'un cluster et sélectionnez *Cloud Performance Test*.
+. Sur la page *clusters*, cliquez sur l'icône de menu d'un cluster et sélectionnez *Test de performances du Cloud*.
 . Sélectionnez un nœud dans la liste déroulante.
 . Consultez les résultats ou revérifiez les performances.
 

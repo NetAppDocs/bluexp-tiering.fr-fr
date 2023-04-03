@@ -19,13 +19,13 @@ summary: 'NetApp Cloud Tiering fournit une vue globale du Tiering des données d
 [role="lead"]
 NetApp Cloud Tiering fournit une vue globale du Tiering des données depuis chacun de vos clusters sur site. Cette vue d'ensemble fournit une image claire de votre environnement et vous permet de prendre les mesures appropriées.
 
-Cliquez simplement sur *Tiering > Présentation sur site*. NetApp Cloud Tiering fournit les informations suivantes sur votre environnement :
+Cliquez simplement sur *Tiering > Tableau de bord sur site*. NetApp Cloud Tiering fournit les informations suivantes sur votre environnement :
 
-image:screenshot_tiering_onprem_overview.gif["Copie d'écran de la page de présentation sur site."]
+image:screenshot_tiering_onprem_dashboard.png["Capture d'écran de la page Tableau de bord sur site."]
 
-Clusters actifs:: Le nombre de clusters qui effectuent actuellement un Tiering des données vers le cloud, les clusters qui ne transfèrent pas les données vers le cloud, et le nombre de clusters qui ne prennent pas en charge le Tiering des données.
+Clusters découverts:: Le nombre de clusters qui effectuent actuellement un Tiering des données vers le cloud, les clusters qui ne transfèrent pas les données vers le cloud, et le nombre de clusters qui ne prennent pas en charge le Tiering des données.
 Présentation des données:: Quantité de données envoyées vers le cloud et quantité de données actives et inactives sur le cluster
-Total des économies:: Vous avez économisé le coût du Tiering des données sur le cloud, ainsi que la quantité de budget que vous pouvez réaliser grâce au Tiering des données plus nombreuses dans le cloud.
+Présentation de la hiérarchisation:: La quantité de données actuellement en cours de hiérarchisation et la quantité de données qui pourraient être transférées sur un Tier de stockage.
 Stratégies:: Nombre de fois où chaque règle de hiérarchisation a été appliquée à un volume.
 Abonnements Marketplace:: Nombre de clusters associés à chaque type d'abonnement Marketplace et indication de l'état de votre abonnement.
 

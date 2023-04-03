@@ -67,6 +67,10 @@ Pour en savoir plus sur ces priorités, passez votre souris sur l'icône d'infor
 
 *** *Description du problème* : fournir une description détaillée de votre problème, y compris les messages d'erreur ou les étapes de dépannage applicables que vous avez effectués.
 *** *Adresses e-mail supplémentaires*: Entrez des adresses e-mail supplémentaires si vous souhaitez informer quelqu'un d'autre de ce problème.
+*** *Pièce jointe (facultatif)* : téléchargez jusqu'à cinq pièces jointes, une à la fois.
++
+Les pièces jointes sont limitées à 25 Mo par fichier. Les extensions de fichier suivantes sont prises en charge : txt, log, PDF, jpg/JPEG, rtf, doc/docx, xls/xlsx et csv.
+
 
 
 
@@ -143,7 +147,10 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/med
 . Pour gérer un dossier de demande de support existant, cliquez sur image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/icon-table-action.png["Icône avec trois points qui apparaît dans la dernière colonne du tableau"] et en sélectionnant l'une des options disponibles :
 +
 ** *Voir cas*: Afficher tous les détails sur un cas spécifique.
-** *Mettre à jour les notes de cas* : fournir des détails supplémentaires sur votre problème.
+** *Mettre à jour les notes de cas* : fournir des détails supplémentaires sur votre problème ou sélectionner *Télécharger les fichiers* pour joindre jusqu'à cinq fichiers.
++
+Les pièces jointes sont limitées à 25 Mo par fichier. Les extensions de fichier suivantes sont prises en charge : txt, log, PDF, jpg/JPEG, rtf, doc/docx, xls/xlsx et csv.
+
 ** *Fermer le cas* : fournissez des détails sur la raison pour laquelle vous fermez le cas et cliquez sur *Fermer le cas*.
 
 
