@@ -96,11 +96,11 @@ Lors de l'utilisation d'une configuration MetroCluster, il est recommandé d'uti
 Lorsque vous utilisez StorageGRID comme magasin d'objets dans une configuration MetroCluster, les deux systèmes ONTAP peuvent effectuer un Tiering FabricPool sur un seul système StorageGRID. Chaque système ONTAP doit transférer les données vers différents compartiments.
 
 .Étapes
-. Sur la page *clusters*, cliquez sur *Paramètres avancés* pour le cluster sélectionné.
+. Dans la page *clusters*, cliquez sur *Configuration avancée* pour le cluster sélectionné.
 +
 image:screenshot_tiering_advanced_setup_button.png["Copie d'écran montrant le bouton Configuration avancée d'un cluster."]
 
-. Dans la page Paramètres avancés, faites glisser le magasin d'objets que vous souhaitez utiliser vers l'emplacement du magasin d'objets miroir.
+. Dans la page Configuration avancée, faites glisser le magasin d'objets que vous souhaitez utiliser vers l'emplacement du magasin d'objets miroir.
 +
 image:screenshot_tiering_mirror_config.png["Capture d'écran montrant comment faire glisser un second magasin d'objets vers un agrégat pour créer un miroir de Tiering."]
 
@@ -119,11 +119,11 @@ L'état miroir apparaît comme « synchronisation en cours » pendant la synchro
 Vous pouvez permuter le magasin d'objets principal et le magasin d'objets miroir d'un agrégat. Le miroir du magasin d'objets devient le miroir principal et le miroir primaire d'origine devient le miroir.
 
 .Étapes
-. Sur la page *clusters*, cliquez sur *Paramètres avancés* pour le cluster sélectionné.
+. Dans la page *clusters*, cliquez sur *Configuration avancée* pour le cluster sélectionné.
 +
 image:screenshot_tiering_advanced_setup_button.png["Copie d'écran montrant le bouton Configuration avancée d'un cluster."]
 
-. Dans la page Paramètres avancés, cliquez sur l'icône de menu de l'agrégat et sélectionnez *échanger destinations*.
+. Dans la page Configuration avancée, cliquez sur l'icône de menu de l'agrégat et sélectionnez *Permuter destinations*.
 +
 image:screenshot_tiering_mirror_swap.png["Capture d'écran affichant l'option Inverser la destination d'un agrégat."]
 
@@ -137,11 +137,11 @@ image:screenshot_tiering_mirror_swap.png["Capture d'écran affichant l'option In
 Si vous n'avez plus besoin d'effectuer la réplication vers un autre magasin d'objets, vous pouvez supprimer un miroir FabricPool.
 
 .Étapes
-. Sur la page *clusters*, cliquez sur *Paramètres avancés* pour le cluster sélectionné.
+. Dans la page *clusters*, cliquez sur *Configuration avancée* pour le cluster sélectionné.
 +
 image:screenshot_tiering_advanced_setup_button.png["Copie d'écran montrant le bouton Configuration avancée d'un cluster."]
 
-. Dans la page Paramètres avancés, cliquez sur l'icône de menu de l'agrégat et sélectionnez *Désymétriser le magasin d'objets*.
+. Dans la page Configuration avancée, cliquez sur l'icône de menu de l'agrégat et sélectionnez *Unmirror Object Store*.
 +
 image:screenshot_tiering_mirror_delete.png["Capture d'écran montrant l'option Unmirror Object Store pour un agrégat."]
 

@@ -118,7 +118,6 @@ Un connecteur est nécessaire pour transférer les données vers le cloud. Pour 
 
 * https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["En savoir plus sur les connecteurs"^]
 * https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html["Déploiement d'un connecteur dans GCP"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html["Basculement entre les connecteurs"^]
 
 
 

@@ -100,9 +100,8 @@ Le connecteur BlueXP est le logiciel principal pour la fonctionnalité BlueXP. U
 Si votre connecteur est déjà déployé dans votre VPC AWS ou sur votre site, cela vous permettra d'être configuré. Si ce n'est pas le cas, vous devez créer un connecteur dans l'un de ces emplacements pour transférer les données ONTAP vers une solution de stockage AWS S3. Vous ne pouvez pas utiliser un connecteur déployé dans un autre fournisseur de cloud.
 
 * https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["En savoir plus sur les connecteurs"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-checklist-cm.html["Mise en route des connecteurs"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["Installation d'un connecteur dans AWS"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["Installation d'un connecteur dans vos locaux"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-aws.html["Déploiement d'un connecteur dans AWS"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-on-prem.html["Installation d'un connecteur sur un hôte Linux"^]
 
 
 

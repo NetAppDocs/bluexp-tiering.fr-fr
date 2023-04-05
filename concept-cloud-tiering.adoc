@@ -35,7 +35,7 @@ NetApp Cloud Tiering propose des fonctionnalités d'automatisation, de surveilla
 * Avec une fenêtre unique, vous n'avez plus besoin de gérer FabricPool de façon indépendante sur plusieurs clusters
 * Des rapports indiquent la quantité de données actives et inactives sur chaque cluster
 * L'état de l'état de santé par niveaux vous aide à identifier et à corriger les problèmes au fur et à mesure qu'ils se produisent
-* Si vous disposez de systèmes Cloud Volumes ONTAP, vous les trouverez dans le tableau de bord des clusters pour bénéficier d'une vue complète du Tiering des données dans votre infrastructure de cloud hybride
+* Si vous disposez de systèmes Cloud Volumes ONTAP, vous les trouverez sur la page clusters afin d'obtenir une vue complète du Tiering des données dans votre infrastructure de cloud hybride
 
 
 Pour en savoir plus sur les atouts de NetApp Cloud Tiering, https://cloud.netapp.com/cloud-tiering["Consultez la page Cloud Tiering sur le site Web de BlueXP"^].
@@ -93,9 +93,9 @@ https://bluexp.netapp.com/pricing#tiering["Voir les détails des tarifs"^].
 
 === essai gratuit de 30 jours
 
-Si vous ne disposez pas de licence Cloud Tiering, une version d'évaluation gratuite de 30 jours de Cloud Tiering commence lorsque vous configurez le Tiering sur le premier cluster. Après la fin de l'essai gratuit de 30 jours, vous devrez payer le service Cloud Tiering par le biais d'un abonnement avec paiement à l'utilisation, d'un abonnement annuel, d'une licence BYOL ou d'une combinaison des deux.
+Si vous ne disposez pas de licence Cloud Tiering, une version d'évaluation gratuite de 30 jours de Cloud Tiering commence lorsque vous configurez le Tiering sur le premier cluster. Après la fin de la période d'essai gratuite de 30 jours, vous devrez payer Cloud Tiering avec un abonnement payant à l'utilisation, un abonnement annuel, une licence BYOL ou une combinaison des deux.
 
-Si votre version d'évaluation gratuite est terminée et que vous n'avez pas souscrit à cette licence, ONTAP ne transfère plus les données inactives vers un stockage objet, mais les données existantes sont toujours accessibles.
+Si votre essai gratuit prend fin et que vous n'avez pas souscrit ou ajouté de licence, ONTAP ne transfère plus les données inactives vers le stockage objet. Toutes les données précédemment hiérarchisées restent accessibles. Vous pouvez donc les récupérer et les utiliser. Lorsqu'elles sont récupérées, elles sont replacées dans le Tier de performance du cloud.
 
 
 

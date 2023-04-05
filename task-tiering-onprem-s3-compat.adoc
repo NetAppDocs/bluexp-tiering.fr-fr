@@ -139,7 +139,7 @@ Ces clés d'accès doivent être associées à un utilisateur disposant des auto
 Un connecteur est nécessaire pour transférer les données vers le cloud. Lorsque vous Tiering des données vers un stockage objet compatible S3, un connecteur doit être disponible sur site. Vous devrez soit installer un nouveau connecteur, soit vérifier que le connecteur actuellement sélectionné réside sur site.
 
 * https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["En savoir plus sur les connecteurs"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["Déploiement d'un connecteur sur un hôte Linux"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-on-prem.html["Installation d'un connecteur sur un hôte Linux"^]
 * https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html["Basculement entre les connecteurs"^]
 
 

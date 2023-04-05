@@ -19,7 +19,7 @@ summary: 'NetApp Cloud Tiering fournit une vue globale du Tiering des données d
 [role="lead"]
 NetApp Cloud Tiering fournit une vue globale du Tiering des données depuis chacun de vos clusters sur site. Cette vue d'ensemble fournit une image claire de votre environnement et vous permet de prendre les mesures appropriées.
 
-Cliquez simplement sur *Tiering > Tableau de bord sur site*. NetApp Cloud Tiering fournit les informations suivantes sur votre environnement :
+Il vous suffit de cliquer sur *Tiering > On-site Dashboard*. NetApp Cloud Tiering fournit les informations suivantes sur votre environnement :
 
 image:screenshot_tiering_onprem_dashboard.png["Capture d'écran de la page Tableau de bord sur site."]
 

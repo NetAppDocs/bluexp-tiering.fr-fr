@@ -116,9 +116,8 @@ https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.
 Un connecteur est nécessaire pour transférer les données vers le cloud. Lors du Tiering des données dans le stockage Azure Blob, vous pouvez utiliser un connecteur situé dans un Azure VNet ou sur site. Vous devrez soit créer un nouveau connecteur, soit vérifier que le connecteur actuellement sélectionné réside dans Azure, soit sur site.
 
 * https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["En savoir plus sur les connecteurs"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-azure.html["Déploiement d'un connecteur dans Azure"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["Déploiement d'un connecteur sur un hôte Linux"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html["Basculement entre les connecteurs"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-azure.html["Déploiement d'un connecteur dans Azure"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-on-prem.html["Installation d'un connecteur sur un hôte Linux"^]
 
 
 

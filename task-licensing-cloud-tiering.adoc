@@ -18,7 +18,7 @@ Une version d'essai gratuite de 30 jours de Cloud Tiering commence lorsque vous 
 
 Quelques remarques avant de lire plus loin :
 
-* Si vous avez déjà souscrit à l'abonnement BlueXP (PAYGO) dans le marché de votre fournisseur cloud, vous êtes également automatiquement abonné à NetApp Cloud Tiering pour les systèmes ONTAP sur site. Un abonnement actif s'affiche dans l'onglet * Tableau de bord sur site Cloud Tiering *. Vous n'aurez pas besoin de vous abonner à nouveau.
+* Si vous avez déjà souscrit à l'abonnement BlueXP (PAYGO) dans le marché de votre fournisseur cloud, vous êtes également automatiquement abonné à NetApp Cloud Tiering pour les systèmes ONTAP sur site. Un abonnement actif s'affiche dans l'onglet * Tableau de bord sur site Cloud Tiering *. Vous n'aurez pas besoin de vous abonner à nouveau. Un abonnement actif s'affiche dans le porte-monnaie numérique.
 * La licence BYOL Cloud Tiering est une licence _flottante_ que vous pouvez utiliser avec plusieurs clusters ONTAP sur site de votre compte BlueXP. Ceci est différent (et beaucoup plus facile) que dans le passé, où vous avez acheté une licence _FabricPool_ pour chaque cluster.
 * Le Tiering des données dans StorageGRID n'est pas facturé, une licence BYOL ou un Deal Registration doit être payant. Ces données hiérarchisées ne sont pas prises en compte par rapport à la capacité achetée dans votre licence.
 
@@ -39,7 +39,7 @@ Abonnez-vous à Cloud Tiering depuis AWS Marketplace pour configurer un abonneme
 
 [[subscribe-aws]]
 .Étapes
-. Dans BlueXP, cliquez sur *mobilité > Tiering > tableau de bord sur site*.
+. Dans BlueXP, cliquez sur *mobilité > Tiering > Tableau de bord sur site*.
 . Dans la section _abonnements Marketplace_, cliquez sur *s'abonner* sous Amazon Web Services, puis cliquez sur *Continuer*.
 . Abonnez-vous à partir du https://aws.amazon.com/marketplace/pp/prodview-oorxakq6lq7m4?sr=0-8&ref_=beagle&applicationId=AWSMPContessa["AWS Marketplace"^], Puis reconnectez-vous au site Web BlueXP pour terminer l'enregistrement.
 +
@@ -57,7 +57,7 @@ Abonnez-vous à NetApp Cloud Tiering depuis Azure Marketplace pour configurer un
 
 [[subscribe-azure]]
 .Étapes
-. Dans BlueXP, cliquez sur *mobilité > Tiering > tableau de bord sur site*.
+. Dans BlueXP, cliquez sur *mobilité > Tiering > Tableau de bord sur site*.
 . Dans la section _abonnements Marketplace_, cliquez sur *s'abonner* sous Microsoft Azure, puis cliquez sur *Continuer*.
 . Abonnez-vous à partir du https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.cloud-manager?tab=Overview["Azure Marketplace"^], Puis reconnectez-vous au site Web BlueXP pour terminer l'enregistrement.
 +
@@ -75,7 +75,7 @@ Abonnez-vous à Cloud Tiering depuis GCP Marketplace pour configurer un abonneme
 
 [[subscribe-gcp]]
 .Étapes
-. Dans BlueXP, cliquez sur *mobilité > Tiering > tableau de bord sur site*.
+. Dans BlueXP, cliquez sur *mobilité > Tiering > Tableau de bord sur site*.
 . Dans la section _abonnements Marketplace_, cliquez sur *s'abonner* sous Google Cloud, puis cliquez sur *Continuer*.
 . Abonnez-vous à partir du https://console.cloud.google.com/marketplace/details/netapp-cloudmanager/cloud-manager?supportedpurview=project&rif_reserved["Marketplace GCP"^], Puis reconnectez-vous au site Web BlueXP pour terminer l'enregistrement.
 +

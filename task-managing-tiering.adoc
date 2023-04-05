@@ -27,7 +27,7 @@ TIP: Il n'est pas nécessaire de configurer le stockage objet, car il était dé
 
 .Étapes
 . Dans le menu de navigation de gauche, sélectionnez *mobilité > hiérarchisation*.
-. Sur la page *clusters*, cliquez sur *Configuration de la hiérarchisation de base* pour le cluster.
+. Sur la page *clusters*, cliquez sur *volumes de niveau* pour le cluster.
 +
 image:screenshot_tiering_tier_volumes_button.png["Copie d'écran montrant comment sélectionner le bouton Tier volumes pour un cluster."]
 
@@ -61,7 +61,7 @@ La modification de la règle de Tiering pour un volume modifie la façon dont ON
 
 .Étapes
 . Dans le menu de navigation de gauche, sélectionnez *mobilité > hiérarchisation*.
-. Sur la page *clusters*, cliquez sur *Configuration de la hiérarchisation de base* pour le cluster.
+. Sur la page *clusters*, cliquez sur *volumes de niveau* pour le cluster.
 . Cliquez sur la ligne d'un volume, sélectionnez une stratégie de hiérarchisation, ajustez éventuellement les jours de refroidissement, puis cliquez sur *appliquer*.
 +
 link:concept-cloud-tiering.html#volume-tiering-policies["En savoir plus sur les règles de Tiering des volumes et les jours de refroidissement"].
@@ -111,7 +111,7 @@ NOTE: Votre fournisseur cloud peut vous facturer le montant des données transf�
 Assurez-vous de disposer d'un espace suffisant dans le Tier de performance pour toutes les données déplacées depuis le cloud.
 
 . Dans le menu de navigation de gauche, sélectionnez *mobilité > hiérarchisation*.
-. Sur la page *clusters*, cliquez sur *Configuration de la hiérarchisation de base* pour le cluster.
+. Sur la page *clusters*, cliquez sur *volumes de niveau* pour le cluster.
 . Cliquez sur le bouton image:screenshot_edit_icon.gif["icône modifier qui apparaît à la fin de chaque ligne de la table pour les volumes de tiering"] Pour le volume, choisissez l'option de récupération que vous souhaitez utiliser, puis cliquez sur *appliquer*.
 +
 image:screenshot_tiering_policy_settings_with_retrieve.png["Capture d'écran affichant les paramètres de règle de Tiering configurables."]
@@ -143,11 +143,11 @@ TIP: Il est préférable de maintenir l'option IDR activée car elle permet d'id
 
 
 .Étapes
-. Sur la page *clusters*, cliquez sur *Paramètres avancés* pour le cluster sélectionné.
+. Dans la page *clusters*, cliquez sur *Configuration avancée* pour le cluster sélectionné.
 +
 image:screenshot_tiering_advanced_setup_button.png["Copie d'écran montrant le bouton Configuration avancée d'un cluster."]
 
-. Dans la page Paramètres avancés, cliquez sur l'icône de menu de l'agrégat et sélectionnez *Modifier l'agrégat*.
+. Sur la page Configuration avancée, cliquez sur l'icône de menu de l'agrégat et sélectionnez *Modifier l'agrégat*.
 +
 image:screenshot_tiering_modify_aggr.png["Capture d'écran affichant l'option Modifier l'agrégat pour un agrégat."]
 
@@ -220,7 +220,7 @@ Si vos informations d'identification NSS ne sont pas enregistrées dans BlueXP, 
 +
 image:screenshot_tiering_discover_cluster.png["Capture d'écran montrant comment découvrir un cluster existant à ajouter à BlueXP et le Tableau de bord de Tiering."]
 
-. Cliquez sur *Ajouter un cluster* pour le cluster que vous souhaitez gérer via BlueXP et implémenter le Tiering des données.
+. Cliquez sur *Discover Cluster* pour le cluster que vous souhaitez gérer via BlueXP et mettez en œuvre le Tiering des données.
 . Sur la page _Cluster Details_, entrez le mot de passe du compte utilisateur admin et cliquez sur *Discover*.
 +
 Notez que l'adresse IP de gestion du cluster est renseignée sur la base des informations de votre compte NSS.
