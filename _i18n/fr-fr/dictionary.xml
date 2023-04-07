@@ -86,7 +86,6 @@
   <block id="7c5661ab6b39ee901cea00a6e7020a49" category="paragraph">NetApp prend en charge BlueXP et ses services cloud de différentes manières. De nombreuses options d'auto-assistance gratuites sont disponibles 24 h/24 et 7 j/7, comme des articles de la base de connaissances (KB) et un forum communautaire. Votre inscription au support inclut un support technique à distance via la création de tickets en ligne.</block>
   <block id="5e4b821a1a82558dead1ef6961e90666" category="paragraph">Ces options sont disponibles gratuitement, 24 heures sur 24, 7 jours sur 7 :</block>
   <block id="19111351b69b6b15668130b38b7f6038" category="inline-link">Base de connaissances</block>
-  <block id="fd6bb4fa1ad0caeedd6782d92cc54ea3" category="list-text"><block ref="fd6bb4fa1ad0caeedd6782d92cc54ea3" category="inline-link-rx"></block></block>
   <block id="9a3db1abe5491d0eb9bb5d125981356c" category="paragraph">Recherchez dans la base de connaissances BlueXP des articles utiles pour résoudre les problèmes.</block>
   <block id="14526abd8bda5af347775025cd5342cf" category="inline-link">Communautés</block>
   <block id="410fdb9caa9c64da2ff3f88f4836960d" category="list-text"><block ref="410fdb9caa9c64da2ff3f88f4836960d" category="inline-link-rx"></block></block>
@@ -300,7 +299,6 @@
   <block id="a8e8e48001e032c3b5939047d15db5a2" category="section-title">Préparation de la mise en réseau pour le connecteur</block>
   <block id="7b16b8b258668ab05a1e5d83e084b477" category="paragraph">Assurez-vous que le connecteur dispose des connexions réseau requises.</block>
   <block id="aadbd6cd1f8b4e9deafea8f1d6c8333c" category="list-text">Assurez-vous que le réseau sur lequel le connecteur est installé active les connexions suivantes :</block>
-  <block id="841f7e7eb4c540f0ef284f9a0806448c" category="list-text">Une connexion Internet sortante vers le service Cloud Tiering via le port 443 (HTTPS)</block>
   <block id="c23e3e3ec330910b74031fabbb7bedbd" category="list-text">Une connexion HTTPS via le port 443 vers un stockage objet compatible S3</block>
   <block id="699a71169310a3553bddb7e36ecb8a5c" category="list-text">Une connexion HTTPS via le port 443 vers votre LIF de gestion de cluster ONTAP</block>
   <block id="aa972ed8d4cd18a54d3bfc872e508a63" category="section-title">Tiering des données inactives de votre premier cluster vers un stockage objet compatible avec S3</block>
@@ -350,7 +348,6 @@
   <block id="bda2a863882afc8f61b71a756b1ea690" category="inline-link">Déploiement d'un connecteur dans Azure</block>
   <block id="b1e389999fc3500ff74c433071c6f3d0" category="section-title">Vérifiez que vous disposez des autorisations de connecteur nécessaires</block>
   <block id="8d553e78e79ca1abdf2ffdd1714a7698" category="paragraph">Assurez-vous que le connecteur dispose des connexions réseau requises. Un connecteur peut être installé sur site ou dans Azure.</block>
-  <block id="bb1241e3a37748e608dbbde25c75ea25" category="list-text">Une connexion HTTPS via le port 443 vers le stockage Azure Blob</block>
   <block id="400985d5d8ad47af48b13e9fe604a6fe" category="list-text">Si nécessaire, activez un terminal du service VNet sur le stockage Azure.</block>
   <block id="0eb60239b46482f7f72a4986fa40c73a" category="paragraph">Un point de terminaison du service VNet pour le stockage Azure est recommandé si vous disposez d'une connexion ExpressRoute ou VPN entre le cluster ONTAP et le vnet et que vous souhaitez que la communication entre le connecteur et le stockage Blob reste sur votre réseau privé virtuel.</block>
   <block id="256fb1d2776e7f3b364ce4414a65b2cd" category="section-title">Préparation du stockage Azure Blob</block>
@@ -719,7 +716,6 @@
   <block id="da67ca84863fc0110febe22c08877274" category="inline-link">Déploiement d'un connecteur dans GCP</block>
   <block id="3b8a5aa33e51c71b8f37ac5972ac20d7" category="list-text"><block ref="3b8a5aa33e51c71b8f37ac5972ac20d7" category="inline-link-rx"></block></block>
   <block id="499449d439c0676b8921b5ff6e0ca806" category="list-text">Assurez-vous que le VPC où le connecteur est installé active les connexions suivantes :</block>
-  <block id="d83f012d1d2a88fdb1e7cb28d94b081d" category="list-text">Une connexion HTTPS via le port 443 vers Google Cloud Storage</block>
   <block id="bad85e9654b782928f6763c3008e8dd4" category="list-text">Facultatif : activez Private Google Access sur le sous-réseau où vous prévoyez de déployer le connecteur.</block>
   <block id="b092138563f7b68473c3bf2a6a23a434" category="inline-link">Accès privé à Google</block>
   <block id="f4daaef45bd7d11ebf3a4c8dc607eaa4" category="paragraph"><block ref="d1ea0c6b3f95b3376607c57ca3a4265e" category="inline-link-rx"></block> Est recommandé si vous disposez d'une connexion directe entre le cluster ONTAP et le VPC et que vous souhaitez maintenir une communication entre le connecteur et Google Cloud Storage dans votre réseau privé virtuel. Notez que Private Google Access fonctionne avec des instances de VM possédant uniquement des adresses IP internes (privées) (pas d'adresses IP externes).</block>
@@ -887,7 +883,6 @@
   <block id="a1b7de43a5472d2ba57c5f863040eec2" category="list-text">Gestion des versions d'objet</block>
   <block id="aa4788e27cdbd61e4d722970587d99c5" category="list-text">Vous ne devez pas activer la gestion des versions d'objets StorageGRID sur le compartiment de magasin d'objets.</block>
   <block id="1c3c05f52f226acac800b43e5ce83b67" category="paragraph">Un connecteur est nécessaire pour transférer les données vers le cloud. Pour le Tiering des données vers StorageGRID, un connecteur doit être disponible sur site. Vous devrez soit installer un nouveau connecteur, soit vérifier que le connecteur actuellement sélectionné réside sur site.</block>
-  <block id="a3049b761ff526799f3b1881932b1c8c" category="list-text">Une connexion HTTPS via le port 443 vers StorageGRID</block>
   <block id="de9570886e9849852133b61caefd03b2" category="section-title">Tiering des données inactives de votre premier cluster vers StorageGRID</block>
   <block id="8763f6e8f73d9edf1525960ebd813b27" category="list-text">Le FQDN du nœud de passerelle StorageGRID et le port qui sera utilisé pour les communications HTTPS.</block>
   <block id="1b8a3756b590cb811f9726f247097028" category="list-text">Clé d'accès AWS qui dispose des autorisations S3 requises.</block>
@@ -933,9 +928,7 @@
   <block id="ffe46224318100d3f7bec7eca2ef7e3f" category="paragraph">Le connecteur BlueXP est le logiciel principal pour la fonctionnalité BlueXP. Un connecteur est nécessaire pour effectuer le Tiering des données ONTAP inactives.</block>
   <block id="cc8fa83637def0ab4b26b2c73eaf58b1" category="paragraph">Si votre connecteur est déjà déployé dans votre VPC AWS ou sur votre site, cela vous permettra d'être configuré. Si ce n'est pas le cas, vous devez créer un connecteur dans l'un de ces emplacements pour transférer les données ONTAP vers une solution de stockage AWS S3. Vous ne pouvez pas utiliser un connecteur déployé dans un autre fournisseur de cloud.</block>
   <block id="929d25665bc92d22cf4a79265248dd36" category="section-title">Exigences de mise en réseau des connecteurs</block>
-  <block id="572373ae1e78fa8826ac1a5468d0b8c1" category="list-text">Une connexion Internet sortante via le port 443 (HTTPS) vers le service Cloud Tiering</block>
   <block id="2e379f93711508ab69eec06837dd271c" category="inline-link">voir la liste des noeuds finaux</block>
-  <block id="070ae2b938526f98049114b311cf4a90" category="list-text">Une connexion HTTPS via le port 443 vers votre stockage objet S3 <block ref="2b717f51e9f0e108fc936d861142f7b4" category="inline-link-rx"></block>)</block>
   <block id="76e709935c290dea4c7b1c0de4918211" category="inline-link">Assurez-vous que le connecteur dispose des autorisations nécessaires pour gérer le compartiment S3</block>
   <block id="4e96d68b20a8c2caa7ac1a77b15169c3" category="list-text"><block ref="4e96d68b20a8c2caa7ac1a77b15169c3" category="inline-link-rx"></block></block>
   <block id="db41e7a8de9567fec002e93320c428ad" category="inline-xref">Découvrez comment configurer une interface de terminal VPC.</block>
@@ -1370,4 +1363,10 @@
   <block id="2b36f8b3b2cccdc6807233a79e1b8d1d" category="paragraph">Si vous atteignez la limite de capacité BYOL, le Tiering des nouvelles données inactives s'arrête. Toutes les données précédemment hiérarchisées restent accessibles. Vous pouvez donc les récupérer et les utiliser. Lorsqu'elles sont récupérées, elles sont replacées dans le Tier de performance du cloud.</block>
   <block id="91c0c3f0911cf0aa7791e2815ecf2507" category="paragraph">Toutefois, si vous avez souscrit un abonnement PAYGO Marketplace à _BlueXP - Deploy &amp; Manage Cloud Data Services_, les nouvelles données inactives continueront d'être hiérarchisées vers le stockage objet et vous payez ces frais à l'utilisation.</block>
   <block id="9c7d287d0ce7d0d1654a49d75c7314f0" category="paragraph">Si vous disposez de systèmes Cloud Volumes ONTAP, vous les trouverez sur la page NetApp Cloud Tiering clusters pour une vue complète du Tiering des données dans votre infrastructure de cloud hybride. Toutefois, les systèmes Cloud Volumes ONTAP sont en lecture seule depuis le Tiering dans le cloud. Vous ne pouvez pas configurer le Tiering des données dans Cloud Volumes ONTAP à partir de NetApp Cloud Tiering.<block ref="7477c38194261f0954175f853359735c" category="inline-link-rx"></block>.</block>
+  <block id="942c9249796cf6b78c981ebf15195809" category="list-text"><block ref="942c9249796cf6b78c981ebf15195809" category="inline-link-rx"></block></block>
+  <block id="827819483dd4d9a78711b6afa4da92ab" category="list-text">Connexion HTTPS sur le port 443 vers le service Cloud Tiering et vers votre Google Cloud Storage <block ref="d9defc1077847b67f008853c06990134" category="inline-link-rx"></block>)</block>
+  <block id="7ec3e00e427ce2f28dc1338f2397328b" category="list-text">Connexion HTTPS via le port 443 du service Cloud Tiering <block ref="4a7a4f89081133703af86b4e7832dbdb" category="inline-link-rx"></block>)</block>
+  <block id="5bfe7676a3f4e4197bf9f895c6b2fcb4" category="list-text">Une connexion HTTPS sur le port 443 de votre système StorageGRID</block>
+  <block id="0d2084a4e3ff91eb61a6e20f85d92399" category="list-text">Connexion HTTPS sur le port 443 vers le service Cloud Tiering et vers votre stockage objet S3 <block ref="e55fc914b3d027a7a2463283008a8fbf" category="inline-link-rx"></block>)</block>
+  <block id="bd0e0977c46457979423f05da93b43de" category="list-text">Connexion HTTPS sur le port 443 vers le service NetApp Cloud Tiering et vers votre stockage objet Azure Blob <block ref="5bf1914e1013b2901a1aed42fbd7a1ac" category="inline-link-rx"></block>)</block>
 </blocks>

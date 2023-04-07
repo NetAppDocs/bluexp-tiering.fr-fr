@@ -144,8 +144,8 @@ Assurez-vous que le connecteur dispose des connexions réseau requises.
 .Étapes
 . Assurez-vous que le réseau sur lequel le connecteur est installé active les connexions suivantes :
 +
-** Une connexion Internet sortante vers le service Cloud Tiering via le port 443 (HTTPS)
-** Une connexion HTTPS via le port 443 vers StorageGRID
+** Connexion HTTPS via le port 443 du service Cloud Tiering (https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-set-up-networking-on-prem.html#endpoints-contacted-for-day-to-day-operations["voir la liste des noeuds finaux"^])
+** Une connexion HTTPS sur le port 443 de votre système StorageGRID
 ** Une connexion HTTPS via le port 443 vers votre LIF de gestion de cluster ONTAP
 
 

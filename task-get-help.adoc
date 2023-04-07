@@ -18,7 +18,7 @@ NetApp prend en charge BlueXP et ses services cloud de différentes manières. D
 
 Ces options sont disponibles gratuitement, 24 heures sur 24, 7 jours sur 7 :
 
-* https://kb.netapp.com/Advice_and_Troubleshooting/Cloud_Services["Base de connaissances"^]
+* https://kb.netapp.com/Cloud/BlueXP["Base de connaissances"^]
 +
 Recherchez dans la base de connaissances BlueXP des articles utiles pour résoudre les problèmes.
 
