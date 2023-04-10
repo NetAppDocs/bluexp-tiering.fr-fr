@@ -117,7 +117,7 @@ https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.
 Un connecteur est nécessaire pour transférer les données vers le cloud. Pour le Tiering des données vers Google Cloud Storage, un connecteur doit être disponible dans un VPC Google Cloud Platform. Vous devrez soit créer un nouveau connecteur, soit vérifier que le connecteur actuellement sélectionné réside dans GCP.
 
 * https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["En savoir plus sur les connecteurs"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html["Déploiement d'un connecteur dans GCP"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["Déploiement d'un connecteur dans GCP"^]
 
 
 

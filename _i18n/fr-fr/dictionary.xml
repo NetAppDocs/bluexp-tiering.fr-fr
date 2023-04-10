@@ -506,7 +506,6 @@
   <block id="98dae1b8caf3c488a405b3624212dfe9" category="list-text">Lors du Tiering des données vers un système StorageGRID ou d'autres fournisseurs de stockage compatibles S3, ce connecteur doit résider sur votre site.</block>
   <block id="d2eea5ad2ae07890452da2aec5cffc98" category="section-title">Puis-je déployer la connexion sur site ?</block>
   <block id="b0ccf0f3fa1a27a2fbab1c35ebf8e0f5" category="inline-link">Découvrez comment installer le connecteur dans vos locaux</block>
-  <block id="de7433c1562faa5f9b2ee55c74f16fa2" category="paragraph">Oui. Le logiciel Connector peut être téléchargé et installé manuellement sur un hôte Linux de votre réseau.<block ref="5cffbbed8cdfbd25b645e94434fee757" category="inline-link-rx"></block>.</block>
   <block id="eef7b8a2b79a5ecae955422af0ab3b72" category="section-title">Un compte avec fournisseur de services cloud est-il nécessaire avant d'utiliser NetApp Cloud Tiering ?</block>
   <block id="71b5e4019a71131db2052326884d8bbe" category="paragraph">Oui. Vous devez disposer d'un compte avant de pouvoir définir le stockage objet à utiliser. Un compte parmi un fournisseur de stockage cloud est également nécessaire pour configurer le connecteur dans le cloud sur un VPC ou vNet.</block>
   <block id="8ca6e099f9e16583824ee8e6a5727c40" category="section-title">Quelles sont les conséquences en cas de défaillance du connecteur ?</block>
@@ -714,7 +713,6 @@
   <block id="c3fb869301bdf0050425864a1c816fd8" category="admonition">NetApp Cloud Tiering prend en charge les volumes FlexGroup. Le réglage fonctionne de la même façon que tout autre volume.</block>
   <block id="6f8de70a130cd2e986950accf1528a82" category="paragraph">Un connecteur est nécessaire pour transférer les données vers le cloud. Pour le Tiering des données vers Google Cloud Storage, un connecteur doit être disponible dans un VPC Google Cloud Platform. Vous devrez soit créer un nouveau connecteur, soit vérifier que le connecteur actuellement sélectionné réside dans GCP.</block>
   <block id="da67ca84863fc0110febe22c08877274" category="inline-link">Déploiement d'un connecteur dans GCP</block>
-  <block id="3b8a5aa33e51c71b8f37ac5972ac20d7" category="list-text"><block ref="3b8a5aa33e51c71b8f37ac5972ac20d7" category="inline-link-rx"></block></block>
   <block id="499449d439c0676b8921b5ff6e0ca806" category="list-text">Assurez-vous que le VPC où le connecteur est installé active les connexions suivantes :</block>
   <block id="bad85e9654b782928f6763c3008e8dd4" category="list-text">Facultatif : activez Private Google Access sur le sous-réseau où vous prévoyez de déployer le connecteur.</block>
   <block id="b092138563f7b68473c3bf2a6a23a434" category="inline-link">Accès privé à Google</block>
@@ -1203,7 +1201,6 @@
   <block id="e1095ff19466581c5274f67123c95036" category="cell">\https://api.bluexp.netapp.com</block>
   <block id="9e434ddc2ad4b9de005368b77254223d" category="cell">\https://*.cloudmanager.cloud.netapp.com</block>
   <block id="37ba276f010f4ea07f1196b487811443" category="cell">\https://*.api.bluexp.netapp.com</block>
-  <block id="0e40b9cba041560c9517bc49757da3c7" category="paragraph">Consultez la liste complète des terminaux de votre<block ref="4c9e3e17ba20f553394e5bc78e402946" category="inline-link-rx"></block>,<block ref="cd3c6f623ccf3e34f9d46b28c47f2a3d" category="inline-link-rx"></block>, ou<block ref="80755100f97c37f8aa8e3d999b0a43d9" category="inline-link-rx"></block> de cloud hybride.</block>
   <block id="c1b8b8c1767ffef37beebd6dca294a19" category="paragraph">Lorsque vous utilisez un connecteur sur site, vous devez entrer l'abonnement Azure qui donne accès au groupe de ressources.</block>
   <block id="838b026c40657f60dbef105628a74c67" category="paragraph">NetApp ne prend pas en charge, ni ne peut être tenu responsable, de tout problème découlant de tout service de magasin d'objets tiers, en particulier s'il n'a pas convenu d'accords de support avec le tiers avec lequel le produit a été créé. NetApp doit être tenu responsable de tout dommage associé ou de toute autre obligation de support pour ce produit tiers.</block>
   <block id="cde18ab8c63e317f54bbc67366c538fb" category="list-text">Cluster ONTAP source sur site qui exécute ONTAP 9.8 ou version ultérieure et connexion via un port spécifié par l'utilisateur vers le stockage objet compatible S3 de destination.<block ref="afd80128eeaacb8238d3ffdcf8ecd8a8" category="inline-link-rx"></block>.</block>
@@ -1369,4 +1366,7 @@
   <block id="5bfe7676a3f4e4197bf9f895c6b2fcb4" category="list-text">Une connexion HTTPS sur le port 443 de votre système StorageGRID</block>
   <block id="0d2084a4e3ff91eb61a6e20f85d92399" category="list-text">Connexion HTTPS sur le port 443 vers le service Cloud Tiering et vers votre stockage objet S3 <block ref="e55fc914b3d027a7a2463283008a8fbf" category="inline-link-rx"></block>)</block>
   <block id="bd0e0977c46457979423f05da93b43de" category="list-text">Connexion HTTPS sur le port 443 vers le service NetApp Cloud Tiering et vers votre stockage objet Azure Blob <block ref="5bf1914e1013b2901a1aed42fbd7a1ac" category="inline-link-rx"></block>)</block>
+  <block id="f8fffd3ee443f29d36b65a0e66a5f03a" category="paragraph">Oui. Le logiciel Connector peut être téléchargé et installé manuellement sur un hôte Linux de votre réseau.<block ref="1b7ddd38e792a03a4b15132910b94d8c" category="inline-link-rx"></block>.</block>
+  <block id="99d3ed1cc58df8ac52e23dd69320374b" category="list-text"><block ref="99d3ed1cc58df8ac52e23dd69320374b" category="inline-link-rx"></block></block>
+  <block id="c395006d6063b66336be768382280c9e" category="paragraph">Consultez la liste complète des terminaux de votre<block ref="684a3f4234dd7d8f8b7d90e00da95138" category="inline-link-rx"></block>,<block ref="fd66fc554da543d0f7f94dcde36b2a2f" category="inline-link-rx"></block>, ou<block ref="2484264a704a749bc992bec76f43f13d" category="inline-link-rx"></block> de cloud hybride.</block>
 </blocks>

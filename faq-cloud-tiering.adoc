@@ -362,7 +362,7 @@ Il s'agit d'un logiciel exécuté sur une instance de calcul dans votre compte c
 
 === Puis-je déployer la connexion sur site ?
 
-Oui. Le logiciel Connector peut être téléchargé et installé manuellement sur un hôte Linux de votre réseau. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["Découvrez comment installer le connecteur dans vos locaux"].
+Oui. Le logiciel Connector peut être téléchargé et installé manuellement sur un hôte Linux de votre réseau. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-on-prem.html["Découvrez comment installer le connecteur dans vos locaux"].
 
 
 
