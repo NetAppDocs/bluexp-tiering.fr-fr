@@ -22,6 +22,8 @@ Le service de Tiering cloud dans BlueXP (anciennement Cloud Manager) exploite le
 
 Cloud Tiering peut être configuré pour les clusters à un seul nœud, les clusters haute disponibilité, les clusters dans les configurations Tiering Mirror et les configurations MetroCluster à l'aide de FabricPool Mirror. Les licences Cloud Tiering sont partagées entre tous vos clusters.
 
+https://bluexp.netapp.com/cloud-tiering-service-tco["Utilisez le calculateur de TCO de Cloud Tiering pour connaître les économies que vous pouvez réaliser"^].
+
 
 
 == Caractéristiques
@@ -38,10 +40,10 @@ NetApp Cloud Tiering propose des fonctionnalités d'automatisation, de surveilla
 * Si vous disposez de systèmes Cloud Volumes ONTAP, vous les trouverez sur la page clusters afin d'obtenir une vue complète du Tiering des données dans votre infrastructure de cloud hybride
 
 
-Pour en savoir plus sur les atouts de NetApp Cloud Tiering, https://cloud.netapp.com/cloud-tiering["Consultez la page Cloud Tiering sur le site Web de BlueXP"^].
+Pour en savoir plus sur les atouts de NetApp Cloud Tiering, https://bluexp.netapp.com/cloud-tiering["Consultez la page Cloud Tiering sur le site Web de BlueXP"^].
 
 
-TIP: Les systèmes Cloud Volumes ONTAP sont en lecture seule depuis le Tiering dans le cloud. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-tiering.html["Vous configurez le Tiering pour Cloud Volumes ONTAP à partir de l'environnement de travail dans BlueXP"^].
+TIP: Les systèmes Cloud Volumes ONTAP sont en lecture seule depuis le Tiering dans le cloud. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-tiering.html["Vous avez configuré le Tiering des systèmes Cloud Volumes ONTAP à partir de l'environnement de travail dans BlueXP"^].
 
 
 
