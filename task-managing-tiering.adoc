@@ -80,7 +80,7 @@ La règle de Tiering est modifiée et les données commencent à être hiérarch
 
 == Téléchargez un rapport de hiérarchisation pour vos volumes
 
-Vous pouvez télécharger un rapport de la page volumes de Tier pour consulter l'état de Tiering de tous les volumes des clusters que vous gérez. Cliquez simplement sur le image:button_download.png["Télécharger"] bouton. Cloud Tiering génère un fichier .CSV que vous pouvez vérifier et envoyer à d'autres groupes selon vos besoins. Le fichier .CSV contient jusqu'à 10,000 lignes de données.
+Vous pouvez télécharger un rapport de la page volumes de Tier pour consulter l'état de Tiering de tous les volumes des clusters que vous gérez. Cliquez simplement sur le image:button_download.png["Télécharger"] bouton. Le Tiering BlueXP génère un fichier .CSV que vous pouvez vérifier et envoyer à d'autres groupes si nécessaire. Le fichier .CSV contient jusqu'à 10,000 lignes de données.
 
 image:screenshot_tiering_report_download.png["Capture d'écran montrant comment générer un fichier CSV répertoriant l'état de hiérarchisation de tous vos volumes."]
 
@@ -162,7 +162,7 @@ image:screenshot_tiering_modify_aggregate.png["Capture d'écran affichant un cur
 
 == Révision des informations de hiérarchisation pour un cluster
 
-Vous pouvez connaître la quantité de données stockées dans le Tier cloud et la quantité de données stockées sur les disques. Vous pouvez également voir la quantité de données actives et inactives sur les disques du cluster. NetApp Cloud Tiering fournit ces informations pour chaque cluster.
+Vous pouvez connaître la quantité de données stockées dans le Tier cloud et la quantité de données stockées sur les disques. Vous pouvez également voir la quantité de données actives et inactives sur les disques du cluster. Le Tiering BlueXP fournit ces informations pour chaque cluster.
 
 .Étapes
 . Dans le menu de navigation de gauche, sélectionnez *mobilité > hiérarchisation*.
@@ -184,7 +184,7 @@ image:screenshot_tiering_aiq_fabricpool_info.png["Copie d'écran présentant les
 
 == Corriger la santé opérationnelle
 
-Les défaillances peuvent survenir. Et le cas fois, Cloud Tiering affiche l'état d'intégrité opérationnelle « défaillante » sur le tableau de bord du cluster. La santé reflète l'état du système ONTAP et BlueXP.
+Les défaillances peuvent survenir. Lorsque c'est le cas, le Tiering BlueXP affiche un état d'intégrité opérationnelle « en échec » sur le tableau de bord du cluster. La santé reflète l'état du système ONTAP et BlueXP.
 
 .Étapes
 . Identifiez tous les clusters dont l'état opérationnel est « en panne ».
@@ -192,21 +192,21 @@ Les défaillances peuvent survenir. Et le cas fois, Cloud Tiering affiche l'éta
 . Corriger le problème :
 +
 .. Vérifiez que le cluster ONTAP est opérationnel et qu'il dispose d'une connexion entrante et sortante avec votre fournisseur de stockage objet.
-.. Vérifiez que BlueXP dispose de connexions sortantes vers le service Cloud Tiering, vers le magasin d'objets et vers les clusters ONTAP qu'il détecte.
+.. Vérifiez que BlueXP dispose de connexions sortantes avec le service de Tiering BlueXP, le magasin d'objets et les clusters ONTAP qu'il détecte.
 
 
 
 
 
 
-== Détection des clusters supplémentaires avec Cloud Tiering
+== Découverte de clusters supplémentaires à partir du Tiering BlueXP
 
 Vous pouvez ajouter vos clusters ONTAP sur site non découverts à BlueXP depuis la page Tiering _Cluster_ afin que vous puissiez activer le Tiering pour le cluster.
 
 Notez que des boutons apparaissent également sur la page Tiering _On-site Dashboard_ pour vous permettre de découvrir d'autres clusters.
 
 .Étapes
-. Dans Cloud Tiering, cliquez sur l'onglet *clusters*.
+. Depuis le Tiering BlueXP, cliquez sur l'onglet *clusters*.
 . Pour afficher les clusters non découverts, cliquez sur *Afficher les clusters non découverts*.
 +
 image:screenshot_tiering_show_undiscovered_cluster.png["Capture d'écran du bouton Afficher les clusters non découverts dans le tableau de bord de Tiering."]

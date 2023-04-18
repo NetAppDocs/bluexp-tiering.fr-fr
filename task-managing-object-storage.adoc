@@ -20,7 +20,7 @@ Une fois que vous avez configuré vos clusters ONTAP sur site pour hiérarchiser
 
 == Affichage des magasins d'objets configurés pour un cluster
 
-Il serait intéressant de voir tous les magasins d'objets qui ont été configurés pour le cluster et les agrégats auxquels ils sont rattachés. NetApp Cloud Tiering fournit ces informations pour chaque cluster.
+Il serait intéressant de voir tous les magasins d'objets qui ont été configurés pour le cluster et les agrégats auxquels ils sont rattachés. Le Tiering BlueXP fournit ces informations pour chaque cluster.
 
 .Étapes
 . Sur la page *clusters*, cliquez sur l'icône de menu d'un cluster et sélectionnez *Object Store Info*.
@@ -56,7 +56,7 @@ L'assistant de stockage d'objets démarre. L'exemple ci-dessous montre comment c
 +
 Le préfixe _fabric-pool_ est requis car la stratégie IAM pour le connecteur permet à l'instance d'effectuer des actions S3 sur les compartiments nommés avec ce préfixe exact. Par exemple, vous pouvez nommer le compartiment S3 _fabric-pool-AFF1_, où AFF1 est le nom du cluster.
 
-.. *Cycle de vie des classes de stockage* : le Tiering dans le cloud gère les transitions de cycle de vie de vos données hiérarchisées. Les données commencent dans la classe _Standard_, mais vous pouvez créer une règle pour déplacer les données vers une autre classe après un certain nombre de jours.
+.. *Cycle de vie de la classe de stockage* : le Tiering BlueXP gère les transitions du cycle de vie de vos données hiérarchisées. Les données commencent dans la classe _Standard_, mais vous pouvez créer une règle pour déplacer les données vers une autre classe après un certain nombre de jours.
 +
 Sélectionnez la classe de stockage S3 vers laquelle vous souhaitez transférer les données hiérarchisées et le nombre de jours avant le déplacement des données, puis cliquez sur *Continuer*. Par exemple, la capture d'écran ci-dessous montre que les données hiérarchisées sont déplacées de la classe _Standard_ à la classe _Standard-IA_ après 45 jours dans le stockage d'objets.
 
@@ -75,7 +75,7 @@ L'utilisateur IAM doit se trouver dans le même compte AWS que le compartiment q
 
 .. *Cluster Network* : sélectionnez l'IPspace ONTAP à utiliser pour se connecter au stockage objet, puis cliquez sur *Continuer*.
 +
-Le choix du bon IPspace garantit que Cloud Tiering peut établir une connexion de ONTAP au stockage objet de votre fournisseur cloud.
+La sélection de l'IPspace approprié permet de garantir que le Tiering BlueXP peut établir une connexion entre ONTAP et le stockage objet de votre fournisseur de cloud.
 
 
 
@@ -156,7 +156,7 @@ NOTE: Lorsque vous supprimez le magasin d'objets miroir d'une configuration Metr
 
 == Migration des données hiérarchisées vers un autre fournisseur de cloud
 
-NetApp Cloud Tiering vous permet de migrer facilement vos données hiérarchisées vers un autre fournisseur cloud. Par exemple, pour migrer d'Amazon S3 vers Azure Blob, vous pouvez suivre les étapes indiquées ci-dessus dans l'ordre suivant :
+Le Tiering BlueXP vous permet de migrer facilement vos données hiérarchisées vers un autre fournisseur cloud. Par exemple, pour migrer d'Amazon S3 vers Azure Blob, vous pouvez suivre les étapes indiquées ci-dessus dans l'ordre suivant :
 
 . Ajoutez un magasin d'objets Azure Blob.
 . Attacher ce nouveau magasin d'objets en tant que miroir à l'agrégat existant.

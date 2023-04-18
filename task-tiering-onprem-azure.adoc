@@ -29,7 +29,7 @@ Il faut les éléments suivants :
 [role="quick-margin-list"]
 * Cluster ONTAP sur site qui exécute ONTAP 9.4 ou version ultérieure et qui est doté d'une connexion HTTPS vers le stockage Azure Blob. https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["Découvrez comment détecter un cluster"^].
 * Un connecteur installé dans un Azure VNet ou sur votre site.
-* Mise en réseau d'un connecteur qui permet une connexion HTTPS sortante vers le cluster ONTAP du data Center, vers le stockage Azure et vers le service Cloud Tiering.
+* Mise en réseau d'un connecteur qui permet une connexion HTTPS sortante au cluster ONTAP de votre data Center, vers le stockage Azure et vers le service de Tiering BlueXP.
 
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Deux"] Configurer le Tiering
@@ -38,11 +38,11 @@ Dans BlueXP, sélectionnez un environnement de travail ONTAP sur site, cliquez s
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Trois"] Configuration des licences
 [role="quick-margin-para"]
-Après la fin de votre essai gratuit, payez le Tiering cloud par le biais d'un abonnement avec paiement à l'utilisation, d'une licence BYOL ONTAP Cloud Tiering ou d'une combinaison des deux :
+À la fin de votre essai gratuit, payez le Tiering BlueXP via un abonnement avec paiement à l'utilisation, une licence ONTAP BlueXP Tiering BYOL ou une combinaison des deux :
 
 [role="quick-margin-list"]
 * Pour vous abonner à Azure Marketplace, https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.cloud-manager?tab=Overview["Accédez à l'offre BlueXP Marketplace"^], Cliquez sur *s'abonner*, puis suivez les invites.
-* Pour payer avec une licence Cloud Tiering BYOL, mailto:ng-cloud-tiering@netapp.com?Subject=Licensing[contactez-nous si vous devez en acheter un], puis link:task-licensing-cloud-tiering.html#add-cloud-tiering-byol-licenses-to-your-account["Ajoutez-le à votre compte à partir du portefeuille numérique BlueXP"].
+* Pour payer avec une licence BYOL de Tiering BlueXP, mailto:ng-cloud-tiering@netapp.com?Subject=Licensing[contactez-nous si vous avez besoin d'en acheter un], puis link:task-licensing-cloud-tiering.html#add-bluexp-tiering-byol-licenses-to-your-account["Ajoutez-le à votre compte à partir du portefeuille numérique BlueXP"].
 
 
 
@@ -53,7 +53,7 @@ Vérifiez la prise en charge de votre cluster ONTAP, configurez votre réseau et
 
 L'image suivante montre chaque composant et les connexions que vous devez préparer entre eux :
 
-image:diagram_cloud_tiering_azure.png["Image d'architecture montrant le service NetApp Cloud Tiering avec une connexion au connecteur de votre fournisseur de cloud, le connecteur avec une connexion au cluster ONTAP et une connexion entre le cluster ONTAP et le stockage objet de votre fournisseur de cloud. Les données actives résident sur le cluster ONTAP, tandis que les données inactives résident dans le stockage objet."]
+image:diagram_cloud_tiering_azure.png["Image de l'architecture montrant le service de Tiering BlueXP avec une connexion au connecteur de votre fournisseur cloud, le connecteur avec une connexion à votre cluster ONTAP et une connexion entre le cluster ONTAP et le stockage objet de votre fournisseur cloud. Les données actives résident sur le cluster ONTAP, tandis que les données inactives résident dans le stockage objet."]
 
 
 NOTE: La communication entre le connecteur et le stockage Blob est uniquement destinée à la configuration du stockage objet. Ce connecteur peut résider sur votre site au lieu de dans le cloud.
@@ -86,20 +86,20 @@ Bien qu'ExpressRoute offre de meilleures performances et des frais de transfert 
 
 * Une connexion entrante est requise depuis le connecteur, qui peut résider dans un Azure VNet ou sur votre site.
 +
-Aucune connexion entre le cluster et le service Cloud Tiering n'est requise.
+Une connexion entre le cluster et le service de Tiering BlueXP n'est pas requise.
 
 * Un LIF intercluster est nécessaire sur chaque nœud ONTAP qui héberge les volumes que vous souhaitez mettre en niveau. La LIF doit être associée au _IPspace_ que ONTAP doit utiliser pour se connecter au stockage objet.
 +
-Lorsque vous configurez le Tiering des données, Cloud Tiering vous invite à utiliser l'IPspace. Vous devez choisir l'IPspace auquel chaque LIF est associée. Il peut s'agir de l'IPspace par défaut ou d'un IPspace personnalisé que vous avez créé. En savoir plus sur https://docs.netapp.com/us-en/ontap/networking/create_a_lif.html["LIF"^] et https://docs.netapp.com/us-en/ontap/networking/standard_properties_of_ipspaces.html["Les IPspaces"^].
+Lorsque vous configurez le Tiering des données, BlueXP vous invite à utiliser l'IPspace. Vous devez choisir l'IPspace auquel chaque LIF est associée. Il peut s'agir de l'IPspace par défaut ou d'un IPspace personnalisé que vous avez créé. En savoir plus sur https://docs.netapp.com/us-en/ontap/networking/create_a_lif.html["LIF"^] et https://docs.netapp.com/us-en/ontap/networking/standard_properties_of_ipspaces.html["Les IPspaces"^].
 
 
 
 --
-Volumes et agrégats pris en charge:: Le nombre total de volumes que vous pouvez effectuer le Tiering dans Cloud Tiering peut être inférieur au nombre de volumes sur votre système ONTAP. En effet, certains volumes ne peuvent pas être hiérarchisés à partir de certains agrégats. Consultez la documentation ONTAP de https://docs.netapp.com/us-en/ontap/fabricpool/requirements-concept.html#functionality-or-features-not-supported-by-fabricpool["Fonctionnalité ou fonctionnalités non prises en charge par FabricPool"^].
+Volumes et agrégats pris en charge:: Le nombre total de volumes que le Tiering BlueXP peut hiérarchiser peut être inférieur au nombre de volumes de votre système ONTAP. En effet, certains volumes ne peuvent pas être hiérarchisés à partir de certains agrégats. Consultez la documentation ONTAP de https://docs.netapp.com/us-en/ontap/fabricpool/requirements-concept.html#functionality-or-features-not-supported-by-fabricpool["Fonctionnalité ou fonctionnalités non prises en charge par FabricPool"^].
 
 
 
-NOTE: NetApp Cloud Tiering prend en charge les volumes FlexGroup, à partir de ONTAP 9.5. Le réglage fonctionne de la même façon que tout autre volume.
+NOTE: Le Tiering BlueXP prend en charge les volumes FlexGroup, à partir de ONTAP 9.5. Le réglage fonctionne de la même façon que tout autre volume.
 
 
 
@@ -124,7 +124,7 @@ Un connecteur est nécessaire pour transférer les données vers le cloud. Lors 
 
 === Vérifiez que vous disposez des autorisations de connecteur nécessaires
 
-Si vous avez créé le connecteur à l'aide de BlueXP version 3.9.25 ou ultérieure, vous êtes tous définis. Le rôle personnalisé qui fournit les autorisations dont un connecteur a besoin pour gérer les ressources et les processus de votre réseau Azure sera configuré par défaut. Voir la https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-azure.html#custom-role-permissions["autorisations de rôle personnalisées requises"^] et le https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-azure.html#cloud-tiering["Autorisations spécifiques requises pour NetApp Cloud Tiering"^].
+Si vous avez créé le connecteur à l'aide de BlueXP version 3.9.25 ou ultérieure, vous êtes tous définis. Le rôle personnalisé qui fournit les autorisations dont un connecteur a besoin pour gérer les ressources et les processus de votre réseau Azure sera configuré par défaut. Voir la https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-azure.html#custom-role-permissions["autorisations de rôle personnalisées requises"^] et le https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-azure.html#cloud-tiering["Autorisations spécifiques requises pour le Tiering BlueXP"^].
 
 Si vous avez créé le connecteur à l'aide d'une version antérieure de BlueXP, vous devrez modifier la liste des autorisations pour le compte Azure afin d'ajouter les autorisations manquantes.
 
@@ -137,7 +137,7 @@ Assurez-vous que le connecteur dispose des connexions réseau requises. Un conne
 .Étapes
 . Assurez-vous que le réseau sur lequel le connecteur est installé active les connexions suivantes :
 +
-** Connexion HTTPS sur le port 443 vers le service NetApp Cloud Tiering et vers votre stockage objet Azure Blob (https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-set-up-networking-azure.html#endpoints-contacted-for-day-to-day-operations["voir la liste des noeuds finaux"^])
+** Connexion HTTPS sur le port 443 vers le service de Tiering BlueXP et vers votre stockage objet Azure Blob (https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-set-up-networking-azure.html#endpoints-contacted-for-day-to-day-operations["voir la liste des noeuds finaux"^])
 ** Une connexion HTTPS via le port 443 vers votre LIF de gestion de cluster ONTAP
 
 
@@ -151,14 +151,14 @@ Un point de terminaison du service VNet pour le stockage Azure est recommandé s
 
 === Préparation du stockage Azure Blob
 
-Lorsque vous configurez le Tiering, vous devez identifier le groupe de ressources à utiliser, ainsi que le compte de stockage et le conteneur Azure appartenant au groupe de ressources. Un compte de stockage permet à NetApp Cloud Tiering d'authentifier et d'accéder au conteneur Blob utilisé pour le Tiering des données.
+Lorsque vous configurez le Tiering, vous devez identifier le groupe de ressources à utiliser, ainsi que le compte de stockage et le conteneur Azure appartenant au groupe de ressources. Un compte de stockage permet au Tiering BlueXP de s'authentifier et d'accéder au conteneur Blob utilisé pour le Tiering des données.
 
-NetApp Cloud Tiering prend en charge le Tiering sur tous les comptes de stockage de toutes les régions accessibles via le connecteur.
+Le Tiering BlueXP prend en charge le Tiering vers n'importe quel compte de stockage, dans n'importe quelle région, accessible via le connecteur.
 
-NetApp Cloud Tiering ne prend en charge que les types General Purpose v2 et Premium Block Blob de comptes de stockage.
+Le Tiering BlueXP prend uniquement en charge les types génériques de comptes de stockage v2 et Premium Block Blob.
 
 
-NOTE: Si vous prévoyez de configurer NetApp Cloud Tiering pour utiliser un Tier d'accès moins onéreux là où vos données hiérarchisées seront conservées après un certain nombre de jours, vous ne devez pas sélectionner de règles de cycle de vie lors de la configuration du conteneur dans votre compte Azure. Le Tiering dans le cloud gère les transitions de cycle de vie.
+NOTE: Si vous prévoyez de configurer le Tiering BlueXP pour utiliser un Tier d'accès moins coûteux vers lequel vos données hiérarchisées seront transférées au bout d'un certain nombre de jours, vous ne devez sélectionner aucune règle de cycle de vie lors de la configuration du conteneur dans votre compte Azure. Le Tiering BlueXP gère les transitions de cycle de vie.
 
 
 
@@ -190,7 +190,7 @@ Lorsque vous utilisez un connecteur sur site, vous devez entrer l'abonnement Azu
 +
 Les comptes de stockage et les conteneurs qui apparaissent à cette étape appartiennent au groupe de ressources que vous avez sélectionné à l'étape précédente.
 
-.. *Cycle de vie des niveaux d'accès* : le Tiering dans le cloud gère les transitions de cycle de vie de vos données hiérarchisées. Les données commencent dans la classe _Hot_, mais vous pouvez créer une règle pour déplacer les données dans la classe _Cool_ après un certain nombre de jours.
+.. *Cycle de vie du niveau d'accès* : le Tiering BlueXP gère les transitions du cycle de vie de vos données hiérarchisées. Les données commencent dans la classe _Hot_, mais vous pouvez créer une règle pour déplacer les données dans la classe _Cool_ après un certain nombre de jours.
 +
 Sélectionnez le niveau d'accès vers lequel vous souhaitez transférer les données hiérarchisées et le nombre de jours avant le déplacement des données, puis cliquez sur *Continuer*. Par exemple, la capture d'écran ci-dessous montre que les données hiérarchisées sont déplacées de la classe _Hot_ à la classe _Cool_ après 45 jours de stockage d'objets.
 
@@ -205,7 +205,7 @@ Notez que la règle du cycle de vie est appliquée à tous les conteneurs d'obje
 
 .. *Cluster Network* : sélectionnez l'IPspace ONTAP à utiliser pour se connecter au stockage objet, puis cliquez sur *Continuer*.
 +
-Le choix du bon IPspace garantit que Cloud Tiering peut établir une connexion de ONTAP au stockage objet de votre fournisseur cloud.
+La sélection de l'IPspace approprié permet de garantir que le Tiering BlueXP peut établir une connexion entre ONTAP et le stockage objet de votre fournisseur de cloud.
 
 
 
@@ -232,7 +232,7 @@ image:screenshot_tiering_policy_settings.png["Capture d'écran affichant les par
 Vous avez configuré le Tiering des données depuis les volumes du cluster vers le stockage objet Azure Blob.
 
 .Et la suite ?
-link:task-licensing-cloud-tiering.html["N'oubliez pas de vous abonner au service NetApp Cloud Tiering"].
+link:task-licensing-cloud-tiering.html["N'oubliez pas de vous abonner au service de Tiering BlueXP"].
 
 Vous pouvez vérifier les informations concernant les données actives et inactives sur le cluster. link:task-managing-tiering.html["En savoir plus sur la gestion de vos paramètres de hiérarchisation"].
 
