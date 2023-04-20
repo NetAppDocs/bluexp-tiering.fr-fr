@@ -111,7 +111,7 @@ Si vous ne disposez pas d'une licence de Tiering BlueXP, contactez-nous pour en 
 
 Si vous ne souhaitez pas utiliser de licence basée sur des nœuds non attribuée à Cloud Volumes ONTAP, vous pouvez la convertir en licence de Tiering BlueXP avec la même équivalence en dollars et la même date d'expiration. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html#exchange-unassigned-node-based-licenses["Cliquez ici pour plus d'informations"^].
 
-La page du portefeuille digital de BlueXP vous permet de gérer le Tiering des licences BYOL. Vous pouvez ajouter de nouvelles licences et mettre à jour des licences existantes.
+La page du portefeuille digital BlueXP vous permet de gérer le Tiering des licences BYOL. Vous pouvez ajouter de nouvelles licences et mettre à jour des licences existantes.
 
 
 
@@ -126,7 +126,7 @@ TIP: Le Tiering vers StorageGRID ne nécessite pas de licence de Tiering FabricP
 
 Si vous utilisez actuellement des licences FabricPool, vous n'êtes affecté que lorsque la licence FabricPool atteint sa date d'expiration ou sa capacité maximale. Contactez NetApp lorsque vous avez besoin de mettre à jour votre licence ou avant pour vous assurer que vous pouvez transférer vos données vers le cloud sans interruption.
 
-* Si vous utilisez une configuration prise en charge par BlueXP, vos licences FabricPool seront converties en licences de Tiering BlueXP, qui apparaîtront dans le portefeuille digital. À l'expiration de ces licences initiales, vous devez mettre à jour les licences de Tiering BlueXP.
+* Si vous utilisez une configuration prise en charge par BlueXP, vos licences FabricPool seront converties en licences de Tiering BlueXP, qui apparaîtront dans le portefeuille digital BlueXP. À l'expiration de ces licences initiales, vous devez mettre à jour les licences de Tiering BlueXP.
 * Si vous utilisez une configuration qui n'est pas prise en charge dans BlueXP, vous continuerez à utiliser une licence FabricPool. https://docs.netapp.com/us-en/ontap/cloud-install-fabricpool-task.html["Découvrez comment faire le Tiering des licences à l'aide de System Manager"^].
 
 
@@ -140,7 +140,7 @@ Voici quelques points que vous devez connaître sur les deux licences :
 | Il s'agit d'une licence _flottante_ que vous pouvez utiliser sur plusieurs clusters ONTAP sur site. | Il s'agit d'une licence par cluster que vous achetez et achetez une licence pour _every_ cluster. 
 
 
-| Il est enregistré dans BlueXP dans le portefeuille digital. | Elle s'applique à des clusters individuels via System Manager ou l'interface de ligne de commandes ONTAP. 
+| Il est enregistré dans le portefeuille digital BlueXP. | Elle s'applique à des clusters individuels via System Manager ou l'interface de ligne de commandes ONTAP. 
 
 
 | Le Tiering de configuration et de gestion s'effectue à l'aide du service de Tiering BlueXP. | La configuration et la gestion du Tiering s'effectuent via System Manager ou l'interface de ligne de commandes ONTAP. 
@@ -204,21 +204,21 @@ Si votre période de licence approche la date d'expiration ou si votre capacité
 
 image:screenshot_services_license_expire2.png["Copie d'écran montrant une licence arrivant à expiration dans la page de Tiering BlueXP."]
 
-Cet état apparaît également dans la page Portefeuille numérique.
+Cet état apparaît également sur la page du portefeuille digital BlueXP.
 
-image:screenshot_services_license_expire1.png["Capture d'écran qui montre une licence arrivant à expiration dans la page du porte-monnaie numérique."]
+image:screenshot_services_license_expire1.png["Copie d'écran montrant une licence arrivant à expiration sur la page de portefeuille digital BlueXP."]
 
 Vous pouvez mettre à jour votre licence de Tiering BlueXP avant son expiration. Ainsi, vous pouvez hiérarchiser vos données dans le cloud sans interrompre votre activité.
 
 .Étapes
 . Cliquez sur l'icône de chat en bas à droite de BlueXP pour demander une extension de votre période ou de votre capacité supplémentaire à votre licence de Tiering BlueXP pour le numéro de série spécifique.
 +
-Une fois que vous avez payé la licence et qu'elle est enregistrée sur le site de support NetApp, BlueXP met automatiquement à jour la licence dans Digital Wallet et et la page des licences des services de données reflétera la modification dans 5 à 10 minutes.
+Une fois que vous avez payé la licence et qu'elle est enregistrée sur le site de support NetApp, BlueXP met automatiquement à jour la licence dans le portefeuille digital BlueXP. La page des licences des services de données reflète le changement en 5 à 10 minutes.
 
 . Si BlueXP ne peut pas mettre à jour automatiquement la licence, vous devrez charger manuellement le fichier de licence.
 +
 .. C'est possible <<Obtenez votre fichier de licence de Tiering BlueXP,Procurez-vous le fichier de licence sur le site de support NetApp>>.
-.. Sur la page porte-monnaie numérique de l'onglet _Data Services Licenses_, cliquez sur image:screenshot_horizontal_more_button.gif["Plus d'icône"] Pour le numéro de série de service que vous mettez à jour, cliquez sur *mettre à jour la licence*.
+.. Sur la page du portefeuille digital BlueXP dans l'onglet _Data Services Licenses_, cliquez sur image:screenshot_horizontal_more_button.gif["Plus d'icône"] Pour le numéro de série de service que vous mettez à jour, cliquez sur *mettre à jour la licence*.
 +
 image:screenshot_services_license_update.png["Capture d'écran de la sélection du bouton mettre à jour la licence pour un service particulier."]
 
@@ -244,7 +244,7 @@ Les clusters ONTAP dans les configurations suivantes peuvent utiliser les licenc
 
 === Processus pour les clusters existants disposant d'une licence FabricPool
 
-Lorsque vous link:task-managing-tiering.html#discovering-additional-clusters-from-bluexp-tiering["Découvrez l'un de ces types de clusters spéciaux dans le Tiering BlueXP"], Le Tiering BlueXP reconnaît la licence FabricPool et l'ajoute au portefeuille digital. Les clusters se poursuivront comme d'habitude dans le Tiering des données. Après expiration de la licence FabricPool, vous devez acheter une licence de Tiering BlueXP.
+Lorsque vous link:task-managing-tiering.html#discovering-additional-clusters-from-bluexp-tiering["Découvrez l'un de ces types de clusters spéciaux dans le Tiering BlueXP"], Le Tiering BlueXP reconnaît la licence FabricPool et l'ajoute au portefeuille digital BlueXP. Les clusters se poursuivront comme d'habitude dans le Tiering des données. Après expiration de la licence FabricPool, vous devez acheter une licence de Tiering BlueXP.
 
 
 
@@ -252,12 +252,12 @@ Lorsque vous link:task-managing-tiering.html#discovering-additional-clusters-fro
 
 Lorsque vous détectez des clusters classiques dans le Tiering BlueXP, vous configurez le Tiering à l'aide de l'interface de Tiering BlueXP. Dans ce cas, les actions suivantes se produisent :
 
-. La licence de Tiering BlueXP « parent » assure le suivi de la capacité utilisée pour le Tiering par tous les clusters pour s'assurer qu'elle dispose de suffisamment de capacité. La capacité totale sous licence et la date d'expiration sont indiquées dans le porte-monnaie numérique.
+. La licence de Tiering BlueXP « parent » assure le suivi de la capacité utilisée pour le Tiering par tous les clusters pour s'assurer qu'elle dispose de suffisamment de capacité. La capacité totale sous licence et la date d'expiration sont indiquées dans le portefeuille digital BlueXP.
 . Une licence de hiérarchisation « enfant » est automatiquement installée sur chaque cluster afin de communiquer avec la licence « parent ».
 
 
 
-NOTE: La capacité et la date d'expiration de la licence indiquées dans System Manager ou dans l'interface de ligne de commandes ONTAP pour la licence « enfant » ne sont pas des informations réelles. Donc, ne craignez pas que les informations ne soient pas identiques. Ces valeurs sont gérées en interne par le logiciel de Tiering BlueXP. Les informations réelles sont suivies dans le porte-monnaie numérique.
+NOTE: La capacité et la date d'expiration de la licence indiquées dans System Manager ou dans l'interface de ligne de commandes ONTAP pour la licence « enfant » ne sont pas des informations réelles. Donc, ne craignez pas que les informations ne soient pas identiques. Ces valeurs sont gérées en interne par le logiciel de Tiering BlueXP. Les informations réelles sont suivies dans le portefeuille digital BlueXP.
 
 Pour les deux configurations répertoriées ci-dessus, vous devez configurer la hiérarchisation à l'aide de System Manager ou de l'interface de ligne de commande ONTAP (et non à l'aide de l'interface de Tiering BlueXP). Dans ce cas, vous devrez transmettre manuellement la licence enfant à ces clusters à partir de l'interface de Tiering BlueXP.
 
@@ -269,7 +269,7 @@ Notez que comme les données sont hiérarchisées vers deux emplacements de stoc
 Ne configurez pas de hiérarchisation à ce stade.
 
 . link:task-licensing-cloud-tiering.html#use-a-bluexp-tiering-byol-license["Achetez une licence de Tiering BlueXP"] pour répondre aux besoins en capacité du nouveau cluster ou des nouveaux clusters.
-. Dans BlueXP, link:task-licensing-cloud-tiering.html#add-bluexp-tiering-byol-licenses-to-your-account["Ajoutez la licence au porte-monnaie numérique"].
+. Dans BlueXP, link:task-licensing-cloud-tiering.html#add-bluexp-tiering-byol-licenses-to-your-account["Ajoutez la licence au portefeuille digital BlueXP"].
 . Dans le Tiering BlueXP, link:task-managing-tiering.html#discovering-additional-clusters-from-bluexp-tiering["découvrir les nouveaux clusters"].
 . Dans la page clusters, cliquez sur image:screenshot_horizontal_more_button.gif["Plus d'icône"] Pour le cluster et sélectionnez *Deploy License*.
 +

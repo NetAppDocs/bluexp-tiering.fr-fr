@@ -24,7 +24,7 @@ Découvrez les nouveautés du Tiering BlueXP.
 
 === L'onglet licences a été supprimé
 
-L'onglet Licensing a été supprimé de l'interface de Tiering BlueXP. Toutes les licences pour les abonnements PAYGO sont désormais accessibles depuis le tableau de bord du Tiering BlueXP sur site. Il existe également un lien vers le portefeuille digital, qui permet d'afficher et de gérer n'importe quel modèle de Tiering BlueXP BYOL (Bring Your Own License).
+L'onglet Licensing a été supprimé de l'interface de Tiering BlueXP. Toutes les licences pour les abonnements PAYGO sont désormais accessibles depuis le tableau de bord du Tiering BlueXP sur site. Il existe également un lien vers le portefeuille digital BlueXP depuis cette page pour afficher et gérer n'importe quel modèle de Tiering BlueXP BYOL (Bring Your Own License).
 
 
 

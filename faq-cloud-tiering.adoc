@@ -479,7 +479,7 @@ Pour plus de détails, voir :
 
 === Quels outils puis-je utiliser pour la surveillance et la création de rapports afin de gérer les données inactives stockées dans le cloud ?
 
-Autre que le Tiering BlueXP, https://docs.netapp.com/us-en/active-iq-unified-manager/["Active IQ Unified Manager"^] et https://docs.netapp.com/us-en/active-iq/index.html["Conseiller digital Active IQ"^] peut être utilisé pour la surveillance et la création de rapports.
+Autre que le Tiering BlueXP, https://docs.netapp.com/us-en/active-iq-unified-manager/["Active IQ Unified Manager"^] et https://docs.netapp.com/us-en/active-iq/index.html["Conseiller digital BlueXP"^] peut être utilisé pour la surveillance et la création de rapports.
 
 
 
