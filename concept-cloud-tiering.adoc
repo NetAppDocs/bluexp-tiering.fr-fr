@@ -133,7 +133,7 @@ Les contrats annuels ne sont pas pris en charge lors du Tiering vers Azure ou GC
 
 === Bring your own license (BYOL)
 
-Bring your own license (BYOL) en achetant une licence *BlueXP Tiering* auprès de NetApp (anciennement appelée licence Cloud Tiering). Vous pouvez acheter des licences de durée de 1, 2 ou 3 ans et spécifier toute quantité de capacité de Tiering. La licence de Tiering BYOL BlueXP est une licence _flottante_ que vous pouvez utiliser sur plusieurs clusters ONTAP sur site. La capacité de Tiering totale que vous définissez dans votre licence de Tiering BlueXP peut être utilisée par tous vos clusters sur site.
+Bring your own license (BYOL) en achetant une licence *BlueXP Tiering* auprès de NetApp (anciennement appelée licence Cloud Tiering). Vous pouvez acheter des licences d'une durée de 1, 2 ou 3 ans et spécifier la quantité de capacité de Tiering (à partir de 10 Tio minimum). La licence de Tiering BYOL BlueXP est une licence _flottante_ que vous pouvez utiliser sur plusieurs clusters ONTAP sur site. La capacité de Tiering totale que vous définissez dans votre licence de Tiering BlueXP peut être utilisée par tous vos clusters sur site.
 
 Après avoir acheté une licence de Tiering BlueXP, vous devez utiliser le portefeuille digital BlueXP de BlueXP pour ajouter la licence. link:task-licensing-cloud-tiering.html#use-a-bluexp-tiering-byol-license["Découvrez comment utiliser une licence de Tiering BlueXP BYOL"].
 

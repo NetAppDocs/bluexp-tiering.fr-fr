@@ -76,7 +76,6 @@ Lors du Tiering des données vers un stockage objet compatible S3, vos clusters 
 
 Plateformes ONTAP prises en charge:: Vous pouvez procéder au Tiering des données depuis les systèmes AFF ou FAS avec des agrégats 100 % SSD ou des agrégats 100 % disques durs.
 Version ONTAP prise en charge:: ONTAP 9.8 ou version ultérieure
-Paramètre d'accès à l'application requis:: L'utilisateur administrateur du cluster doit disposer d'un accès à l'application « console ». Vous pouvez le vérifier à l'aide de la commande ONTAP `security login show`. « Console » doit apparaître dans la colonne _application_ pour l'utilisateur « admin ». Utilisez le `security login create` commande permettant d'ajouter l'accès aux applications de console si nécessaire. https://docs.netapp.com/us-en/ontap-cli-9111/security-login-create.html["Pour plus de détails, reportez-vous aux commandes « Security login »"].
 Configuration requise pour la mise en réseau des clusters::
 +
 --
