@@ -18,7 +18,7 @@ Avant de configurer le Tiering à partir de votre premier cluster, commencez l'e
 
 Quelques remarques avant de lire plus loin :
 
-* Si vous avez déjà souscrit à l'abonnement BlueXP (PAYGO) dans le marché de votre fournisseur cloud, vous êtes également automatiquement abonné au Tiering BlueXP pour les systèmes ONTAP sur site. Vous verrez un abonnement actif dans l'onglet BlueXP Tiering *On-prem Dashboard*. Vous n'aurez pas besoin de vous abonner à nouveau. Un abonnement actif s'affiche dans le porte-monnaie numérique.
+* Si vous avez déjà souscrit à l'abonnement BlueXP (PAYGO) dans le marché de votre fournisseur cloud, vous êtes également automatiquement abonné au Tiering BlueXP pour les systèmes ONTAP sur site. Vous verrez un abonnement actif dans l'onglet BlueXP Tiering *On-site Dashboard*. Vous n'aurez pas besoin de vous abonner à nouveau. Un abonnement actif s'affiche dans le porte-monnaie numérique.
 * La licence de Tiering BYOL BlueXP (précédemment appelée licence Cloud Tiering) est une licence _flottante_ que vous pouvez utiliser sur plusieurs clusters ONTAP sur site dans votre compte BlueXP. Ceci est différent (et beaucoup plus facile) que dans le passé, où vous avez acheté une licence _FabricPool_ pour chaque cluster.
 * Le Tiering des données dans StorageGRID n'est pas facturé, une licence BYOL ou un Deal Registration doit être payant. Ces données hiérarchisées ne sont pas prises en compte par rapport à la capacité achetée dans votre licence.
 

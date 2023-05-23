@@ -19,13 +19,31 @@ summary: 'Le Tiering BlueXP offre une vue agrégée du Tiering des données à p
 [role="lead"]
 Le Tiering BlueXP offre une vue agrégée du Tiering des données à partir de chacun de vos clusters sur site. Cette vue d'ensemble fournit une image claire de votre environnement et vous permet de prendre les mesures appropriées.
 
-Il vous suffit de cliquer sur *Tiering > On-site Dashboard*. Le Tiering BlueXP fournit les informations suivantes sur votre environnement.
+Cliquez simplement sur *Tiering > Tableau de bord sur site*. Le Tiering BlueXP fournit les informations suivantes sur votre environnement.
 
 image:screenshot_tiering_onprem_dashboard.png["Capture d'écran de la page Tableau de bord sur site."]
 
-Clusters découverts:: Le nombre de clusters qui effectuent actuellement un Tiering des données vers le cloud, les clusters qui ne transfèrent pas les données vers le cloud, et le nombre de clusters qui ne prennent pas en charge le Tiering des données.
-Présentation des données:: Quantité de données envoyées vers le cloud et quantité de données actives et inactives sur le cluster
-Présentation de la hiérarchisation:: La quantité de données actuellement en cours de hiérarchisation et la quantité de données qui pourraient être transférées sur un Tier de stockage.
+Clusters découverts:: Nombre de clusters sur site détectés par le Tiering BlueXP. Le graphique présente l'état de la hiérarchisation pour ces clusters.
++
+--
+* Tiering élevé : les clusters qui hiérarchissent plus de 20 % de leurs données inactives
+* Tiering faible : clusters qui hiérarchise moins de 20 % de leurs données inactives
+* Pas de hiérarchisation : clusters qui ne hiérarchise aucune donnée
+* Non éligible : clusters qui ne prennent pas en charge le Tiering des données
+
+
+--
+Présentation des données:: Quantité de données utilisées par tous les clusters détectés. Le graphique indique la quantité de données à hiérarchiser, et plus, pour ces clusters.
++
+--
+* Données hiérarchisées : total des données inactives placées dans le cloud
+* Données inactives : total des données inactives qui ne sont pas hiérarchisées
+* Hot Data : total des données fortement sollicitées actives utilisées
+* Non éligible : Total des données qui ne sont pas hiérarchisées car le cluster ou le volume ne prend pas en charge le Tiering des données
+
+
+--
+Présentation de la hiérarchisation:: Quantité de données actuellement en cours de Tiering et quantité de données inactives pouvant être transférées sur un Tier de stockage.
 Stratégies:: Nombre de fois où chaque règle de hiérarchisation a été appliquée à un volume.
 Abonnements Marketplace:: Nombre de clusters associés à chaque type d'abonnement Marketplace et indication de l'état de votre abonnement.
 
