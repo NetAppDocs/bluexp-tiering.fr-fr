@@ -200,7 +200,7 @@ Oui. Le Tiering BlueXP peut être configuré pour hiérarchiser les volumes héb
 
 === Qu'en est-il de Cloud Volumes ONTAP ?
 
-Si vous disposez de systèmes Cloud Volumes ONTAP, vous les trouverez sur la page clusters de Tiering BlueXP pour obtenir une vue complète du Tiering des données dans votre infrastructure de cloud hybride. Cependant, les systèmes Cloud Volumes ONTAP sont en lecture seule à partir du Tiering BlueXP. Vous ne pouvez pas configurer le Tiering des données sur Cloud Volumes ONTAP à partir du Tiering BlueXP. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-tiering.html["Vous avez configuré le Tiering des systèmes Cloud Volumes ONTAP à partir de l'environnement de travail dans BlueXP"^].
+Si vous disposez de systèmes Cloud Volumes ONTAP, vous les trouverez sur la page clusters de Tiering BlueXP pour obtenir une vue complète du Tiering des données dans votre infrastructure de cloud hybride. Cependant, les systèmes Cloud Volumes ONTAP sont en lecture seule à partir du Tiering BlueXP. Vous ne pouvez pas configurer le Tiering des données sur Cloud Volumes ONTAP à partir du Tiering BlueXP. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-tiering.html["Vous avez configuré le Tiering des systèmes Cloud Volumes ONTAP à partir de l'environnement de travail dans BlueXP"^].
 
 
 
@@ -362,7 +362,7 @@ Il s'agit d'un logiciel exécuté sur une instance de calcul dans votre compte c
 
 === Puis-je déployer la connexion sur site ?
 
-Oui. Le logiciel Connector peut être téléchargé et installé manuellement sur un hôte Linux de votre réseau. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-on-prem.html["Découvrez comment installer le connecteur dans vos locaux"].
+Oui. Le logiciel Connector peut être téléchargé et installé manuellement sur un hôte Linux de votre réseau. https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html["Découvrez comment installer le connecteur dans vos locaux"].
 
 
 

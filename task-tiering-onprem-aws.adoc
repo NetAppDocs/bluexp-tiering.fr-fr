@@ -63,7 +63,7 @@ Sélectionnez un environnement de travail sur site, cliquez sur *Activer* pour l
 
 [role="quick-margin-list"]
 * Pour vous abonner à AWS Marketplace, https://aws.amazon.com/marketplace/pp/prodview-oorxakq6lq7m4?sr=0-8&ref_=beagle&applicationId=AWSMPContessa["Accédez à l'offre BlueXP Marketplace"^], Cliquez sur *s'abonner*, puis suivez les invites.
-* Pour payer avec une licence BYOL de Tiering BlueXP, mailto:ng-cloud-tiering@netapp.com?Subject=Licensing[contactez-nous si vous avez besoin d'en acheter un], puis link:task-licensing-cloud-tiering.html#add-bluexp-tiering-byol-licenses-to-your-account["Ajoutez-le à votre compte à partir du portefeuille numérique BlueXP"].
+* Pour payer avec une licence BYOL de Tiering BlueXP, mailto:ng-cloud-tiering@netapp.com?Subject=Licensing[contactez-nous si vous avez besoin d'en acheter un], puis link:task-licensing-cloud-tiering.html#add-bluexp-tiering-byol-licenses-to-your-account["Ajoutez-le à votre compte depuis le portefeuille digital BlueXP"].
 
 
 
@@ -99,9 +99,9 @@ Le connecteur BlueXP est le logiciel principal pour la fonctionnalité BlueXP. U
 
 Si votre connecteur est déjà déployé dans votre VPC AWS ou sur votre site, cela vous permettra d'être configuré. Si ce n'est pas le cas, vous devez créer un connecteur dans l'un de ces emplacements pour transférer les données ONTAP vers une solution de stockage AWS S3. Vous ne pouvez pas utiliser un connecteur déployé dans un autre fournisseur de cloud.
 
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["En savoir plus sur les connecteurs"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-aws.html["Déploiement d'un connecteur dans AWS"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-on-prem.html["Installation d'un connecteur sur un hôte Linux"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["En savoir plus sur les connecteurs"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-aws.html["Déploiement d'un connecteur dans AWS"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-on-prem.html["Installation d'un connecteur sur un hôte Linux"^]
 
 
 
@@ -110,11 +110,11 @@ Si votre connecteur est déjà déployé dans votre VPC AWS ou sur votre site, c
 
 * Assurez-vous que le réseau sur lequel le connecteur est installé active les connexions suivantes :
 +
-** Connexion HTTPS sur le port 443 vers le service de Tiering BlueXP et vers votre stockage objet S3 (https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-set-up-networking-aws.html#endpoints-contacted-for-day-to-day-operations["voir la liste des noeuds finaux"^])
+** Connexion HTTPS sur le port 443 vers le service de Tiering BlueXP et vers votre stockage objet S3 (https://docs.netapp.com/us-en/bluexp-setup-admin/task-set-up-networking-aws.html#endpoints-contacted-for-day-to-day-operations["voir la liste des noeuds finaux"^])
 ** Une connexion HTTPS via le port 443 vers votre LIF de gestion de cluster ONTAP
 
 
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-aws.html#cloud-tiering["Assurez-vous que le connecteur dispose des autorisations nécessaires pour gérer le compartiment S3"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html#cloud-tiering["Assurez-vous que le connecteur dispose des autorisations nécessaires pour gérer le compartiment S3"^]
 * Si vous disposez d'une connexion Direct Connect ou VPN entre votre cluster ONTAP et le VPC, et que vous souhaitez que la communication entre le connecteur et S3 reste dans votre réseau interne AWS (une connexion *privée*), vous devez activer une interface de terminal VPC vers S3. <<Configurez votre système pour une connexion privée à l'aide d'une interface de terminal VPC,Découvrez comment configurer une interface de terminal VPC.>>
 
 
@@ -182,7 +182,7 @@ Toutes les LIF intercluster au sein de l'IPspace doivent avoir accès au magasin
 
 Vous devez découvrir votre cluster ONTAP sur site dans BlueXP avant de commencer le Tiering des données inactives vers le stockage objet. Vous devez connaître l'adresse IP de gestion du cluster et le mot de passe permettant au compte utilisateur admin d'ajouter le cluster.
 
-https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["Découvrez comment détecter un cluster"^].
+https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["Découvrez comment détecter un cluster"^].
 
 
 
@@ -206,7 +206,7 @@ Vous devez configurer deux ensembles d'autorisations :
 
 
 .Étapes
-. Confirmez-le https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-aws.html#cloud-tiering["Ces autorisations S3"^] Font partie du rôle IAM qui fournit au connecteur des autorisations. Ils doivent avoir été inclus par défaut lorsque vous avez déployé le connecteur pour la première fois. Si ce n'est pas le cas, vous devrez ajouter les autorisations manquantes. Voir la https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-edit.html["Documentation AWS : modification des règles IAM"^].
+. Confirmez-le https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html#cloud-tiering["Ces autorisations S3"^] Font partie du rôle IAM qui fournit au connecteur des autorisations. Ils doivent avoir été inclus par défaut lorsque vous avez déployé le connecteur pour la première fois. Si ce n'est pas le cas, vous devrez ajouter les autorisations manquantes. Voir la https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-edit.html["Documentation AWS : modification des règles IAM"^].
 . Lors de l'activation du service, l'assistant Tiering vous invite à entrer une clé d'accès et une clé secrète. Ces identifiants sont transmis au cluster ONTAP afin que ONTAP puisse hiérarchiser les données dans le compartiment S3. Pour cela, vous devrez créer un utilisateur IAM avec les autorisations suivantes :
 +
 [source, json]
@@ -253,7 +253,7 @@ Si vous utilisez le port 443 (HTTPS) pour la communication avec le terminal priv
 +
 image:screenshot_endpoint_dns_aws_console.png["Capture d'écran du nom DNS du terminal VPC depuis la console AWS."]
 
-. Obtenir le certificat à partir du terminal VPC S3 Vous faites ceci par https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html#connect-to-the-linux-vm["Se connecter à la machine virtuelle qui héberge le connecteur BlueXP"^] et exécutant la commande suivante. Lors de la saisie du nom DNS du noeud final, ajoutez "compartiment" au début, en remplaçant le "*" :
+. Obtenir le certificat à partir du terminal VPC S3 Vous faites ceci par https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#connect-to-the-linux-vm["Se connecter à la machine virtuelle qui héberge le connecteur BlueXP"^] et exécutant la commande suivante. Lors de la saisie du nom DNS du noeud final, ajoutez "compartiment" au début, en remplaçant le "*" :
 +
 [source, text]
 ----
@@ -289,7 +289,7 @@ Please enter Certificate: Press <Enter> when done
 Une fois votre environnement AWS prêt, commencez le Tiering des données inactives à partir du premier cluster.
 
 .Ce dont vous avez besoin
-* https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["Un environnement de travail sur site"^].
+* https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["Un environnement de travail sur site"^].
 * Clé d'accès AWS pour un utilisateur IAM qui dispose des autorisations S3 requises.
 
 
