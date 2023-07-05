@@ -205,6 +205,9 @@ Notez que la règle du cycle de vie est appliquée à tous les objets du compart
 +
 La sélection de l'IPspace approprié permet de garantir que le Tiering BlueXP peut établir une connexion entre ONTAP et le stockage objet de votre fournisseur de cloud.
 
++
+Vous pouvez également définir la bande passante réseau disponible pour télécharger des données inactives vers un stockage objet en définissant le « taux de transfert maximal ». Sélectionnez le bouton radio *Limited* et saisissez la bande passante maximale utilisable, ou sélectionnez *Unlimited* pour indiquer qu'il n'y a pas de limite.
+
 
 
 . Cliquez sur *Continuer* pour sélectionner les volumes à mettre en niveau.

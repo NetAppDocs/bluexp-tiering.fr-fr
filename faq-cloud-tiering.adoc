@@ -493,6 +493,8 @@ En cas de défaillance réseau, le niveau de performance local reste en ligne et
 
 La latence de lecture de la technologie de Tiering FabricPool sous-jacente dépend de la connectivité au Tier cloud. Bien que la hiérarchisation fonctionne sur n'importe quelle bande passante, il est recommandé de placer les LIF intercluster sur des ports 10 Gbit/s pour assurer des performances adéquates. Il n'y a pas de recommandations ni de limitations de bande passante pour le connecteur.
 
+Vous pouvez en outre limiter la quantité de bande passante réseau utilisée lors du transfert des données inactives du volume vers le stockage objet. Le paramètre _maximum Transfer Rate_ est disponible lors de la configuration de votre cluster pour la hiérarchisation, puis à partir de la page *clusters*.
+
 
 
 === Y a-t-il une latence lorsqu'un utilisateur tente d'accéder aux données hiérarchisées ?

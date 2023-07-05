@@ -18,6 +18,24 @@ Découvrez les nouveautés du Tiering BlueXP.
 
 
 
+== 4 juillet 2023
+
+
+
+=== Vous pouvez désormais ajuster la bande passante utilisée pour télécharger les données inactives vers le stockage objet
+
+Lorsque vous activez le Tiering BlueXP, ONTAP peut utiliser une quantité illimitée de bande passante réseau pour transférer les données inactives des volumes du cluster vers le stockage objet. Si vous remarquez que le trafic de hiérarchisation affecte les charges de travail normales des utilisateurs, vous pouvez limiter la quantité de bande passante qui peut être utilisée pendant le transfert. https://docs.netapp.com/us-en/bluexp-tiering/task-managing-tiering.html#changing-the-network-bandwidth-available-to-upload-inactive-data-to-object-storage["En savoir plus >>"].
+
+
+
+=== L'événement de hiérarchisation pour « niveau bas » s'affiche dans le Centre de notification
+
+La fonctionnalité de Tiering « transférer des données supplémentaires d'une <name> de cluster vers un stockage objet pour améliorer votre efficacité du stockage » s'affiche désormais sous forme de notification lorsqu'un cluster effectue le Tiering de moins de 20 % de ses données inactives, y compris les clusters qui ne hiérarchise aucune donnée.
+
+Cette notification est une « recommandation » pour vous aider à rendre vos systèmes plus efficaces et à réduire vos coûts de stockage. Il fournit un lien vers le https://bluexp.netapp.com/cloud-tiering-service-tco["Calculateur de coût total de possession et d'économies du Tiering BlueXP"^] pour vous aider à calculer vos économies.
+
+
+
 == 3 avril 2023
 
 
@@ -123,19 +141,3 @@ Les licences Cloud Tiering peuvent désormais être partagées avec vos clusters
 === Prise en charge de la licence Cloud Tiering pour d'autres configurations de clusters
 
 Les licences Cloud Tiering peuvent désormais être partagées avec vos clusters dans les configurations Tiering Mirror (hors configurations MetroCluster) et avec des clusters tiers vers le stockage objet IBM Cloud. Vous n'avez plus besoin d'utiliser les licences FabricPool obsolètes dans ces scénarios. Les licences Cloud Tiering sont ainsi plus faciles à utiliser sur un plus grand nombre de clusters. https://docs.netapp.com/us-en/bluexp-tiering/task-licensing-cloud-tiering.html#apply-bluexp-tiering-licenses-to-clusters-in-special-configurations["Découvrez comment licences et configurer ces types de clusters."]
-
-
-
-== 4 avril 2022
-
-
-
-=== La classe de stockage de récupération instantanée Amazon S3 Glacier est désormais disponible
-
-Lors de la configuration de Cloud Tiering, vous pouvez maintenant configurer une règle de cycle de vie de sorte que vos données inactives puissent passer de la classe de stockage _Standard_ à la classe de récupération instantanée _Glacier_ après un certain nombre de jours. Vous réduisez ainsi les coûts de votre infrastructure AWS. https://docs.netapp.com/us-en/bluexp-tiering/reference-aws-support.html["Consultez les classes de stockage S3 prises en charge."]
-
-
-
-=== NetApp Cloud Tiering est totalement qualifié sur les systèmes ONTAP Select
-
-Outre le Tiering des données depuis vos systèmes AFF et FAS, vous pouvez désormais déplacer les données inactives à partir de vos systèmes ONTAP Select vers un stockage dans le cloud.

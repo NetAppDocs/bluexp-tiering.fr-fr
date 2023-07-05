@@ -4,7 +4,7 @@ permalink: task-managing-tiering.html
 keywords: discover, volumes, report, hot, cold, inactive, active, capacity, used capacity, savings, health, failed 
 summary: 'Maintenant que vous avez configuré le Tiering des données à partir de vos clusters ONTAP sur site, vous pouvez hiérarchiser les données à partir de volumes supplémentaires, modifier la règle de Tiering d"un volume, découvrir d"autres clusters, etc.' 
 ---
-= Gestion du Tiering des données à partir des clusters
+= Gestion du Tiering des données pour vos clusters
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -15,6 +15,33 @@ summary: 'Maintenant que vous avez configuré le Tiering des données à partir 
 
 [role="lead"]
 Maintenant que vous avez configuré le Tiering des données à partir de vos clusters ONTAP sur site, vous pouvez hiérarchiser les données à partir de volumes supplémentaires, modifier la règle de Tiering d'un volume, découvrir d'autres clusters, etc.
+
+
+
+== Révision des informations de hiérarchisation pour un cluster
+
+Vous pouvez connaître la quantité de données stockées dans le Tier cloud et la quantité de données stockées sur les disques. Vous pouvez également voir la quantité de données actives et inactives sur les disques du cluster. Le Tiering BlueXP fournit ces informations pour chaque cluster.
+
+.Étapes
+. Dans le menu de navigation de gauche, sélectionnez *mobilité > hiérarchisation*.
+. Dans la page *clusters*, cliquez sur l'icône de menu image:icon-action.png["Icône actions"] Pour un cluster et sélectionnez *Infos cluster*.
++
+image:screenshot_tiering_cluster_info_button.png["Capture d'écran de sélection du bouton Infos sur le cluster dans la page clusters."]
+
+. Révision des détails du cluster.
++
+Voici un exemple :
+
++
+image:screenshot_tiering_cluster_info.png["Capture d'écran affichant la capacité totale de données utilisée du cluster, la capacité utilisée du cluster et les informations sur le cluster."]
+
+
+
+Notez que l'affichage est différent pour les systèmes Cloud Volumes ONTAP. Les données des volumes Cloud Volumes ONTAP peuvent être hiérarchisées vers le cloud, mais ils n'utilisent pas le service de Tiering BlueXP. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-tiering.html["Découvrez comment procéder au Tiering des données inactives à partir de systèmes Cloud Volumes ONTAP vers un stockage objet économique"^].
+
+Vous pouvez également https://docs.netapp.com/us-en/active-iq/task-informed-decisions-based-on-cloud-recommendations.html#tiering["Affichez les informations de hiérarchisation pour un cluster depuis Digital Advisor"^] Si vous connaissez déjà ce produit NetApp, Il vous suffit de sélectionner *Cloud Recommendations* dans le volet de navigation de gauche.
+
+image:screenshot_tiering_aiq_fabricpool_info.png["Copie d'écran présentant les informations de FabricPool pour un cluster utilisant le conseiller FabricPool de Digital Advisor."]
 
 
 
@@ -75,6 +102,25 @@ image:screenshot_tiering_policy_settings.png["Capture d'écran affichant les par
 
 .Résultat
 La règle de Tiering est modifiée et les données commencent à être hiérarchisées en fonction de la nouvelle règle.
+
+
+
+== Modification de la bande passante réseau disponible pour le téléchargement de données inactives vers le stockage objet
+
+Lorsque vous activez le Tiering BlueXP pour un cluster, par défaut, ONTAP peut utiliser une quantité illimitée de bande passante pour transférer les données inactives des volumes de l'environnement de travail vers le stockage objet. Si vous remarquez que la hiérarchisation du trafic affecte les charges de travail normales des utilisateurs, vous pouvez limiter la quantité de bande passante réseau utilisée lors du transfert. Vous pouvez choisir une valeur comprise entre 1 et 10,000 Mbit/s comme vitesse de transfert maximale.
+
+. Dans le menu de navigation de gauche, sélectionnez *mobilité > hiérarchisation*.
+. Dans la page *clusters*, cliquez sur l'icône de menu image:icon-action.png["Icône actions"] Pour un cluster et sélectionnez *taux de transfert maximal*.
++
+image:screenshot_tiering_transfer_rate_button.png["Capture d'écran de la sélection du bouton de taux de transfert maximal à partir de la page clusters."]
+
+. Dans la page _maximum Transfer Rate_, sélectionnez le bouton radio *Limited* et entrez la bande passante maximale qui peut être utilisée, ou sélectionnez *Unlimited* pour indiquer qu'il n'y a pas de limite. Cliquez ensuite sur *appliquer*.
++
+image:screenshot_tiering_transfer_rate.png["Capture d'écran de la boîte de dialogue taux de transfert maximal pour un cluster."]
+
+
+
+Ce paramètre n'affecte pas la bande passante allouée aux autres clusters qui hiérarchise les données.
 
 
 
@@ -157,28 +203,6 @@ image:screenshot_tiering_modify_aggregate.png["Capture d'écran affichant un cur
 
 . Cliquez sur *appliquer*.
 
-
-
-
-== Révision des informations de hiérarchisation pour un cluster
-
-Vous pouvez connaître la quantité de données stockées dans le Tier cloud et la quantité de données stockées sur les disques. Vous pouvez également voir la quantité de données actives et inactives sur les disques du cluster. Le Tiering BlueXP fournit ces informations pour chaque cluster.
-
-.Étapes
-. Dans le menu de navigation de gauche, sélectionnez *mobilité > hiérarchisation*.
-. Sur la page *clusters*, cliquez sur l'icône de menu d'un cluster et sélectionnez *Infos cluster*.
-. Révision des détails du cluster.
-+
-Voici un exemple :
-
-+
-image:screenshot_tiering_cluster_info.png["Une capture d'écran présente le rapport du cluster, qui présente la capacité totale utilisée, la capacité utilisée du cluster, les informations sur le cluster et les informations relatives au stockage objet."]
-
-
-
-Vous pouvez également https://docs.netapp.com/us-en/active-iq/task-informed-decisions-based-on-cloud-recommendations.html#tiering["Affichez les informations de hiérarchisation pour un cluster depuis Digital Advisor"^] Si vous connaissez déjà ce produit NetApp, Il vous suffit de sélectionner *Cloud Recommendations* dans le volet de navigation de gauche.
-
-image:screenshot_tiering_aiq_fabricpool_info.png["Copie d'écran présentant les informations de FabricPool pour un cluster utilisant le conseiller FabricPool de Digital Advisor."]
 
 
 

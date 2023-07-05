@@ -206,7 +206,7 @@ Vous devez configurer deux ensembles d'autorisations :
 
 
 .Étapes
-. Confirmez-le https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html#cloud-tiering["Ces autorisations S3"^] Font partie du rôle IAM qui fournit au connecteur des autorisations. Ils doivent avoir été inclus par défaut lorsque vous avez déployé le connecteur pour la première fois. Si ce n'est pas le cas, vous devrez ajouter les autorisations manquantes. Voir la https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-edit.html["Documentation AWS : modification des règles IAM"^].
+. Confirmez-le https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html#iam-policies["Ces autorisations S3"^] Font partie du rôle IAM qui fournit au connecteur des autorisations. Ils doivent avoir été inclus par défaut lorsque vous avez déployé le connecteur pour la première fois. Si ce n'est pas le cas, vous devrez ajouter les autorisations manquantes. Voir la https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-edit.html["Documentation AWS : modification des règles IAM"^].
 . Lors de l'activation du service, l'assistant Tiering vous invite à entrer une clé d'accès et une clé secrète. Ces identifiants sont transmis au cluster ONTAP afin que ONTAP puisse hiérarchiser les données dans le compartiment S3. Pour cela, vous devrez créer un utilisateur IAM avec les autorisations suivantes :
 +
 [source, json]
@@ -307,14 +307,14 @@ image:screenshot_setup_tiering_onprem.png["Une capture d'écran montre l'option 
 +
 image:screenshot_tiering_aws_s3_bucket.png["Copie d'écran montrant les données à fournir pour configurer le Tiering dans un compartiment S3."]
 
-. Complétez les sections de la page *Créer un stockage objet* :
+. Complétez les sections de la page *Tiering Setup* :
 +
-.. *Compartiment S3* : ajoutez un nouveau compartiment S3 ou sélectionnez un compartiment S3 existant commençant par le préfixe _fabric-pool_, sélectionnez la région du compartiment et cliquez sur *Continuer*.
+.. *Compartiment S3* : ajoutez un nouveau compartiment S3 ou sélectionnez un compartiment S3 existant qui commence par le préfixe défini « fabric-pool », sélectionnez la région du compartiment et cliquez sur *Continuer*.
 +
 Lorsque vous utilisez un connecteur sur site, vous devez saisir l'ID de compte AWS qui donne accès au compartiment S3 existant ou au nouveau compartiment S3 à créer.
 
 +
-Le préfixe _fabric-pool_ est requis car la stratégie IAM pour le connecteur permet à l'instance d'effectuer des actions S3 sur les compartiments nommés avec ce préfixe exact. Par exemple, vous pouvez nommer le compartiment S3 _fabric-pool-AFF1_, où AFF1 est le nom du cluster.
+Le préfixe _fabric-pool_ est utilisé par défaut, car la règle IAM du connecteur permet à l'instance d'effectuer des actions S3 sur les compartiments nommés avec ce préfixe exact. Par exemple, vous pouvez nommer le compartiment S3 _fabric-pool-AFF1_, où AFF1 est le nom du cluster.
 
 .. *Classe de stockage* : le Tiering BlueXP gère les transitions de cycle de vie de vos données hiérarchisées. Les données commencent dans la classe _Standard_, mais vous pouvez créer une règle pour déplacer les données vers une autre classe après un certain nombre de jours.
 +
@@ -338,10 +338,10 @@ L'utilisateur IAM doit se trouver dans le même compte AWS que le compartiment q
 Sélectionnez l'IPspace dans le cluster ONTAP où les volumes doivent résider. Les LIF intercluster de cet IPspace doivent disposer d'un accès Internet sortant afin que les utilisateurs puissent se connecter au stockage objet de votre fournisseur cloud.
 
 +
-Vous pouvez également choisir d'utiliser AWS PrivateLink que vous avez configuré précédemment. <<Configurez votre système pour une connexion privée à l'aide d'une interface de terminal VPC,Voir les informations de configuration ci-dessus.>>
+Vous pouvez également choisir d'utiliser AWS PrivateLink que vous avez configuré précédemment. <<Configurez votre système pour une connexion privée à l'aide d'une interface de terminal VPC,Voir les informations de configuration ci-dessus.>> Une boîte de dialogue s'affiche pour vous guider dans la configuration du point final.
 
 +
-Une boîte de dialogue s'affiche pour vous guider dans la configuration du point final.
+Vous pouvez également définir la bande passante réseau disponible pour télécharger des données inactives vers un stockage objet en définissant le « taux de transfert maximal ». Sélectionnez le bouton radio *Limited* et saisissez la bande passante maximale utilisable, ou sélectionnez *Unlimited* pour indiquer qu'il n'y a pas de limite.
 
 
 

@@ -184,6 +184,9 @@ Le préfixe _fabric-pool_ est requis car la stratégie IAM pour le connecteur pe
 +
 La sélection de l'IPspace approprié permet de garantir que le Tiering BlueXP peut configurer une connexion de ONTAP au stockage objet StorageGRID.
 
++
+Vous pouvez également définir la bande passante réseau disponible pour télécharger des données inactives vers un stockage objet en définissant le « taux de transfert maximal ». Sélectionnez le bouton radio *Limited* et saisissez la bande passante maximale utilisable, ou sélectionnez *Unlimited* pour indiquer qu'il n'y a pas de limite.
+
 
 
 . Sur la page _Tier volumes_, sélectionnez les volumes que vous souhaitez configurer le Tiering et lancez la page Tiering Policy :

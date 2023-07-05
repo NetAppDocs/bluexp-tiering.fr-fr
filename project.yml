@@ -45,6 +45,8 @@ sidebar:
       url: "/task-tiering-test.html"
     - title: Afficher la présentation de Tiering pour tous les clusters
       url: "/task-tiering-onprem-overview.html"
+    - title: Surveillez l'état des alertes de hiérarchisation
+      url: "/task-monitor-tiering-alerts.html"
   - title: Référence
     entries:
     - title: Classes et régions de stockage Amazon S3 prises en charge
@@ -91,6 +93,9 @@ homepage:
       url: task-managing-tiering.html#reviewing-tiering-info-for-a-cluster
     - title: Procéder au Tiering des données à partir de volumes supplémentaires
       url: task-managing-tiering.html#tiering-data-from-additional-volumes
+    - title: Modifiez la bande passante pour télécharger les données inactives vers
+        le stockage objet
+      url: task-managing-tiering.html#changing-the-network-bandwidth-available-to-upload-inactive-data-to-object-storage
     - title: Déplacez les données du cloud vers le Tier de performance
       url: task-managing-tiering.html#migrating-data-from-the-cloud-tier-back-to-the-performance-tier
     - title: Gestion des paramètres de Tiering sur les agrégats
