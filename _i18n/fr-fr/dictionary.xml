@@ -25,10 +25,7 @@
   <block id="67dbdeb11e22ea7def810bade59ce818" category="paragraph">Ces numéros de série sont généralement appelés _PAYGO - numéros de série_ et sont générés par BlueXP au moment du déploiement de Cloud Volumes ONTAP.</block>
   <block id="328a2c1e7778e9edaf79d90c51409ac4" category="list-text">Si vous avez un compte au niveau du client, vous pouvez ajouter un ou plusieurs comptes NSS.</block>
   <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">Étapes</block>
-  <block id="1afe19576f77bb0073c93359ed2cbb18" category="list-text">Dans le coin supérieur droit de la console BlueXP, cliquez sur l'icône aide et sélectionnez *support*.</block>
   <block id="b50f0a46135bcb7083b1f2f82032fc26" category="inline-image-macro">Capture d'écran du menu aide où support est la première option répertoriée</block>
-  <block id="d17d6b5dafebab6b7659da8850737e70" category="list-text">Cliquez sur *NSS Management &gt; Ajouter un compte NSS*.</block>
-  <block id="8aaf101e623c543c7eef3c65f6233366" category="list-text">Lorsque vous y êtes invité, cliquez sur *Continuer* pour être redirigé vers une page de connexion Microsoft.</block>
   <block id="19d089db572ee6a1e154a0c9c9e57bfd" category="paragraph">NetApp utilise Microsoft Azure Active Directory comme fournisseur d'identités pour les services d'authentification spécifiques au support et aux licences.</block>
   <block id="465ec6d5eafa3524c948c99d8bfcd306" category="list-text">Sur la page de connexion, indiquez l'adresse e-mail et le mot de passe que vous avez enregistrés sur le site de support NetApp pour réaliser le processus d'authentification.</block>
   <block id="cbc6cc3bb022583403171b447b2a962c" category="paragraph">Ces actions permettent à BlueXP d'utiliser votre compte NSS pour des opérations telles que le téléchargement de licences, la vérification de la mise à niveau logicielle et les inscriptions de support futures.</block>
@@ -65,8 +62,6 @@
   <block id="80b1b0d2b1ebf2b3cba2d25759801afd" category="list-text">Courrier électronique :ng-cloudmanager-feedback@netapp.com[E-mail de commentaires]</block>
   <block id="6702efec14563f45f1ee2f8c613b8ad8" category="paragraph">Nous accordons une grande importance à vos commentaires. Envoyez vos commentaires pour nous aider à améliorer BlueXP.</block>
   <block id="82812db645b6ff5e9c2a24ddfb66c8d6" category="paragraph">Outre les options d'auto-support mentionnées ci-dessus, vous pouvez travailler avec un spécialiste du support NetApp pour résoudre tous les problèmes après avoir activé le service de support.</block>
-  <block id="6254a4afeeb76765a127fe74d31c1b3d" category="list-text">Dans BlueXP, cliquez sur *aide &gt; support*.</block>
-  <block id="383133cb6f7207b1c65c3ace94aa5e95" category="list-text">Cliquez sur *appelez-nous* si vous souhaitez parler avec quelqu'un au téléphone. Vous serez dirigé vers une page netapp.com qui répertorie les numéros de téléphone que vous pouvez appeler.</block>
   <block id="d63bf50426f4c712554faec55b30c548" category="list-text">*Service* : sélectionnez le service auquel le problème est associé. Par exemple, BlueXP lorsqu'il est spécifique à un problème de support technique avec des flux de travail ou des fonctionnalités au sein du service.</block>
   <block id="2e50c5f85523f0aba9ff2db10f18279c" category="list-text">*Environnement de travail* : si applicable au stockage, sélectionnez *Cloud Volumes ONTAP* ou *sur site*, puis l'environnement de travail associé.</block>
   <block id="aa996e20900197b0ea41485ada083d8c" category="paragraph">La liste des environnements de travail est comprise dans le cadre du compte, de l'espace de travail et du connecteur BlueXP que vous avez sélectionnés dans la bannière supérieure du service.</block>
@@ -76,7 +71,6 @@
   <block id="002c6f26fb01affb37b8cf3cef7a1fb0" category="list-text">*Adresses e-mail supplémentaires*: Entrez des adresses e-mail supplémentaires si vous souhaitez informer quelqu'un d'autre de ce problème.</block>
   <block id="baaf0e61add7d12cf8d12e023d5aef18" category="inline-image-macro">Capture d'écran du formulaire Créer un dossier qui vous permet de créer un dossier auprès du support NetApp.</block>
   <block id="18f487556417bb6d9721a7005ae097c9" category="paragraph">Une fenêtre contextuelle contenant votre numéro de dossier de support s'affiche. Un spécialiste du support NetApp va étudier votre dossier et vous recontacterons très rapidement.</block>
-  <block id="04e15da1deae9568b4dcda64fbb0c8d5" category="paragraph">Pour consulter l'historique de vos dossiers d'assistance, vous pouvez cliquer sur *Paramètres &gt; Chronologie* et rechercher les actions nommées "Créer un dossier de support". Un bouton à l'extrême droite vous permet de développer l'action pour voir les détails.</block>
   <block id="5c56753585e89a84941bb3a78bc681af" category="paragraph">Il est possible que vous rencontriez le message d'erreur suivant lors de la création d'un dossier :</block>
   <block id="a30f69ab0ec85d427a3e8835713525bd" category="paragraph">« Vous n'êtes pas autorisé à créer un dossier pour le service sélectionné »</block>
   <block id="e01df0b4dfd95eba2c59333419e4fac6" category="list-text">Utilisez le chat du produit</block>
@@ -155,9 +149,6 @@
   <block id="65f5911f922c92104ab33c2cd05d4a45" category="paragraph">Vous pouvez activer le service Tiering ou d'autres services pour ce cluster dans le volet de droite.</block>
   <block id="ddc0d211eedc82ce253724f39188a145" category="doc">Classes et régions de stockage S3 prises en charge</block>
   <block id="83985bfab8a456963026e9333e67b251" category="section-title">Classes de stockage S3 prises en charge</block>
-  <block id="7a1255ccd32375deedb79fe52eed93f5" category="list-text">Accès autonome et peu fréquent</block>
-  <block id="e2b0c2a0a664cef2184b3d17808db4ce" category="list-text">Un seul accès à Zone-Infrequent</block>
-  <block id="d5af3a9669300c1a58b6af2ac906df11" category="list-text">Hiérarchisation intelligente (dans laquelle AWS déplace automatiquement les données entre deux niveaux (accès fréquent et Infrequent Access), en cas de changement de modèle d'accès)</block>
   <block id="cb6793246bf8a1d9872b2f128304ed8c" category="list-text">Récupération instantanée Glacier</block>
   <block id="9cc96aa415acf4482c36fe27491f4449" category="paragraph">Si vous ne choisissez pas une autre classe de stockage, les données restent dans la classe de stockage _Standard_ et aucune règle n'est appliquée.</block>
   <block id="c84f9bdf2de63c378b4a57466b3e08bc" category="inline-link">Découvrez les classes de stockage S3</block>
@@ -255,7 +246,6 @@
   <block id="f972833c06016ff05585be675c6f77e0" category="list-text">Sur la page _Success_, cliquez sur *Continuer* pour configurer vos volumes maintenant.</block>
   <block id="467dc67da765672ea12bbd2efe6c892d" category="list-text">Sur la page _Tier volumes_, sélectionnez les volumes pour lesquels vous souhaitez configurer le Tiering et cliquez sur *Continuer* :</block>
   <block id="16c1b13c5edce68f96a3166081c6dd73" category="inline-image-macro">Capture d'écran indiquant comment sélectionner un seul volume, plusieurs volumes ou tous les volumes et le bouton Modifier les volumes sélectionnés.</block>
-  <block id="7de06bb2b943b6fd5754912e3f1d4ceb" category="paragraph"><block ref="7de06bb2b943b6fd5754912e3f1d4ceb" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ef451a94db19d37a27a0b08cd56be525" category="paragraph">Vous avez configuré le Tiering des données à partir de volumes du cluster vers un stockage objet compatible S3.</block>
   <block id="b1617e3bbddaa657a4ec6bf1adaa009f" category="inline-link-macro">En savoir plus sur la gestion de vos paramètres de hiérarchisation</block>
   <block id="2acc64ddb56d741fd3a55722992443a4" category="paragraph">Vous pouvez vérifier les informations concernant les données actives et inactives sur le cluster. <block ref="f94cc3968691fc7fbe7d897f27b0d426" category="inline-link-macro-rx"></block>.</block>
@@ -292,7 +282,6 @@
   <block id="76ebfce4c2c67a5c80f5e3389cadd984" category="paragraph"><block ref="76ebfce4c2c67a5c80f5e3389cadd984" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d2f15cc1f6b52e91b3fa0f67c5683cc7" category="paragraph">Notez que la règle du cycle de vie est appliquée à tous les conteneurs d'objets blob du compte de stockage sélectionné.</block>
   <block id="edb5302d21562d6e6d64d3bbe03d94b4" category="list-text">*Cluster Network* : sélectionnez l'IPspace ONTAP à utiliser pour se connecter au stockage objet, puis cliquez sur *Continuer*.</block>
-  <block id="207355fa06161fe61fe18f75db4c59d5" category="paragraph"><block ref="207355fa06161fe61fe18f75db4c59d5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ade7907875a5b3e50997036947f13251" category="paragraph">Vous avez configuré le Tiering des données depuis les volumes du cluster vers le stockage objet Azure Blob.</block>
   <block id="b1151aae9531d2f5e85d085e8878cea6" category="summary">Cette FAQ peut vous aider si vous cherchez juste une réponse rapide à une question.</block>
   <block id="a1f517fb951a64f2e9c18d82ac80635c" category="list-text">Extension sans effort du data Center au cloud pour un espace jusqu'à 50 fois plus important</block>
@@ -486,7 +475,6 @@
   <block id="80c4b6e3dfa1d4f33033585b7c74e7e9" category="list-text">Connectez-vous au<block ref="fcc52edac3ce57829c48ee35d97a295d" category="inline-link-rx"></block> Et cliquez sur *systèmes &gt; licences logicielles*.</block>
   <block id="5190e9ec018f5e661ec4b31ff1b34423" category="inline-image-macro">Capture d'écran affichant une table de licences après une recherche par numéro de série.</block>
   <block id="d15379b9f839ac6523d1b06ad8763875" category="paragraph"><block ref="d15379b9f839ac6523d1b06ad8763875" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="8e04bab9d0c0964365e3483da66e2f09" category="list-text">Sous *License Key*, cliquez sur *Get NetApp License File*.</block>
   <block id="f68bf28051d836364652b5a91d1bcd3a" category="list-text">Saisissez votre identifiant de compte BlueXP (il s'agit d'un identifiant de locataire sur le site d'assistance) et cliquez sur *Submit* pour télécharger le fichier de licence.</block>
   <block id="56273f3344c87fabbf5196fba9816fff" category="inline-image-macro">Une capture d'écran qui affiche la boîte de dialogue obtenir la licence dans laquelle vous entrez votre identifiant de locataire, puis cliquez sur soumettre pour télécharger le fichier de licence.</block>
   <block id="212f5a95c637538f9375d966345ca9f7" category="paragraph"><block ref="212f5a95c637538f9375d966345ca9f7" category="inline-image-macro-rx" type="image"></block></block>
@@ -728,7 +716,6 @@
   <block id="aa82b0633ff8ba724f265336515caa95" category="section-title">Préparez votre environnement AWS</block>
   <block id="95be42e50b8072b622c23cf84099c7b8" category="section-title">Configurez les autorisations S3</block>
   <block id="0d0602824136f714807f54069c6d5a89" category="paragraph">Vous devez configurer deux ensembles d'autorisations :</block>
-  <block id="0d021f94d8bd70d2a5185935d6efa23e" category="list-text">Autorisations permettant au connecteur de créer et de gérer le compartiment S3.</block>
   <block id="e1e27de3274b6be648bacdf85d89a282" category="list-text">Autorisations relatives au cluster ONTAP sur site afin de pouvoir lire et écrire les données dans le compartiment S3.</block>
   <block id="b99f1169cc9c4dc4d04df2e1240f99b1" category="inline-link">Ces autorisations S3</block>
   <block id="a6e42fec71384a3a5d77eba684fba2c9" category="inline-link">Documentation AWS : modification des règles IAM</block>
@@ -788,20 +775,14 @@
   <block id="aa18b7b04ae6143c1d2f56b72718403e" category="inline-link">En savoir plus sur la nouvelle fonctionnalité de stockage objet.</block>
   <block id="5c10257d843c1a8aa9e46f55d2064835" category="section-title">Prise en charge des licences Cloud Tiering dans les configurations MetroCluster</block>
   <block id="afacb33ad65bcd63eb15aeba04b4aed0" category="inline-link">Découvrez comment licences et configurer ces types de clusters.</block>
-  <block id="d3e8cd2e370974f27de1b310b4aa8cb3" category="section-title">3 mai 2022</block>
-  <block id="a74300b6b08791dda4f54d473a58e17a" category="section-title">Prise en charge de la licence Cloud Tiering pour d'autres configurations de clusters</block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">Mentions légales</block>
   <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="paragraph">Les mentions légales donnent accès aux déclarations de copyright, aux marques, aux brevets, etc.</block>
   <block id="6016a2b341113bf496b719905398ecd2" category="section-title">Droits d'auteur</block>
-  <block id="09e95b77ffe81fe465a83ba99efad5c8" category="paragraph"><block ref="09e95b77ffe81fe465a83ba99efad5c8" category="inline-link-rx"></block></block>
   <block id="126a02652da6de02962cf1b654fd6376" category="section-title">Marques déposées</block>
   <block id="c4ce4761e466527d26b3e3d5ed1006fd" category="paragraph">NetApp, le logo NETAPP et les marques mentionnées sur la page des marques commerciales NetApp sont des marques commerciales de NetApp, Inc. Les autres noms de sociétés et de produits peuvent être des marques commerciales de leurs propriétaires respectifs.</block>
-  <block id="7aa531e9acfe2b98e34d2c92fe9846ff" category="paragraph"><block ref="7aa531e9acfe2b98e34d2c92fe9846ff" category="inline-link-rx"></block></block>
   <block id="be89498d2f8a22ce47c02ba9795fe2af" category="section-title">Brevets</block>
   <block id="d0b19d36be2c5f16e9aef46c8a452d3d" category="paragraph">Vous trouverez une liste actuelle des brevets appartenant à NetApp à l'adresse suivante :</block>
-  <block id="d7f1fbcf9ce4e42f705add574d262b2c" category="paragraph"><block ref="d7f1fbcf9ce4e42f705add574d262b2c" category="inline-link-rx"></block></block>
   <block id="56c34c6410dd45c5cec44149ad0ce037" category="section-title">Politique de confidentialité</block>
-  <block id="fc248f74f5e36542f7f5627b8610e9a3" category="paragraph"><block ref="fc248f74f5e36542f7f5627b8610e9a3" category="inline-link-rx"></block></block>
   <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">Source ouverte</block>
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">Les fichiers de notification fournissent des informations sur les droits d'auteur et les licences de tiers utilisés dans le logiciel NetApp.</block>
   <block id="c95623cd0395d5a6bb6105b9d32f197b" category="inline-link">Note pour BlueXP</block>
@@ -975,7 +956,6 @@
   <block id="edd15fbeb7b2dffa163336ecd4f3e80c" category="section-title">Utilisation d'options de support en libre-service</block>
   <block id="d88bacf2a9fdcbbc844edcba97c34e30" category="section-title">Créez un dossier de demande de support auprès du support NetApp</block>
   <block id="08d96fdd1a845d80db99e6e1dffb8bc7" category="list-text">Sur la page *Ressources*, choisissez l'une des options disponibles sous support technique :</block>
-  <block id="5be2e1dfe4bf215289731df45ec8157b" category="list-text">Cliquez sur *Créer un dossier* pour ouvrir un dossier auprès d'un spécialiste du support NetApp :</block>
   <block id="d0693e7bf28b7bbc94287cee0e4b0768" category="section-title">5 mars 2023</block>
   <block id="b92f2131d3d225c3c3327daaa8862624" category="section-title">Vous pouvez désormais générer un rapport de hiérarchisation pour vos volumes</block>
   <block id="f86857f0a51fde5819da3a17258b5448" category="inline-link">Téléchargez le rapport sur la hiérarchisation</block>
@@ -989,10 +969,8 @@
   <block id="56dcadeee6b0e5c47a52673f9b5a0bb3" category="list-text">Vous pouvez ajouter ou supprimer des colonnes d'intérêt et filtrer le contenu des colonnes telles que priorité et Statut. D'autres colonnes offrent uniquement des fonctions de tri.</block>
   <block id="6f936762e1223311f031685422fcd3a4" category="paragraph">Pour plus d'informations, consultez les étapes ci-dessous.</block>
   <block id="b14929795a61440e9b4ec9f8a4885ae3" category="list-text">Au niveau de chaque dossier, nous offrons la possibilité de mettre à jour les notes de dossier ou de fermer un dossier qui n'est pas déjà à l'état fermé ou en attente fermée.</block>
-  <block id="34b1296d31cefa72dae9b3a364b1f444" category="list-text">Cliquez sur *case Management* et si vous y êtes invité, ajoutez votre compte NSS à BlueXP.</block>
   <block id="d8ce1865cf1fe3cffd60300b4b86ad63" category="paragraph">La page *gestion des cas* affiche les cas ouverts associés au compte NSS associé à votre compte utilisateur BlueXP. Il s'agit du même compte NSS qui apparaît en haut de la page *gestion NSS*.</block>
   <block id="2ae5ae78bdb2d222f15fd8e89248709c" category="list-text">Modifiez éventuellement les informations qui s'affichent dans le tableau :</block>
-  <block id="27635a52fe4c34c39ffc6430f4244ec6" category="list-text">Sous *cas de l'organisation*, cliquez sur *Afficher* pour afficher tous les cas associés à votre société.</block>
   <block id="059e856250b59be3069246887b74a23c" category="list-text">Modifiez la plage de dates en choisissant une plage de dates exacte ou en choisissant une autre période.</block>
   <block id="dfb3764bce2548df4e06357403f9c7d0" category="inline-image-macro">Capture d'écran de l'option au-dessus du tableau de la page gestion des cas qui vous permet de choisir une plage de dates exacte ou les 7 derniers jours, 30 derniers jours ou 3 derniers mois.</block>
   <block id="a1bb576be9e5a356290f231efb51b3f5" category="list-text">Filtrez le contenu des colonnes.</block>
@@ -1001,7 +979,6 @@
   <block id="370b44009f1b82d0b6b178bb80cc62fa" category="inline-image-macro">Capture d'écran affichant les colonnes que vous pouvez afficher dans le tableau.</block>
   <block id="ad0ae9ea1f2e8d973a9a0f6bb169f494" category="inline-image-macro">Icône avec trois points qui apparaît dans la dernière colonne du tableau</block>
   <block id="6d9dd74e7709ef802d299966f7898f6b" category="list-text">*Voir cas*: Afficher tous les détails sur un cas spécifique.</block>
-  <block id="f791bc685c526af8296381acff10f6a0" category="list-text">*Fermer le cas* : fournissez des détails sur la raison pour laquelle vous fermez le cas et cliquez sur *Fermer le cas*.</block>
   <block id="e93217b2f709a398ce3c0fb753beb05f" category="inline-image-macro">Capture d'écran qui montre les actions que vous pouvez effectuer après avoir sélectionné le menu dans la dernière colonne du tableau.</block>
   <block id="ec084bb25ed5b934c09b361069c246b2" category="list-text">Le compte NSS doit être un compte de niveau client (pas un compte invité ou temporaire). Vous pouvez avoir plusieurs comptes NSS de niveau client.</block>
   <block id="27387009488fe78dcc7cb7e3e432792f" category="list-text">Il ne peut y avoir qu'un seul compte NSS si ce compte est un compte de niveau partenaire. Si vous essayez d'ajouter des comptes NSS de niveau client et qu'un compte de niveau partenaire existe, le message d'erreur suivant s'affiche :</block>
@@ -1144,7 +1121,6 @@
   <block id="7a75abe8763b34e741fcabf5e89398eb" category="cell">Licence de Tiering BlueXP</block>
   <block id="534497403860589544cd9e470d2d110b" category="cell">Le Tiering de configuration et de gestion s'effectue à l'aide du service de Tiering BlueXP.</block>
   <block id="316a7aed758eb7b043492e848b931117" category="section-title">Obtenez votre fichier de licence de Tiering BlueXP</block>
-  <block id="410b8be575ba665b4d7188d2d9a7d9f7" category="paragraph">Après avoir acheté votre licence de Tiering BlueXP, vous activez la licence dans BlueXP en entrant le numéro de série du Tiering BlueXP et le compte NSS, ou en téléchargeant le fichier de licence NLF. Les étapes ci-dessous montrent comment obtenir le fichier de licence NLF si vous prévoyez d'utiliser cette méthode.</block>
   <block id="9b1441120e66cf63798ba27aa3531664" category="list-text">Entrez le numéro de série de votre licence de Tiering BlueXP.</block>
   <block id="1a8eb6c0b4ba023742d25f05dbe5273d" category="section-title">Ajoutez les licences BYOL de Tiering BlueXP à votre compte</block>
   <block id="87afcfb4fef2a4d3fb672d29a7991ab4" category="paragraph">Après avoir acheté une licence de Tiering BlueXP pour votre compte BlueXP, vous devez ajouter la licence à BlueXP pour utiliser le service de Tiering BlueXP.</block>
@@ -1218,8 +1194,6 @@
   <block id="416d6b305415c1b651308d03bee7d8bf" category="paragraph"><block ref="416d6b305415c1b651308d03bee7d8bf" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0db73897f94acf452b2b14679c1dbda3" category="admonition">Le Tiering BlueXP prend en charge les volumes FlexGroup à partir de ONTAP 9.5. Le réglage fonctionne de la même façon que tout autre volume.</block>
   <block id="0ad14aaf7eff30985750c0d80c7e4786" category="paragraph">Lorsque vous configurez le Tiering BlueXP, vous êtes invité à utiliser l'IPspace. Vous devez choisir l'IPspace auquel ces LIF sont associées. Il peut s'agir de l'IPspace par défaut ou d'un IPspace personnalisé que vous avez créé.</block>
-  <block id="57c83c3911b1cfb3313ecdbbf6f7b3bc" category="paragraph">Lorsque vous configurez le Tiering des données sur un nouveau cluster, vous êtes invité à créer un compartiment S3 ou à sélectionner un compartiment S3 existant dans le compte AWS où le connecteur est configuré. Le compte AWS doit avoir des autorisations et une clé d'accès que vous pouvez entrer dans le Tiering BlueXP. Le cluster ONTAP utilise la clé d'accès pour classer les données entrantes et sortantes de S3.</block>
-  <block id="e3bf91040469142203d9d6e34af081cc" category="paragraph">Le compartiment S3 doit être dans un <block ref="b332867db2cb27fa4068cfc3dc6b80f9" category="inline-link-macro-rx"></block>.</block>
   <block id="e12d69112c676a34f24fe32d8c78054b" category="admonition">Si vous prévoyez de configurer le Tiering BlueXP pour utiliser une classe de stockage moins onéreuse à laquelle vos données hiérarchisées seront transférées au bout d'un certain nombre de jours, vous ne devez pas sélectionner de règles de cycle de vie lors de la configuration du compartiment dans votre compte AWS. Le Tiering BlueXP gère les transitions de cycle de vie.</block>
   <block id="6f7815856002a1331164afcaf80de883" category="paragraph">Le Tiering BlueXP transmet la clé d'accès au cluster ONTAP. Les identifiants ne sont pas stockés dans le service de Tiering BlueXP.</block>
   <block id="0faf47b6f5732c018e12a7f9c05b2120" category="paragraph">Si vous utilisez le port 80 (HTTP) pour la communication avec le noeud final privé, vous êtes tous définis. Vous pouvez activer le Tiering BlueXP sur le cluster.</block>
@@ -1313,7 +1287,6 @@
   <block id="b2917ea80501e4e266fb196a8938fa14" category="paragraph"><block ref="60aeda1e87e3285e814ff97260256aa7" category="inline-link-rx"></block>.</block>
   <block id="97102364d27cfa2b371b04954f8509a5" category="paragraph">L'interface de NetApp Cloud Tiering a ajouté un nouveau jeu de pages pour la configuration du stockage objet. Vous pouvez ajouter de nouveaux magasins d'objets, connecter plusieurs magasins d'objets à un agrégat pour la mise en miroir FabricPool, échanger les magasins d'objets principal et miroir, supprimer les connexions au magasin d'objets avec des agrégats, et plus encore.<block ref="beab3aba355fc6cb093ce3f5ab5dae37" category="inline-link-rx"></block></block>
   <block id="8988a1e5f033eb9ad9a8652cec24f2d1" category="paragraph">Les licences Cloud Tiering peuvent désormais être partagées avec vos clusters dans les configurations MetroCluster. Vous n'avez plus besoin d'utiliser les licences FabricPool obsolètes dans ces scénarios. Les licences Cloud Tiering sont ainsi plus faciles à utiliser sur un plus grand nombre de clusters.<block ref="034dee4c81b485ee26e8054e04588c81" category="inline-link-rx"></block></block>
-  <block id="9f6052fbd8e40798fd43c9c396d5cc95" category="paragraph">Les licences Cloud Tiering peuvent désormais être partagées avec vos clusters dans les configurations Tiering Mirror (hors configurations MetroCluster) et avec des clusters tiers vers le stockage objet IBM Cloud. Vous n'avez plus besoin d'utiliser les licences FabricPool obsolètes dans ces scénarios. Les licences Cloud Tiering sont ainsi plus faciles à utiliser sur un plus grand nombre de clusters.<block ref="034dee4c81b485ee26e8054e04588c81" category="inline-link-rx"></block></block>
   <block id="f9cbaeb3412c248528eeb5b316882c2f" category="list-text">Cluster ONTAP source sur site qui exécute ONTAP 9.8 ou version ultérieure et connexion via un port spécifié par l'utilisateur vers le stockage objet compatible S3 de destination.<block ref="37a771554b6d226a7c4eb146e900f0b4" category="inline-link-rx"></block>.</block>
   <block id="0e3e175aa7efdfc360dab27c51b6fc80" category="admonition">Les systèmes Cloud Volumes ONTAP sont en lecture seule à partir du Tiering BlueXP.<block ref="f5b25cbfd89581108090437b49ead269" category="inline-link-rx"></block>.</block>
   <block id="994f1fa9f6b6f6276b10a9c8a8f18a8c" category="list-text">Les volumes définis avec une règle de Tiering affectent de la même manière la sauvegarde et la restauration BlueXP.<block ref="2db919f88216e9376af16eec91019e18" category="inline-link-rx"></block>.</block>
@@ -1324,9 +1297,7 @@
   <block id="509259be6d5e15d8959f705cbe0cbcc1" category="paragraph"><block ref="509259be6d5e15d8959f705cbe0cbcc1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0972db30d942fdb65d1732e6e84bde99" category="paragraph"><block ref="0972db30d942fdb65d1732e6e84bde99" category="inline-image-macro-rx" type="image"></block></block>
   <block id="cb6a777dd3c6e43b0dc441d38519d219" category="paragraph"><block ref="cb6a777dd3c6e43b0dc441d38519d219" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="0f6cac2f77150840994f84044fc1b12b" category="list-text">Modifiez les colonnes qui apparaissent dans le tableau en cliquant sur <block ref="b574dd55d604ddb721d869a0fc302007" category="inline-image-macro-rx" type="image"></block> puis choisissez les colonnes que vous souhaitez afficher.</block>
   <block id="e65065c4fd326b9f3a1eeb9453c30d73" category="paragraph"><block ref="e65065c4fd326b9f3a1eeb9453c30d73" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="6ba7d68d8b3ef0f3398afb9d3ea96172" category="list-text">Pour gérer un dossier de demande de support existant, cliquez sur <block ref="566c029d89e7d5421080767a37bf443e" category="inline-image-macro-rx" type="image"></block> et en sélectionnant l'une des options disponibles :</block>
   <block id="2ea260929e27ffcb623c8aa35689bd18" category="paragraph"><block ref="2ea260929e27ffcb623c8aa35689bd18" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b62a489db7d21470a588af3757360c8f" category="list-text">Cluster ONTAP sur site qui exécute ONTAP 9.4 ou version ultérieure et qui est doté d'une connexion HTTPS vers le stockage Azure Blob.<block ref="37a771554b6d226a7c4eb146e900f0b4" category="inline-link-rx"></block>.</block>
   <block id="3cf7465ae7f5c20ed45abc7161a7193a" category="list-text"><block ref="3cf7465ae7f5c20ed45abc7161a7193a" category="inline-link-rx"></block></block>
@@ -1344,10 +1315,7 @@
   <block id="e922b9aa0836a1d93e11cac0fe4c9004" category="paragraph">Pour obtenir un support technique sur les solutions des fournisseurs cloud suivants, consultez la section « obtention d'aide » dans la documentation BlueXP pour ce produit.</block>
   <block id="5a19febf1dcb23c10e8dcfde64ba764c" category="section-title">Enregistrez votre compte BlueXP pour bénéficier de la prise en charge NetApp</block>
   <block id="6bbc2ba432f59ab65ee3d8ac5a58336e" category="paragraph">Pour vous inscrire au support et activer les droits de support, un utilisateur de votre compte BlueXP doit associer un compte sur le site de support NetApp à sa connexion BlueXP. Le fait de vous inscrire au support NetApp dépend de la présence ou non d'un compte sur le site de support NetApp (NSS).</block>
-  <block id="b019ab068deba8494415cbd226ca0c4e" category="list-text">Dans le coin supérieur droit de la console BlueXP, cliquez sur l'icône Paramètres et sélectionnez *informations d'identification*.</block>
-  <block id="41e1e3cff4a07ce2ecc08e6c09f11092" category="list-text">Cliquez sur *informations d'identification de l'utilisateur*.</block>
   <block id="0c788a722f31f8f0cf36539ee04615cf" category="list-text">Sélectionnez *Ajouter des informations d'identification NSS* et suivez l'invite authentification du site de support NetApp (NSS).</block>
-  <block id="8c916e828e9e5a3592c8cac4e25928be" category="list-text">Pour confirmer que le processus d'enregistrement a réussi, cliquez sur l'icône aide et sélectionnez *support*.</block>
   <block id="8add4eb0d3f6ce61d374f3df3ee4eadf" category="paragraph">La page *Ressources* doit indiquer que votre compte est enregistré pour le support.</block>
   <block id="10c56875db7a47f791d653e5d5bff0e9" category="inline-image-macro">Capture d'écran affichant un numéro de série de compte, une case à cocher verte et le texte enregistré pour le support.</block>
   <block id="3d183819a15163ef2e2e7d9d764254a9" category="paragraph"><block ref="3d183819a15163ef2e2e7d9d764254a9" category="inline-image-macro-rx" type="image"></block></block>
@@ -1401,10 +1369,70 @@
   <block id="e314ee024e8325910d81b4fc0055f7f9" category="inline-image-macro">Capture d'écran de la boîte de dialogue taux de transfert maximal pour un cluster.</block>
   <block id="a2d27e5609ad559bf9f7b69d746c83b9" category="paragraph"><block ref="a2d27e5609ad559bf9f7b69d746c83b9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b6d7a1ad9440cb7fff09db239b1313d7" category="paragraph">Ce paramètre n'affecte pas la bande passante allouée aux autres clusters qui hiérarchise les données.</block>
-  <block id="543a6f0774f273b2f0359fc47eb71d9b" category="list-text">Confirmez-le<block ref="540eaaeac9761e2ce00566e2544cdb50" category="inline-link-rx"></block> Font partie du rôle IAM qui fournit au connecteur des autorisations. Ils doivent avoir été inclus par défaut lorsque vous avez déployé le connecteur pour la première fois. Si ce n'est pas le cas, vous devrez ajouter les autorisations manquantes. Voir la<block ref="6d4dc5f0c95117ac550b72968db62911" category="inline-link-rx"></block>.</block>
   <block id="7911cbd17bf94032db18ecf08e4fe5c8" category="list-text">Complétez les sections de la page *Tiering Setup* :</block>
-  <block id="42f1d2728ac3fa0606dbd810a0dc4498" category="list-text">*Compartiment S3* : ajoutez un nouveau compartiment S3 ou sélectionnez un compartiment S3 existant qui commence par le préfixe défini « fabric-pool », sélectionnez la région du compartiment et cliquez sur *Continuer*.</block>
-  <block id="6c130f8588109fcc613dd92f914dbe88" category="paragraph">Le préfixe _fabric-pool_ est utilisé par défaut, car la règle IAM du connecteur permet à l'instance d'effectuer des actions S3 sur les compartiments nommés avec ce préfixe exact. Par exemple, vous pouvez nommer le compartiment S3 _fabric-pool-AFF1_, où AFF1 est le nom du cluster.</block>
   <block id="fe35e262c448d76aba8db40105f10ae6" category="paragraph">Vous pouvez également choisir d'utiliser AWS PrivateLink que vous avez configuré précédemment. <block ref="e6b15c4e63006b05802c430924113019" category="inline-xref-macro-rx"></block> Une boîte de dialogue s'affiche pour vous guider dans la configuration du point final.</block>
   <block id="e1c9950bf8922ee7b7ee2dc803696a6a" category="sidebar">Modifiez la bande passante pour télécharger les données inactives vers le stockage objet</block>
+  <block id="c52a9d7f6355ad24bacb2c5f23c0e863" category="paragraph">Après avoir acheté votre licence de Tiering BlueXP, vous activez la licence dans BlueXP en saisissant le numéro de série de Tiering BlueXP et le compte NSS ou en téléchargeant le fichier de licence NLF. Les étapes ci-dessous montrent comment obtenir le fichier de licence NLF si vous prévoyez d'utiliser cette méthode.</block>
+  <block id="135b308ed83c53f1516b7c754566d1c4" category="paragraph-title">Avant de commencer</block>
+  <block id="e3286b69a705d4ed944e904722ab7c8f" category="paragraph">Vous devez disposer des informations suivantes avant de commencer :</block>
+  <block id="31c32a382d97a37a96c1074e48f523a5" category="list-text">Numéro de série du Tiering BlueXP</block>
+  <block id="079aeecf06b109e4316b0a68ea943f2b" category="paragraph">Recherchez ce numéro dans votre numéro de commande ou contactez l'équipe chargée du compte pour obtenir ces informations.</block>
+  <block id="bcbbd9a155e07caa8b31001adc835c79" category="list-text">ID de compte BlueXP</block>
+  <block id="a6cfac773f21906007a8ddf407596067" category="list-text">Dans la colonne *License Key*, cliquez sur *Get NetApp License File*.</block>
+  <block id="7fe6981833e8fe7fd89e0a99a55573da" category="list-text">Dans BlueXP, sélectionnez *aide &gt; support*.</block>
+  <block id="6a1b74969231967ed071d465206b15c7" category="list-text">Sélectionnez *appelez-nous* si vous souhaitez parler avec quelqu'un au téléphone. Vous serez dirigé vers une page netapp.com qui répertorie les numéros de téléphone que vous pouvez appeler.</block>
+  <block id="d65a2a6fc9caad1867728d4382eeb989" category="list-text">Sélectionnez *Créer un cas* pour ouvrir un ticket avec un spécialiste du support NetApp :</block>
+  <block id="0ff9b4b8684b9e03c9c1e1320935eae3" category="paragraph">Pour un historique de vos dossiers de support, vous pouvez sélectionner *Paramètres &gt; Chronologie* et rechercher les actions nommées "Créer un dossier de support". Un bouton situé à l'extrême droite vous permet de développer l'action pour afficher les détails.</block>
+  <block id="0a4050ac39772e9281a9aba225254bf8" category="list-text">Sélectionnez *case Management* et si vous y êtes invité, ajoutez votre compte NSS à BlueXP.</block>
+  <block id="1d39d3ab518e1e3f16cbafb2a56e1fd9" category="list-text">Sous *cas de l'organisation*, sélectionnez *Afficher* pour afficher tous les cas associés à votre société.</block>
+  <block id="cdf14d2156528231a5dbd12ad5c95d3f" category="list-text">Modifiez les colonnes qui apparaissent dans le tableau en sélectionnant <block ref="b574dd55d604ddb721d869a0fc302007" category="inline-image-macro-rx" type="image"></block> puis choisissez les colonnes que vous souhaitez afficher.</block>
+  <block id="348552521b849746260fe8d296d34c15" category="list-text">Gérer un dossier existant en sélectionnant <block ref="566c029d89e7d5421080767a37bf443e" category="inline-image-macro-rx" type="image"></block> et en sélectionnant l'une des options disponibles :</block>
+  <block id="bb6d5d351525342dd6b3cf4d15b6f298" category="list-text">*Fermer le cas* : fournissez des détails sur la raison pour laquelle vous fermez le cas et sélectionnez *Fermer le cas*.</block>
+  <block id="b6622b22e773efbd870e49f198696807" category="paragraph"><block ref="b6622b22e773efbd870e49f198696807" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="74e8b50272841d3fb995d4bcbaf7288c" category="paragraph"><block ref="74e8b50272841d3fb995d4bcbaf7288c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="dd3c02511c6df4e46b9f0453620726d0" category="list-text">Standard-Infrequent Access (S3 Standard-IA)</block>
+  <block id="e8502d2a8613fd0065f74d21e27a5baf" category="list-text">One zone-Infrequent Access (S3 One zone-IA)</block>
+  <block id="7eaf4b5aa1c510e2404453e74c5fe7fc" category="list-text">Hiérarchisation intelligente (S3 Intelligent-Tiering)</block>
+  <block id="9c6a018743ed77a40f5c77bc9d87dc11" category="paragraph"><block ref="9c6a018743ed77a40f5c77bc9d87dc11" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c24c54da7c963c94781caeb0eeee2e30" category="paragraph">Lorsque vous configurez le Tiering des données pour un nouveau cluster, vous êtes invité à indiquer si vous souhaitez que le service crée un compartiment S3 ou si vous souhaitez sélectionner un compartiment S3 existant dans le compte AWS sur lequel le connecteur est configuré. Le compte AWS doit avoir des autorisations et une clé d'accès que vous pouvez entrer dans le Tiering BlueXP. Le cluster ONTAP utilise la clé d'accès pour classer les données entrantes et sortantes de S3.</block>
+  <block id="014ed9ed57d024e568191e4b6f127f6f" category="inline-link">Découvrez comment créer des compartiments S3 à partir de BlueXP</block>
+  <block id="2894bf52173740ca0aecddbcdf948d3a" category="paragraph">Par défaut, le service de Tiering crée le compartiment à votre place. Si vous souhaitez utiliser votre propre compartiment, vous pouvez en créer un avant de démarrer l'assistant d'activation du Tiering, puis sélectionner ce compartiment dans l'assistant.<block ref="2c426db32d0318b3b7001dd2ca8d7635" category="inline-link-rx"></block>. Le compartiment doit être exclusivement utilisé pour stocker les données inactives de vos volumes. Il ne peut pas être utilisé à d'autres fins. Le compartiment S3 doit être dans un <block ref="b332867db2cb27fa4068cfc3dc6b80f9" category="inline-link-macro-rx"></block>.</block>
+  <block id="582e2896974789f367949492fb4c4802" category="list-text">Autorisations pour le connecteur afin qu'il puisse créer et gérer le compartiment S3.</block>
+  <block id="fdc19b19bb08b842183f4536b3eec76b" category="list-text">*Autorisations de connecteur* :</block>
+  <block id="a23c48c7dacd4cbd23073fcbf60fd74b" category="list-text">Confirmez-le<block ref="540eaaeac9761e2ce00566e2544cdb50" category="inline-link-rx"></block> Font partie du rôle IAM qui fournit au connecteur des autorisations. Ils doivent avoir été inclus par défaut lorsque vous avez déployé le connecteur pour la première fois. Si ce n'est pas le cas, vous devrez ajouter les autorisations manquantes. Voir la<block ref="6d4dc5f0c95117ac550b72968db62911" category="inline-link-rx"></block> pour obtenir des instructions.</block>
+  <block id="66a7f2c8895d7b21d1201fccfd4bdba8" category="list-text">Le compartiment par défaut créé par le Tiering BlueXP comporte le préfixe « fabric-pool ». Si vous souhaitez utiliser un préfixe différent pour votre compartiment, vous devez personnaliser les autorisations avec le nom que vous souhaitez utiliser. Dans les autorisations S3, une ligne s'affiche<block ref="c712bdd29459fc8b86dccbf521d236c1" prefix=" " category="inline-code"></block>. Vous devrez remplacer « fabric-pool » par le préfixe que vous souhaitez utiliser. Par exemple, si vous souhaitez utiliser le préfixe « Tiering-1 » pour vos compartiments, vous définissez cette ligne sur<block ref="f36e7f2ef320186e3d37d367e5be31fc" prefix=" " category="inline-code"></block>.</block>
+  <block id="ffab91aa955935f27edca0e2b61e13ec" category="paragraph">Si vous souhaitez utiliser un préfixe différent pour les compartiments que vous utiliserez pour d'autres clusters de ce même compte BlueXP, vous pouvez ajouter une autre ligne avec le préfixe pour les autres compartiments. Par exemple :</block>
+  <block id="38efd96fb4da1774586c4379285d5732" category="paragraph"><block ref="f36e7f2ef320186e3d37d367e5be31fc" prefix="" category="inline-code"></block><block ref="98422a36dda2cb7df4362652f96b84d8" prefix=" " category="inline-code"></block></block>
+  <block id="bfe84f0ff43744ba679acbdbf46ab156" category="paragraph">Si vous créez votre propre compartiment et n'utilisez pas de préfixe standard, vous devez modifier cette ligne en<block ref="d97fa8f672dbe6f85ad395e3369cf55a" prefix=" " category="inline-code"></block> pour que tout godet soit reconnu. Cependant, cela peut exposer tous vos compartiments à la place de ceux que vous avez conçus pour conserver les données inactives de vos volumes.</block>
+  <block id="93965115cac9e91f74b649a6fba443e5" category="list-text">*Autorisations du cluster* :</block>
+  <block id="e88ca2781923e7ac16a6d144c17a0eb3" category="list-text">*Compartiment S3* : ajoutez un nouveau compartiment S3 ou sélectionnez un compartiment S3 existant, sélectionnez la région du compartiment et cliquez sur *Continuer*.</block>
+  <block id="3527b947af5ea5dbd74e0bd79f37eb2e" category="inline-xref">Configuration des autorisations S3</block>
+  <block id="34f0b3361dbdeb70841b641a1d0b24a5" category="paragraph">Le préfixe _fabric-pool_ est utilisé par défaut, car la règle IAM du connecteur permet à l'instance d'effectuer des actions S3 sur les compartiments nommés avec ce préfixe exact. Par exemple, vous pouvez nommer le compartiment S3 _fabric-pool-AFF1_, où AFF1 est le nom du cluster. Vous pouvez également définir le préfixe des compartiments utilisés pour la hiérarchisation. Voir <block ref="dc7de67bd16395d32b8ccde883c94ae1" category="inline-xref-macro-rx"></block> Garantir que vous disposez des autorisations AWS qui reconnaissent tout préfixe personnalisé que vous prévoyez d'utiliser.</block>
+  <block id="2d81e61b650e87c484f1701ff4c00053" category="section-title">Recherchez un cluster sur tous les connecteurs BlueXP</block>
+  <block id="3abfce797bf55b3442168c224f5fd132" category="paragraph">Si vous utilisez plusieurs connecteurs pour gérer l'ensemble du stockage de votre environnement, certains clusters sur lesquels vous souhaitez implémenter la hiérarchisation peuvent se trouver dans un autre connecteur. Si vous n'êtes pas sûr de quel connecteur gère un certain cluster, vous pouvez rechercher sur tous les connecteurs à l'aide du Tiering BlueXP.</block>
+  <block id="62f160ce3415a127018a3d672d7df105" category="list-text">Dans la barre de menus BlueXP Tiering, cliquez sur le menu actions et sélectionnez *Rechercher un cluster dans tous les connecteurs*.</block>
+  <block id="31f724b941fcfcd7cfb620aab82faa70" category="inline-image-macro">Copie d'écran montrant comment rechercher un cluster dans l'un de vos connecteurs BlueXP.</block>
+  <block id="2af6709f846ff207d6e730d9235c8576" category="paragraph"><block ref="2af6709f846ff207d6e730d9235c8576" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7d60aaa42b36df3f362b2dc8696e6c52" category="list-text">Dans la boîte de dialogue de recherche affichée, entrez le nom du cluster et cliquez sur *Search*.</block>
+  <block id="2662a7699ad973c129a2dcc08c6c5a90" category="paragraph">Le Tiering BlueXP affiche le nom du connecteur s'il peut trouver le cluster.</block>
+  <block id="1c7f4aea6cf3b42c3b49ff0b42c521e7" category="inline-link">Basculer sur le connecteur et configurer la hiérarchisation pour le cluster</block>
+  <block id="5d7b20eede6c6b7e6ea66e130a2db37a" category="list-text"><block ref="bd2c8685cbd143ca58648fd879714140" category="inline-link-rx"></block>.</block>
+  <block id="52009bb7ee17227f566cd26a02caee56" category="inline-link-macro"><block ref="52009bb7ee17227f566cd26a02caee56" category="inline-link-rx"></block></block>
+  <block id="a1a9afcf552a769c282769271829889a" category="paragraph"><block ref="a1a9afcf552a769c282769271829889a" category="inline-link-macro-rx"></block></block>
+  <block id="f99aa604031e5049799e73b5c3748a98" category="inline-link-macro"><block ref="f99aa604031e5049799e73b5c3748a98" category="inline-link-rx"></block></block>
+  <block id="5d545fe5152641e2ebe654e336e520e5" category="paragraph"><block ref="5d545fe5152641e2ebe654e336e520e5" category="inline-link-macro-rx"></block></block>
+  <block id="88e5eabd3917048b6927c42496b98f86" category="inline-link-macro"><block ref="88e5eabd3917048b6927c42496b98f86" category="inline-link-rx"></block></block>
+  <block id="dd38f906b37d412de7d1c1dcf4cbf31c" category="paragraph"><block ref="dd38f906b37d412de7d1c1dcf4cbf31c" category="inline-link-macro-rx"></block></block>
+  <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-macro"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
+  <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
+  <block id="0307a12e5749f8dd930472ee78f69d2c" category="list-text">Dans le coin supérieur droit de la console BlueXP, sélectionnez l'icône Paramètres, puis sélectionnez *informations d'identification*.</block>
+  <block id="f19ab635e6d5f884a22ee4ce067fdbfd" category="list-text">Sélectionnez *informations d'identification utilisateur*.</block>
+  <block id="cfc5506589d5a4d055e721267d5f0732" category="list-text">Pour confirmer que le processus d'enregistrement a réussi, sélectionnez l'icône aide et sélectionnez *support*.</block>
+  <block id="d889e6e7cc4c5509ab5b37f8fc894e46" category="list-text">Dans le coin supérieur droit de la console BlueXP, sélectionnez l'icône aide, puis sélectionnez *support*.</block>
+  <block id="c0e0b7ff0de9558404e9b77ece42948a" category="list-text">Sélectionnez *gestion NSS &gt; Ajouter un compte NSS*.</block>
+  <block id="85b9386ed443776127e099931d73448a" category="list-text">Lorsque vous y êtes invité, sélectionnez *Continuer* pour être redirigé vers une page de connexion Microsoft.</block>
+  <block id="4bca0fdcdafed1e5f31435f4b19c8738" category="section-title">9 août 2023</block>
+  <block id="b839d32c555694a5245fa2fa33d17d88" category="section-title">Utilisez un préfixe personnalisé pour le nom du compartiment dans lequel les données hiérarchisées sont stockées</block>
+  <block id="6eb4429639db75cb3b56cc38a3fb8785" category="paragraph">Auparavant, vous aviez besoin d'utiliser le préfixe par défaut « fabric-pool » lors de la définition du nom du compartiment, par exemple, _fabric-pool-bucket1_. Vous pouvez désormais utiliser un préfixe personnalisé pour nommer votre compartiment. Cette fonctionnalité n'est disponible que lors du Tiering des données vers Amazon S3.<block ref="3e8270d3bc816ce30c7c11fe6d073535" category="inline-link-rx"></block>.</block>
+  <block id="6a3a27c0cd9c23985f6e8260846d58bc" category="paragraph">Si vous utilisez plusieurs connecteurs pour gérer tous les systèmes de stockage de votre environnement, certains clusters sur lesquels vous souhaitez implémenter la hiérarchisation peuvent se trouver dans différents connecteurs. Si vous n'êtes pas sûr de quel connecteur gère un certain cluster, vous pouvez rechercher sur tous les connecteurs à l'aide du Tiering BlueXP.<block ref="017b0207cc8469b6ea246adade89f8e1" category="inline-link-rx"></block>.</block>
 </blocks>

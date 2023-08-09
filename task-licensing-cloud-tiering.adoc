@@ -152,7 +152,20 @@ Voici quelques points que vous devez connaître sur les deux licences :
 
 === Obtenez votre fichier de licence de Tiering BlueXP
 
-Après avoir acheté votre licence de Tiering BlueXP, vous activez la licence dans BlueXP en entrant le numéro de série du Tiering BlueXP et le compte NSS, ou en téléchargeant le fichier de licence NLF. Les étapes ci-dessous montrent comment obtenir le fichier de licence NLF si vous prévoyez d'utiliser cette méthode.
+Après avoir acheté votre licence de Tiering BlueXP, vous activez la licence dans BlueXP en saisissant le numéro de série de Tiering BlueXP et le compte NSS ou en téléchargeant le fichier de licence NLF. Les étapes ci-dessous montrent comment obtenir le fichier de licence NLF si vous prévoyez d'utiliser cette méthode.
+
+.Avant de commencer
+Vous devez disposer des informations suivantes avant de commencer :
+
+* Numéro de série du Tiering BlueXP
++
+Recherchez ce numéro dans votre numéro de commande ou contactez l'équipe chargée du compte pour obtenir ces informations.
+
+* ID de compte BlueXP
++
+Vous pouvez trouver votre identifiant de compte BlueXP en sélectionnant le menu déroulant *compte* en haut de BlueXP, puis en cliquant sur *gérer compte* en regard de votre compte. Votre ID de compte se trouve dans l'onglet vue d'ensemble.
+
+
 
 .Étapes
 . Connectez-vous au https://mysupport.netapp.com["Site de support NetApp"^] Et cliquez sur *systèmes > licences logicielles*.
@@ -160,13 +173,10 @@ Après avoir acheté votre licence de Tiering BlueXP, vous activez la licence da
 +
 image:screenshot_cloud_tiering_license_step1.gif["Capture d'écran affichant une table de licences après une recherche par numéro de série."]
 
-. Sous *License Key*, cliquez sur *Get NetApp License File*.
+. Dans la colonne *License Key*, cliquez sur *Get NetApp License File*.
 . Saisissez votre identifiant de compte BlueXP (il s'agit d'un identifiant de locataire sur le site d'assistance) et cliquez sur *Submit* pour télécharger le fichier de licence.
 +
 image:screenshot_cloud_tiering_license_step2.gif["Une capture d'écran qui affiche la boîte de dialogue obtenir la licence dans laquelle vous entrez votre identifiant de locataire, puis cliquez sur soumettre pour télécharger le fichier de licence."]
-
-+
-Vous pouvez trouver votre identifiant de compte BlueXP en sélectionnant le menu déroulant *compte* en haut de BlueXP, puis en cliquant sur *gérer compte* en regard de votre compte. Votre ID de compte se trouve dans l'onglet vue d'ensemble.
 
 
 

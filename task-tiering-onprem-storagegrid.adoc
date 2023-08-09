@@ -195,7 +195,7 @@ Vous pouvez également définir la bande passante réseau disponible pour télé
 ** Pour sélectionner plusieurs volumes, cochez la case pour chaque volume (image:button_backup_1_volume.png[""]) Et cliquez sur *configurer les volumes*.
 ** Pour sélectionner un seul volume, cliquez sur la ligne (ou image:screenshot_edit_icon.gif["modifier l'icône du crayon"] icône) du volume.
 +
-image:screenshot_tiering_tier_volumes.png["Capture d'écran indiquant comment sélectionner un seul volume, plusieurs volumes ou tous les volumes et le bouton Modifier les volumes sélectionnés."]
+image:screenshot_tiering_initial_volumes.png["Capture d'écran indiquant comment sélectionner un seul volume, plusieurs volumes ou tous les volumes et le bouton Modifier les volumes sélectionnés."]
 
 
 
@@ -204,7 +204,7 @@ image:screenshot_tiering_tier_volumes.png["Capture d'écran indiquant comment s�
 link:concept-cloud-tiering.html#volume-tiering-policies["En savoir plus sur les règles de Tiering des volumes et les jours de refroidissement"].
 
 +
-image:screenshot_tiering_policy_settings.png["Capture d'écran affichant les paramètres de règle de Tiering configurables."]
+image:screenshot_tiering_initial_policy_settings.png["Capture d'écran affichant les paramètres de règle de Tiering configurables."]
 
 
 

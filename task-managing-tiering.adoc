@@ -256,3 +256,21 @@ Notez que l'adresse IP de gestion du cluster est renseignée sur la base des inf
 BlueXP découvre le cluster et l'ajoute à un environnement de travail dans Canvas en utilisant le nom de cluster comme nom d'environnement de travail.
 
 Vous pouvez activer le service Tiering ou d'autres services pour ce cluster dans le volet de droite.
+
+
+
+== Recherchez un cluster sur tous les connecteurs BlueXP
+
+Si vous utilisez plusieurs connecteurs pour gérer l'ensemble du stockage de votre environnement, certains clusters sur lesquels vous souhaitez implémenter la hiérarchisation peuvent se trouver dans un autre connecteur. Si vous n'êtes pas sûr de quel connecteur gère un certain cluster, vous pouvez rechercher sur tous les connecteurs à l'aide du Tiering BlueXP.
+
+.Étapes
+. Dans la barre de menus BlueXP Tiering, cliquez sur le menu actions et sélectionnez *Rechercher un cluster dans tous les connecteurs*.
++
+image:screenshot_tiering_search for_cluster.png["Copie d'écran montrant comment rechercher un cluster dans l'un de vos connecteurs BlueXP."]
+
+. Dans la boîte de dialogue de recherche affichée, entrez le nom du cluster et cliquez sur *Search*.
++
+Le Tiering BlueXP affiche le nom du connecteur s'il peut trouver le cluster.
+
+. https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#switch-between-connectors["Basculer sur le connecteur et configurer la hiérarchisation pour le cluster"^].
+

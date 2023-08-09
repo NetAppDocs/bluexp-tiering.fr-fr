@@ -22,9 +22,9 @@ Le Tiering BlueXP prend en charge plusieurs classes de stockage S3 et la plupart
 
 Lorsque vous configurez le Tiering des données sur AWS, le Tiering BlueXP utilise automatiquement la classe de stockage _Standard_ pour vos données inactives. Le Tiering BlueXP peut appliquer une règle de cycle de vie afin que les données puissent passer de la classe de stockage _Standard_ à une autre classe de stockage au bout d'un certain nombre de jours. Vous pouvez choisir parmi les classes de stockage suivantes :
 
-* Accès autonome et peu fréquent
-* Un seul accès à Zone-Infrequent
-* Hiérarchisation intelligente (dans laquelle AWS déplace automatiquement les données entre deux niveaux (accès fréquent et Infrequent Access), en cas de changement de modèle d'accès)
+* Standard-Infrequent Access (S3 Standard-IA)
+* One zone-Infrequent Access (S3 One zone-IA)
+* Hiérarchisation intelligente (S3 Intelligent-Tiering)
 * Récupération instantanée Glacier
 
 

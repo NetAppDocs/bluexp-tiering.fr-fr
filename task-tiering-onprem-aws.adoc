@@ -188,9 +188,9 @@ https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["D
 
 == Préparez votre environnement AWS
 
-Lorsque vous configurez le Tiering des données sur un nouveau cluster, vous êtes invité à créer un compartiment S3 ou à sélectionner un compartiment S3 existant dans le compte AWS où le connecteur est configuré. Le compte AWS doit avoir des autorisations et une clé d'accès que vous pouvez entrer dans le Tiering BlueXP. Le cluster ONTAP utilise la clé d'accès pour classer les données entrantes et sortantes de S3.
+Lorsque vous configurez le Tiering des données pour un nouveau cluster, vous êtes invité à indiquer si vous souhaitez que le service crée un compartiment S3 ou si vous souhaitez sélectionner un compartiment S3 existant dans le compte AWS sur lequel le connecteur est configuré. Le compte AWS doit avoir des autorisations et une clé d'accès que vous pouvez entrer dans le Tiering BlueXP. Le cluster ONTAP utilise la clé d'accès pour classer les données entrantes et sortantes de S3.
 
-Le compartiment S3 doit être dans un link:reference-aws-support.html#supported-aws-regions["Région qui prend en charge le Tiering BlueXP"].
+Par défaut, le service de Tiering crée le compartiment à votre place. Si vous souhaitez utiliser votre propre compartiment, vous pouvez en créer un avant de démarrer l'assistant d'activation du Tiering, puis sélectionner ce compartiment dans l'assistant. https://docs.netapp.com/us-en/bluexp-s3-storage/task-add-s3-bucket.html["Découvrez comment créer des compartiments S3 à partir de BlueXP"^]. Le compartiment doit être exclusivement utilisé pour stocker les données inactives de vos volumes. Il ne peut pas être utilisé à d'autres fins. Le compartiment S3 doit être dans un link:reference-aws-support.html#supported-aws-regions["Région qui prend en charge le Tiering BlueXP"].
 
 
 NOTE: Si vous prévoyez de configurer le Tiering BlueXP pour utiliser une classe de stockage moins onéreuse à laquelle vos données hiérarchisées seront transférées au bout d'un certain nombre de jours, vous ne devez pas sélectionner de règles de cycle de vie lors de la configuration du compartiment dans votre compte AWS. Le Tiering BlueXP gère les transitions de cycle de vie.
@@ -201,13 +201,30 @@ NOTE: Si vous prévoyez de configurer le Tiering BlueXP pour utiliser une classe
 
 Vous devez configurer deux ensembles d'autorisations :
 
-* Autorisations permettant au connecteur de créer et de gérer le compartiment S3.
+* Autorisations pour le connecteur afin qu'il puisse créer et gérer le compartiment S3.
 * Autorisations relatives au cluster ONTAP sur site afin de pouvoir lire et écrire les données dans le compartiment S3.
 
 
 .Étapes
-. Confirmez-le https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html#iam-policies["Ces autorisations S3"^] Font partie du rôle IAM qui fournit au connecteur des autorisations. Ils doivent avoir été inclus par défaut lorsque vous avez déployé le connecteur pour la première fois. Si ce n'est pas le cas, vous devrez ajouter les autorisations manquantes. Voir la https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-edit.html["Documentation AWS : modification des règles IAM"^].
-. Lors de l'activation du service, l'assistant Tiering vous invite à entrer une clé d'accès et une clé secrète. Ces identifiants sont transmis au cluster ONTAP afin que ONTAP puisse hiérarchiser les données dans le compartiment S3. Pour cela, vous devrez créer un utilisateur IAM avec les autorisations suivantes :
+. *Autorisations de connecteur* :
++
+** Confirmez-le https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html#iam-policies["Ces autorisations S3"^] Font partie du rôle IAM qui fournit au connecteur des autorisations. Ils doivent avoir été inclus par défaut lorsque vous avez déployé le connecteur pour la première fois. Si ce n'est pas le cas, vous devrez ajouter les autorisations manquantes. Voir la https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-edit.html["Documentation AWS : modification des règles IAM"^] pour obtenir des instructions.
+** Le compartiment par défaut créé par le Tiering BlueXP comporte le préfixe « fabric-pool ». Si vous souhaitez utiliser un préfixe différent pour votre compartiment, vous devez personnaliser les autorisations avec le nom que vous souhaitez utiliser. Dans les autorisations S3, une ligne s'affiche `"Resource": ["arn:aws:s3:::fabric-pool*"]`. Vous devrez remplacer « fabric-pool » par le préfixe que vous souhaitez utiliser. Par exemple, si vous souhaitez utiliser le préfixe « Tiering-1 » pour vos compartiments, vous définissez cette ligne sur `"Resource": ["arn:aws:s3:::tiering-1*"]`.
++
+Si vous souhaitez utiliser un préfixe différent pour les compartiments que vous utiliserez pour d'autres clusters de ce même compte BlueXP, vous pouvez ajouter une autre ligne avec le préfixe pour les autres compartiments. Par exemple :
+
++
+`"Resource": ["arn:aws:s3:::tiering-1*"]`
+`"Resource": ["arn:aws:s3:::tiering-2*"]`
+
++
+Si vous créez votre propre compartiment et n'utilisez pas de préfixe standard, vous devez modifier cette ligne en `"Resource": ["arn:aws:s3:::*"]` pour que tout godet soit reconnu. Cependant, cela peut exposer tous vos compartiments à la place de ceux que vous avez conçus pour conserver les données inactives de vos volumes.
+
+
+
+. *Autorisations du cluster* :
++
+** Lors de l'activation du service, l'assistant Tiering vous invite à entrer une clé d'accès et une clé secrète. Ces identifiants sont transmis au cluster ONTAP afin que ONTAP puisse hiérarchiser les données dans le compartiment S3. Pour cela, vous devrez créer un utilisateur IAM avec les autorisations suivantes :
 +
 [source, json]
 ----
@@ -220,6 +237,8 @@ Vous devez configurer deux ensembles d'autorisations :
 ----
 +
 Voir la https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-user.html["Documentation AWS : création d'un rôle pour déléguer des autorisations à un utilisateur IAM"^] pour plus d'informations.
+
+
 
 . Créez ou localisez la clé d'accès.
 +
@@ -309,12 +328,12 @@ image:screenshot_tiering_aws_s3_bucket.png["Copie d'écran montrant les données
 
 . Complétez les sections de la page *Tiering Setup* :
 +
-.. *Compartiment S3* : ajoutez un nouveau compartiment S3 ou sélectionnez un compartiment S3 existant qui commence par le préfixe défini « fabric-pool », sélectionnez la région du compartiment et cliquez sur *Continuer*.
+.. *Compartiment S3* : ajoutez un nouveau compartiment S3 ou sélectionnez un compartiment S3 existant, sélectionnez la région du compartiment et cliquez sur *Continuer*.
 +
 Lorsque vous utilisez un connecteur sur site, vous devez saisir l'ID de compte AWS qui donne accès au compartiment S3 existant ou au nouveau compartiment S3 à créer.
 
 +
-Le préfixe _fabric-pool_ est utilisé par défaut, car la règle IAM du connecteur permet à l'instance d'effectuer des actions S3 sur les compartiments nommés avec ce préfixe exact. Par exemple, vous pouvez nommer le compartiment S3 _fabric-pool-AFF1_, où AFF1 est le nom du cluster.
+Le préfixe _fabric-pool_ est utilisé par défaut, car la règle IAM du connecteur permet à l'instance d'effectuer des actions S3 sur les compartiments nommés avec ce préfixe exact. Par exemple, vous pouvez nommer le compartiment S3 _fabric-pool-AFF1_, où AFF1 est le nom du cluster. Vous pouvez également définir le préfixe des compartiments utilisés pour la hiérarchisation. Voir <<Configurez les autorisations S3,Configuration des autorisations S3>> Garantir que vous disposez des autorisations AWS qui reconnaissent tout préfixe personnalisé que vous prévoyez d'utiliser.
 
 .. *Classe de stockage* : le Tiering BlueXP gère les transitions de cycle de vie de vos données hiérarchisées. Les données commencent dans la classe _Standard_, mais vous pouvez créer une règle pour déplacer les données vers une autre classe après un certain nombre de jours.
 +
@@ -351,7 +370,7 @@ Vous pouvez également définir la bande passante réseau disponible pour télé
 ** Pour sélectionner plusieurs volumes, cochez la case pour chaque volume (image:button_backup_1_volume.png[""]) Et cliquez sur *configurer les volumes*.
 ** Pour sélectionner un seul volume, cliquez sur la ligne (ou image:screenshot_edit_icon.gif["modifier l'icône du crayon"] icône) du volume.
 +
-image:screenshot_tiering_tier_volumes.png["Capture d'écran indiquant comment sélectionner un seul volume, plusieurs volumes ou tous les volumes et le bouton Modifier les volumes sélectionnés."]
+image:screenshot_tiering_initial_volumes.png["Capture d'écran indiquant comment sélectionner un seul volume, plusieurs volumes ou tous les volumes et le bouton Modifier les volumes sélectionnés."]
 
 
 
@@ -360,7 +379,7 @@ image:screenshot_tiering_tier_volumes.png["Capture d'écran indiquant comment s�
 link:concept-cloud-tiering.html#volume-tiering-policies["En savoir plus sur les règles de Tiering des volumes et les jours de refroidissement"].
 
 +
-image:screenshot_tiering_policy_settings.png["Capture d'écran affichant les paramètres de règle de Tiering configurables."]
+image:screenshot_tiering_initial_policy_settings.png["Capture d'écran affichant les paramètres de règle de Tiering configurables."]
 
 
 
