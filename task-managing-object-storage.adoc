@@ -56,18 +56,18 @@ L'assistant de stockage d'objets démarre. L'exemple ci-dessous montre comment c
 +
 Le préfixe _fabric-pool_ est requis car la stratégie IAM pour le connecteur permet à l'instance d'effectuer des actions S3 sur les compartiments nommés avec ce préfixe exact. Par exemple, vous pouvez nommer le compartiment S3 _fabric-pool-AFF1_, où AFF1 est le nom du cluster.
 
-.. *Cycle de vie de la classe de stockage* : le Tiering BlueXP gère les transitions du cycle de vie de vos données hiérarchisées. Les données commencent dans la classe _Standard_, mais vous pouvez créer une règle pour déplacer les données vers une autre classe après un certain nombre de jours.
+.. *Cycle de vie des classes de stockage* : le Tiering BlueXP gère les transitions de cycle de vie de vos données hiérarchisées. Les données commencent dans la classe _Standard_, mais vous pouvez créer une règle pour appliquer une classe de stockage différente aux données après un certain nombre de jours.
 +
-Sélectionnez la classe de stockage S3 vers laquelle vous souhaitez transférer les données hiérarchisées et le nombre de jours avant le déplacement des données, puis cliquez sur *Continuer*. Par exemple, la capture d'écran ci-dessous montre que les données hiérarchisées sont déplacées de la classe _Standard_ à la classe _Standard-IA_ après 45 jours dans le stockage d'objets.
+Sélectionnez la classe de stockage S3 vers laquelle vous souhaitez transférer les données hiérarchisées et le nombre de jours avant l'attribution des données à cette classe, puis cliquez sur *Continuer*. Par exemple, la capture d'écran ci-dessous montre que des données hiérarchisées sont affectées à la classe _Standard-IA_ de la classe _Standard_ après 45 jours dans le stockage objet.
 
 +
 Si vous choisissez *conserver les données dans cette classe de stockage*, les données restent dans la classe de stockage _Standard_ et aucune règle n'est appliquée. link:reference-aws-support.html["Voir classes de stockage prises en charge"^].
 
 +
-image:screenshot_tiering_lifecycle_selection_aws.png["Capture d'écran montrant comment sélectionner une autre classe de stockage où les données sont déplacées après un certain nombre de jours."]
+image:screenshot_tiering_lifecycle_selection_aws.png["Capture d'écran montrant comment sélectionner une autre classe de stockage affectée à vos données après un certain nombre de jours."]
 
 +
-Notez que la règle du cycle de vie est appliquée à tous les objets du compartiment sélectionné.
+Notez que la règle de cycle de vie est appliquée à tous les objets du compartiment sélectionné.
 
 .. *Informations d'identification* : saisissez l'ID de clé d'accès et la clé secrète pour un utilisateur IAM disposant des autorisations S3 requises, puis cliquez sur *Continuer*.
 +

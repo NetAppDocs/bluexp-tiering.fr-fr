@@ -130,7 +130,7 @@ Si la destination de Tiering Amazon S3 existe en tant qu'environnement de travai
 
 === Choisissez le comportement de hiérarchisation lors de la suppression du magasin d'objets miroir dans une configuration MetroCluster
 
-Lorsque vous supprimez le magasin d’objets miroir d’une configuration MetroCluster, vous êtes invité à indiquer si vous souhaitez également supprimer le magasin d’objets primaire. Vous pouvez choisir de conserver le magasin d'objets principal rattaché à l'agrégat, ou de le supprimer.
+Lorsque vous supprimez le magasin d'objets miroir d'une configuration MetroCluster, vous êtes invité à indiquer si vous souhaitez également supprimer le magasin d'objets principal. Vous pouvez choisir de conserver le magasin d'objets principal rattaché à l'agrégat, ou de le supprimer.
 
 
 

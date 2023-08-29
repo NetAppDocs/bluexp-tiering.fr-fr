@@ -187,18 +187,18 @@ image:screenshot_setup_tiering_onprem.png["Une capture d'écran montre l'option 
 . Suivez les étapes des pages *Créer un stockage objet* :
 +
 .. *Compartiment* : ajoutez un nouveau compartiment Google Cloud Storage ou sélectionnez un compartiment existant.
-.. *Cycle de vie de la classe de stockage* : le Tiering BlueXP gère les transitions du cycle de vie de vos données hiérarchisées. Les données commencent dans la classe _Standard_, mais vous pouvez créer des règles pour déplacer les données vers d'autres classes après un certain nombre de jours.
+.. *Cycle de vie des classes de stockage* : le Tiering BlueXP gère les transitions de cycle de vie de vos données hiérarchisées. Les données commencent dans la classe _Standard_, mais vous pouvez créer des règles pour appliquer différentes classes de stockage après un certain nombre de jours.
 +
-Sélectionnez la classe de stockage Google Cloud vers laquelle vous souhaitez transférer les données hiérarchisées et le nombre de jours avant le déplacement des données, puis cliquez sur *Continuer*. Par exemple, la capture d'écran ci-dessous montre que les données hiérarchisées sont déplacées de la classe _Standard_ vers la classe _Nearline_ après 30 jours dans le stockage d'objets, puis vers la classe _Coldline_ après 60 jours dans le stockage d'objets.
+Sélectionnez la classe de stockage Google Cloud vers laquelle vous souhaitez transférer les données hiérarchisées et le nombre de jours avant l'attribution des données à cette classe, puis cliquez sur *Continuer*. Par exemple, la capture d'écran ci-dessous montre que les données hiérarchisées sont affectées à la classe _Nearline_ depuis la classe _Standard_ après 30 jours dans le stockage objet, puis à la classe _Coldline_ après 60 jours dans le stockage objet.
 
 +
 Si vous choisissez *conserver les données dans cette classe de stockage*, les données restent dans cette classe de stockage. link:reference-google-support.html["Voir classes de stockage prises en charge"^].
 
 +
-image:screenshot_tiering_lifecycle_selection_gcp.png["Capture d'écran indiquant comment sélectionner des classes de stockage supplémentaires dans lesquelles les données sont déplacées après un certain nombre de jours."]
+image:screenshot_tiering_lifecycle_selection_gcp.png["Une capture d'écran montrant comment sélectionner des classes de stockage supplémentaires qui sont attribuées à vos données après un certain nombre de jours."]
 
 +
-Notez que la règle du cycle de vie est appliquée à tous les objets du compartiment sélectionné.
+Notez que la règle de cycle de vie est appliquée à tous les objets du compartiment sélectionné.
 
 .. *Informations d'identification* : saisissez la clé d'accès au stockage et la clé secrète pour un compte de service qui a le rôle d'administrateur du stockage.
 .. *Cluster Network* : sélectionnez l'IPspace ONTAP à utiliser pour se connecter au stockage objet.

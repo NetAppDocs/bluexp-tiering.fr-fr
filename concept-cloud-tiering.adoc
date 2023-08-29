@@ -31,7 +31,7 @@ https://bluexp.netapp.com/cloud-tiering-service-tco["Utilisez le calculateur de 
 Le Tiering BlueXP assure l'automatisation, la surveillance, les rapports et une interface de gestion commune :
 
 * Grâce à l'automatisation, vous pouvez plus facilement configurer et gérer le Tiering des données depuis les clusters ONTAP sur site vers le cloud
-* Vous pouvez choisir la classe de stockage/le Tier d'accès par défaut du fournisseur cloud, ou utiliser la gestion du cycle de vie pour déplacer les données hiérarchisées vers un Tier plus économique
+* Vous pouvez choisir la classe de stockage/le Tier d'accès par défaut du fournisseur cloud ou utiliser la gestion du cycle de vie pour attribuer un Tier plus économique aux données hiérarchisées plus anciennes
 * Vous pouvez créer des connexions vers d'autres magasins d'objets qui peuvent être utilisés pour d'autres agrégats du cluster
 * L'interface utilisateur permet de faire glisser des magasins d'objets vers un agrégat pour le Tiering et la mise en miroir FabricPool
 * Avec une fenêtre unique, vous n'avez plus besoin de gérer FabricPool de façon indépendante sur plusieurs clusters
@@ -159,7 +159,7 @@ image:diagram_cloud_tiering.png["Image de l'architecture montrant le service de 
 . BlueXP configure ONTAP pour utiliser le fournisseur de stockage objet et détecte la quantité de données actives et inactives sur le cluster.
 . Vous choisissez les volumes à Tier et la règle de Tiering à appliquer à ces volumes.
 . ONTAP commence le Tiering des données inactives dans le magasin d'objets dès que les données ont atteint les seuils à considérer comme inactives (voir la <<Stratégies de hiérarchisation des volumes>>).
-. Si vous avez appliqué une règle de cycle de vie aux données hiérarchisées (uniquement disponible pour certains fournisseurs), les données hiérarchisées plus anciennes sont déplacées vers un niveau plus économique après un certain nombre de jours.
+. Si vous avez appliqué une règle de cycle de vie aux données hiérarchisées (uniquement disponible pour certains fournisseurs), les données plus anciennes sur plusieurs niveaux sont attribuées à un niveau plus économique après un certain nombre de jours.
 
 
 

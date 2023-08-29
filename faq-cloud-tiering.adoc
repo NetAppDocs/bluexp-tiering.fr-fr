@@ -284,7 +284,7 @@ Le Tiering BlueXP prend en charge le Tiering des données vers les classes de st
 
 === Le Tiering BlueXP prend-il en charge l'utilisation de règles de gestion du cycle de vie ?
 
-Oui. Vous pouvez activer la gestion du cycle de vie afin que le Tiering BlueXP transfère les données du Tier de classe de stockage/d'accès par défaut vers un Tier plus économique après un certain nombre de jours. La règle de cycle de vie s'applique à tous les objets du compartiment sélectionné pour Amazon S3 et Google Cloud Storage, et à tous les conteneurs du compte de stockage sélectionné pour Azure Blob.
+Oui. Vous pouvez activer la gestion du cycle de vie afin que le Tiering BlueXP transfère les données du Tier de classe de stockage/d'accès par défaut vers un Tier plus économique après un certain nombre de jours. La règle de cycle de vie s'applique à tous les objets du compartiment sélectionné pour le stockage Amazon S3 et Google Cloud, ainsi qu'à tous les conteneurs du compte de stockage sélectionné pour Azure Blob.
 
 
 

@@ -193,7 +193,7 @@ Lorsque vous configurez le Tiering des données pour un nouveau cluster, vous ê
 Par défaut, le service de Tiering crée le compartiment à votre place. Si vous souhaitez utiliser votre propre compartiment, vous pouvez en créer un avant de démarrer l'assistant d'activation du Tiering, puis sélectionner ce compartiment dans l'assistant. https://docs.netapp.com/us-en/bluexp-s3-storage/task-add-s3-bucket.html["Découvrez comment créer des compartiments S3 à partir de BlueXP"^]. Le compartiment doit être exclusivement utilisé pour stocker les données inactives de vos volumes. Il ne peut pas être utilisé à d'autres fins. Le compartiment S3 doit être dans un link:reference-aws-support.html#supported-aws-regions["Région qui prend en charge le Tiering BlueXP"].
 
 
-NOTE: Si vous prévoyez de configurer le Tiering BlueXP pour utiliser une classe de stockage moins onéreuse à laquelle vos données hiérarchisées seront transférées au bout d'un certain nombre de jours, vous ne devez pas sélectionner de règles de cycle de vie lors de la configuration du compartiment dans votre compte AWS. Le Tiering BlueXP gère les transitions de cycle de vie.
+NOTE: Si vous prévoyez de configurer le Tiering BlueXP pour utiliser une classe de stockage moins coûteuse à laquelle vos données hiérarchisées seront transférées au bout d'un certain nombre de jours, vous ne devez sélectionner aucune règle de cycle de vie lors de la configuration du compartiment dans votre compte AWS. Le Tiering BlueXP gère les transitions de cycle de vie.
 
 
 
@@ -335,18 +335,18 @@ Lorsque vous utilisez un connecteur sur site, vous devez saisir l'ID de compte A
 +
 Le préfixe _fabric-pool_ est utilisé par défaut, car la règle IAM du connecteur permet à l'instance d'effectuer des actions S3 sur les compartiments nommés avec ce préfixe exact. Par exemple, vous pouvez nommer le compartiment S3 _fabric-pool-AFF1_, où AFF1 est le nom du cluster. Vous pouvez également définir le préfixe des compartiments utilisés pour la hiérarchisation. Voir <<Configurez les autorisations S3,Configuration des autorisations S3>> Garantir que vous disposez des autorisations AWS qui reconnaissent tout préfixe personnalisé que vous prévoyez d'utiliser.
 
-.. *Classe de stockage* : le Tiering BlueXP gère les transitions de cycle de vie de vos données hiérarchisées. Les données commencent dans la classe _Standard_, mais vous pouvez créer une règle pour déplacer les données vers une autre classe après un certain nombre de jours.
+.. *Classe de stockage* : le Tiering BlueXP gère les transitions de cycle de vie de vos données hiérarchisées. Les données commencent dans la classe _Standard_, mais vous pouvez créer une règle pour appliquer une classe de stockage différente aux données après un certain nombre de jours.
 +
-Sélectionnez la classe de stockage S3 vers laquelle vous souhaitez transférer les données hiérarchisées et le nombre de jours avant le déplacement des données, puis cliquez sur *Continuer*. Par exemple, la capture d'écran ci-dessous montre que les données hiérarchisées sont déplacées de la classe _Standard_ à la classe _Standard-IA_ après 45 jours dans le stockage d'objets.
+Sélectionnez la classe de stockage S3 vers laquelle vous souhaitez transférer les données hiérarchisées et le nombre de jours avant l'attribution des données à cette classe, puis cliquez sur *Continuer*. Par exemple, la capture d'écran ci-dessous montre que des données hiérarchisées sont affectées à la classe _Standard-IA_ de la classe _Standard_ après 45 jours dans le stockage objet.
 
 +
 Si vous choisissez *conserver les données dans cette classe de stockage*, les données restent dans la classe de stockage _Standard_ et aucune règle n'est appliquée. link:reference-aws-support.html["Voir classes de stockage prises en charge"^].
 
 +
-image:screenshot_tiering_lifecycle_selection_aws.png["Capture d'écran montrant comment sélectionner une autre classe de stockage où les données sont déplacées après un certain nombre de jours."]
+image:screenshot_tiering_lifecycle_selection_aws.png["Capture d'écran montrant comment sélectionner une autre classe de stockage affectée à vos données après un certain nombre de jours."]
 
 +
-Notez que la règle du cycle de vie est appliquée à tous les objets du compartiment sélectionné.
+Notez que la règle de cycle de vie est appliquée à tous les objets du compartiment sélectionné.
 
 .. *Informations d'identification* : saisissez l'ID de clé d'accès et la clé secrète pour un utilisateur IAM disposant des autorisations S3 requises, puis cliquez sur *Continuer*.
 +

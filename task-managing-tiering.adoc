@@ -154,7 +154,7 @@ Deux options sont disponibles :
 NOTE: Votre fournisseur cloud peut vous facturer le montant des données transférées hors du cloud.
 
 .Étapes
-Assurez-vous de disposer d'un espace suffisant dans le Tier de performance pour toutes les données déplacées depuis le cloud.
+Assurez-vous de disposer d'un espace suffisant dans le Tier de performance pour toutes les données qui sont déplacées depuis le cloud.
 
 . Dans le menu de navigation de gauche, sélectionnez *mobilité > hiérarchisation*.
 . Sur la page *clusters*, cliquez sur *volumes de niveau* pour le cluster.
