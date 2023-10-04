@@ -853,7 +853,6 @@
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">Webinaires sur le cloud</block>
   <block id="4c7d5d7dfde4a7bd82b54348182043d3" category="sidebar">Autres ressources</block>
   <block id="e4f8a35ee8df8b5c247f6e3286e42891" category="sidebar">Cas d'utilisation de BlueXP</block>
-  <block id="7a45e6298bb69116e2c6db653fb88884" category="sidebar">Toute la documentation BlueXP</block>
   <block id="29fdfd7eb2f0e4bc1264e61841c1e15c" category="inline-link">Affichez les informations de hiérarchisation pour un cluster depuis Digital Advisor</block>
   <block id="4beb855fa991422619d33c99b74d1365" category="paragraph">Vous pouvez également<block ref="ba21940cc7b1756c6b93b4daf8cfd4fb" category="inline-link-rx"></block> Si vous connaissez déjà ce produit NetApp, Il vous suffit de sélectionner *Cloud Recommendations* dans le volet de navigation de gauche.</block>
   <block id="d80d78ee61a9d0887caddafbd12776c6" category="inline-image-macro">Copie d'écran présentant les informations de FabricPool pour un cluster utilisant le conseiller FabricPool de Digital Advisor.</block>
@@ -912,7 +911,6 @@
   <block id="b151844c81732b344718260aa69943af" category="list-text">Passez le curseur sur l'icône d'information « i » pour voir la raison de l'échec.</block>
   <block id="b2b5aa0c45edd9f1055e515a5bfde8eb" category="list-text">Sélectionnez l'environnement de travail ONTAP sur site.</block>
   <block id="57c0e1741966187a33a00eea2622a5ec" category="list-text">Cliquez sur *Activer* pour le service Tiering dans le panneau de droite.</block>
-  <block id="0375f4855be072c7d856a0233cc21de9" category="section-title">Prise en charge des solutions des fournisseurs cloud</block>
   <block id="18cf072964a583150dd247485ba75b92" category="inline-link-macro">Amazon FSX pour ONTAP</block>
   <block id="7450cfde7058dc5e1f7909d0280fd7ae" category="inline-link-macro">Azure NetApp Files</block>
   <block id="b0cee72642f5457a71ddd0b49efb6d93" category="inline-link-macro">Cloud Volumes Service pour Google Cloud</block>
@@ -1286,9 +1284,7 @@
   <block id="e1d2e1a634647fd631081bc4f6f8e523" category="list-text">Pour utiliser la fonctionnalité *Créer un cas*, vous devez d'abord associer vos informations d'identification du site de support NetApp à votre connexion BlueXP.<block ref="2a0d8b66ca9e99d023b48cf25f40fb12" category="inline-link-rx"></block>.</block>
   <block id="e49aa971c20ec071f1b5bbc3c7266769" category="list-text">Si vous ouvrez un dossier pour un système ONTAP doté d'un numéro de série, votre compte NSS doit être associé au numéro de série de ce système.</block>
   <block id="c7b7a5ae9f37fd7d24e4d641b9186fe9" category="paragraph">Cette erreur peut signifier que le compte NSS et la société d'enregistrement auquel il est associé n'est pas la même société d'enregistrement pour le numéro de série du compte BlueXP (par exemple 960xxxx) ou le numéro de série de l'environnement de travail. Vous pouvez demander de l'aide en utilisant l'une des options suivantes :</block>
-  <block id="0c7db2bd63c891adb2c0fa4527805d72" category="paragraph">L'enregistrement du support est requis pour votre compte BlueXP et pour chaque système Cloud Volumes ONTAP.</block>
   <block id="28164bf9e881ddc9e7ff74744bfce180" category="paragraph">L'enregistrement des deux types de numéros de série offre des fonctionnalités telles que l'ouverture de tickets de support et la génération automatique de tickets. L'inscription est terminée en ajoutant des comptes du site de support NetApp (NSS) à BlueXP, comme décrit ci-dessous.</block>
-  <block id="e922b9aa0836a1d93e11cac0fe4c9004" category="paragraph">Pour obtenir un support technique sur les solutions des fournisseurs cloud suivants, consultez la section « obtention d'aide » dans la documentation BlueXP pour ce produit.</block>
   <block id="5a19febf1dcb23c10e8dcfde64ba764c" category="section-title">Enregistrez votre compte BlueXP pour bénéficier de la prise en charge NetApp</block>
   <block id="6bbc2ba432f59ab65ee3d8ac5a58336e" category="paragraph">Pour vous inscrire au support et activer les droits de support, un utilisateur de votre compte BlueXP doit associer un compte sur le site de support NetApp à sa connexion BlueXP. Le fait de vous inscrire au support NetApp dépend de la présence ou non d'un compte sur le site de support NetApp (NSS).</block>
   <block id="0c788a722f31f8f0cf36539ee04615cf" category="list-text">Sélectionnez *Ajouter des informations d'identification NSS* et suivez l'invite authentification du site de support NetApp (NSS).</block>
@@ -1435,4 +1431,9 @@
   <block id="15b2d2644c0eb82c219365b9d3ed6f75" category="paragraph">Assurez-vous de disposer d'un espace suffisant dans le Tier de performance pour toutes les données qui sont déplacées depuis le cloud.</block>
   <block id="18711602a05157009e1d81446d484cb4" category="list-text">*Cycle de vie des classes de stockage* : le Tiering BlueXP gère les transitions de cycle de vie de vos données hiérarchisées. Les données commencent dans la classe _Standard_, mais vous pouvez créer une règle pour appliquer une classe de stockage différente aux données après un certain nombre de jours.</block>
   <block id="8ca0007104a6880fedaff25fc59dc8ad" category="paragraph">Lorsque vous supprimez le magasin d'objets miroir d'une configuration MetroCluster, vous êtes invité à indiquer si vous souhaitez également supprimer le magasin d'objets principal. Vous pouvez choisir de conserver le magasin d'objets principal rattaché à l'agrégat, ou de le supprimer.</block>
+  <block id="ece19bab46695021f109a5e50f08bebe" category="paragraph">L'enregistrement au support est requis pour recevoir le support technique spécifique à BlueXP et à ses solutions et services de stockage. L'enregistrement au support est également requis pour activer les principaux workflows des systèmes Cloud Volumes ONTAP.</block>
+  <block id="8a3d807608e632d188a288fc5f4aa7eb" category="paragraph">L'inscription au support n'active pas le support NetApp pour un service de fichiers de fournisseur cloud. Pour obtenir de l'aide concernant un service de fichiers d'un fournisseur cloud, son infrastructure ou toute solution utilisant le service, consultez la section « obtention d'aide » de la documentation BlueXP associée à ce produit.</block>
+  <block id="522cbb900314aeb84eb5a961c5f94672" category="section-title">Bénéficiez du support pour les services de fichiers d'un fournisseur cloud</block>
+  <block id="f6185bb12f5e53c800be8cda7fbca65b" category="paragraph">Pour obtenir de l'aide concernant un service de fichiers d'un fournisseur cloud, son infrastructure ou toute solution utilisant le service, consultez la section « obtention d'aide » de la documentation BlueXP associée à ce produit.</block>
+  <block id="3880ae5df9fdc4d0fc4a6d00a2239530" category="paragraph">Pour bénéficier du support technique spécifique à BlueXP et à ses solutions et services de stockage, utilisez les options de support décrites ci-dessous.</block>
 </blocks>
