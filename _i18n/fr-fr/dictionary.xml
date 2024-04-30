@@ -1416,4 +1416,26 @@
   <block id="17c353c0dd208c819d731350ef2b1300" category="paragraph">Lorsque vous configurez le Tiering des données vers AWS à partir de vos systèmes ONTAP sur site, le Tiering BlueXP utilise automatiquement la classe de stockage _Standard_ pour vos données inactives. Le Tiering BlueXP peut appliquer une règle de cycle de vie afin que les données puissent passer de la classe de stockage _Standard_ à une autre classe de stockage au bout d'un certain nombre de jours. Vous pouvez choisir parmi les classes de stockage suivantes :</block>
   <block id="d59e0b46782e48a01966e5c7ccc38d17" category="paragraph">NetApp utilise Microsoft Entra ID comme fournisseur d'identité pour les services d'authentification spécifiques à la prise en charge et à l'octroi de licences.</block>
   <block id="36a7f0d732c9746e546a6bf227b6a550" category="summary">Le Tiering BlueXP étend votre data Center au cloud en transférant automatiquement les données inactives des clusters ONTAP sur site vers le stockage objet.</block>
+  <block id="91770f038cd944a1d3b9b347edeb2b10" category="sidebar">Nouveautés</block>
+  <block id="2081f1ce1d1b21d487730d917f2fc133" category="sidebar">Déplacez les données ONTAP sur site vers le cloud</block>
+  <block id="9c24075097cef2efbfa6d34acbbb775d" category="sidebar">Tiering dans Azure Blob</block>
+  <block id="a62425c23786654b084b1fbadf9c41f1" category="sidebar">Tiering dans Google Cloud</block>
+  <block id="932b49a2d53968bfae607cb915ef9ec2" category="sidebar">Tiering dans le système S3 générique</block>
+  <block id="6efa402b5baeb2ad1984997697bc2d7b" category="sidebar">Gérer les paramètres de Tiering</block>
+  <block id="4f5b5f1d13dfc896b9f5faa0807d8a6c" category="sidebar">Modifier la règle de Tiering d'un volume</block>
+  <block id="00e64b31a7ad3617adbda7547414223a" category="sidebar">Révision des informations de hiérarchisation pour un cluster</block>
+  <block id="34698ad735e6046f93fbdd61cb2d3804" category="sidebar">Procéder au Tiering des données à partir de volumes supplémentaires</block>
+  <block id="e1c9950bf8922ee7b7ee2dc803696a6a" category="sidebar">Modifiez la bande passante pour télécharger les données inactives vers le stockage objet</block>
+  <block id="004509d192f15716a8c5185cda0cc0da" category="sidebar">Déplacez les données du cloud vers le Tier de performance</block>
+  <block id="b19237098460d786516168b98687becc" category="sidebar">Gestion des paramètres de Tiering sur les agrégats</block>
+  <block id="44e298753e2ff93996d0e8ffa928a922" category="sidebar">Ajoutez un nouveau magasin d'objets pour un cluster</block>
+  <block id="f479e40bc5b0a3dc9ce1b1c43ebdec89" category="sidebar">Ajoutez un second magasin d'objets à un agrégat pour la mise en miroir</block>
+  <block id="07ed437d90cdfd3243fc6c8fa8ddacff" category="sidebar">Intervertir le magasin d'objets principal et miroir</block>
+  <block id="500c3424a2151541a2d7783c7e308bb5" category="sidebar">Supprime un magasin d'objets symétriques</block>
+  <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">Blogs et communauté</block>
+  <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">Communauté NetApp</block>
+  <block id="10fd54f4214c20c0fb0c8174413e67e6" category="sidebar">Blog sur le Tiering BlueXP</block>
+  <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">Webinaires sur le cloud</block>
+  <block id="4c7d5d7dfde4a7bd82b54348182043d3" category="sidebar">Autres ressources</block>
+  <block id="e4f8a35ee8df8b5c247f6e3286e42891" category="sidebar">Cas d'utilisation de BlueXP</block>
 </blocks>
