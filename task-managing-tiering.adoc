@@ -272,5 +272,5 @@ image:screenshot_tiering_search for_cluster.png["Copie d'écran montrant comment
 +
 Le Tiering BlueXP affiche le nom du connecteur s'il peut trouver le cluster.
 
-. https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#switch-between-connectors["Basculer sur le connecteur et configurer la hiérarchisation pour le cluster"^].
+. https://docs.netapp.com/us-en/bluexp-setup-admin/task-manage-multiple-connectors.html#switch-between-connectors["Basculer sur le connecteur et configurer la hiérarchisation pour le cluster"^].
 

@@ -272,7 +272,7 @@ Si vous utilisez le port 443 (HTTPS) pour la communication avec le terminal priv
 +
 image:screenshot_endpoint_dns_aws_console.png["Capture d'écran du nom DNS du terminal VPC depuis la console AWS."]
 
-. Obtenir le certificat à partir du terminal VPC S3 Vous faites ceci par https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#connect-to-the-linux-vm["Se connecter à la machine virtuelle qui héberge le connecteur BlueXP"^] et exécutant la commande suivante. Lors de la saisie du nom DNS du noeud final, ajoutez "compartiment" au début, en remplaçant le "*" :
+. Obtenir le certificat à partir du terminal VPC S3 Vous faites ceci par https://docs.netapp.com/us-en/bluexp-setup-admin/task-maintain-connectors.html#connect-to-the-linux-vm["Se connecter à la machine virtuelle qui héberge le connecteur BlueXP"^] et exécutant la commande suivante. Lors de la saisie du nom DNS du noeud final, ajoutez "compartiment" au début, en remplaçant le "*" :
 +
 [source, text]
 ----
