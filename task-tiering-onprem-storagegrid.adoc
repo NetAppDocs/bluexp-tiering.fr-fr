@@ -65,7 +65,7 @@ Plateformes ONTAP prises en charge::
 
 --
 Version ONTAP prise en charge:: ONTAP 9.4 ou version ultérieure
-Licences:: Aucune licence de Tiering BlueXP n'est requise dans votre compte BlueXP, ni FabricPool pour le cluster ONTAP en cas de Tiering des données vers StorageGRID.
+Licences:: Aucune licence de Tiering BlueXP  n'est requise pour votre organisation BlueXP , ni FabricPool pour le cluster ONTAP lors du Tiering des données vers StorageGRID.
 Configuration requise pour la mise en réseau des clusters::
 +
 --
@@ -130,7 +130,7 @@ Gestion des versions d'objet:: Vous ne devez pas activer la gestion des versions
 Un connecteur est nécessaire pour transférer les données vers le cloud. Pour le Tiering des données vers StorageGRID, un connecteur doit être disponible sur site. Vous devrez soit installer un nouveau connecteur, soit vérifier que le connecteur actuellement sélectionné réside sur site.
 
 * https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["En savoir plus sur les connecteurs"^]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html["Installez et configurez un connecteur sur site"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html["Installer et configurer un connecteur sur site"^]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-manage-multiple-connectors.html#switch-between-connectors["Basculer entre les connecteurs"^]
 
 

@@ -211,7 +211,7 @@ Vous devez configurer deux ensembles d'autorisations :
 ** Confirmez-le https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html#iam-policies["Ces autorisations S3"^] Font partie du rôle IAM qui fournit au connecteur des autorisations. Ils doivent avoir été inclus par défaut lorsque vous avez déployé le connecteur pour la première fois. Si ce n'est pas le cas, vous devrez ajouter les autorisations manquantes. Voir la https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-edit.html["Documentation AWS : modification des règles IAM"^] pour obtenir des instructions.
 ** Le compartiment par défaut créé par le Tiering BlueXP comporte le préfixe « fabric-pool ». Si vous souhaitez utiliser un préfixe différent pour votre compartiment, vous devez personnaliser les autorisations avec le nom que vous souhaitez utiliser. Dans les autorisations S3, une ligne s'affiche `"Resource": ["arn:aws:s3:::fabric-pool*"]`. Vous devrez remplacer « fabric-pool » par le préfixe que vous souhaitez utiliser. Par exemple, si vous souhaitez utiliser le préfixe « Tiering-1 » pour vos compartiments, vous définissez cette ligne sur `"Resource": ["arn:aws:s3:::tiering-1*"]`.
 +
-Si vous souhaitez utiliser un préfixe différent pour les compartiments que vous utiliserez pour d'autres clusters de ce même compte BlueXP, vous pouvez ajouter une autre ligne avec le préfixe pour les autres compartiments. Par exemple :
+Si vous souhaitez utiliser un préfixe différent pour les compartiments que vous utiliserez pour d'autres clusters de cette même organisation BlueXP , vous pouvez ajouter une autre ligne avec le préfixe pour les autres compartiments. Par exemple :
 
 +
 `"Resource": ["arn:aws:s3:::tiering-1*"]`

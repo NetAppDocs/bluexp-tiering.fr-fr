@@ -19,7 +19,7 @@ Avant de configurer le Tiering à partir de votre premier cluster, commencez l'e
 Quelques remarques avant de lire plus loin :
 
 * Si vous avez déjà souscrit à l'abonnement BlueXP (PAYGO) dans le marché de votre fournisseur cloud, vous êtes également automatiquement abonné au Tiering BlueXP pour les systèmes ONTAP sur site. Vous verrez un abonnement actif dans l'onglet BlueXP Tiering *On-site Dashboard*. Vous n'aurez pas besoin de vous abonner à nouveau. Un abonnement actif s'affiche dans le portefeuille digital BlueXP.
-* La licence de Tiering BYOL BlueXP (précédemment appelée licence Cloud Tiering) est une licence _flottante_ que vous pouvez utiliser sur plusieurs clusters ONTAP sur site dans votre compte BlueXP. Ceci est différent (et beaucoup plus facile) que dans le passé, où vous avez acheté une licence _FabricPool_ pour chaque cluster.
+* La licence BYOL BlueXP  Tiering (précédemment appelée licence Cloud Tiering) est une licence _flottante_ que vous pouvez utiliser sur plusieurs clusters ONTAP sur site dans votre entreprise BlueXP . Ceci est différent (et beaucoup plus facile) que dans le passé, où vous avez acheté une licence _FabricPool_ pour chaque cluster.
 * Le Tiering des données dans StorageGRID n'est pas facturé, une licence BYOL ou un Deal Registration doit être payant. Ces données hiérarchisées ne sont pas prises en compte par rapport à la capacité achetée dans votre licence.
 
 
@@ -109,7 +109,7 @@ Les contrats annuels ne sont pas pris en charge pour le Tiering vers Google Clou
 
 == Utilisez une licence BYOL de Tiering BlueXP
 
-Modèle BYOL de 1, 2 ou 3 ans avec les licences Bring Your Own. La licence BYOL *BlueXP Tiering* (précédemment appelée licence Cloud Tiering) est une licence _flottante_ que vous pouvez utiliser sur plusieurs clusters ONTAP sur site dans votre compte BlueXP. La capacité de Tiering totale définie dans votre licence de Tiering BlueXP est partagée entre *tous* de vos clusters sur site, ce qui facilite le renouvellement et la licence initiale. La capacité minimale requise pour une licence de Tiering BYOL est de 10 Tio.
+Modèle BYOL de 1, 2 ou 3 ans avec les licences Bring Your Own. La licence BYOL *BlueXP  Tiering* (précédemment appelée licence Cloud Tiering) est une licence _flottante_ que vous pouvez utiliser sur plusieurs clusters ONTAP sur site au sein de votre organisation BlueXP . La capacité de Tiering totale définie dans votre licence de Tiering BlueXP est partagée entre *tous* de vos clusters sur site, ce qui facilite le renouvellement et la licence initiale. La capacité minimale requise pour une licence de Tiering BYOL est de 10 Tio.
 
 Si vous ne disposez pas d'une licence de Tiering BlueXP, contactez-nous pour en acheter une :
 
@@ -163,26 +163,37 @@ Voici quelques points que vous devez connaître sur les deux licences :
 Après avoir acheté votre licence de Tiering BlueXP, vous activez la licence dans BlueXP en saisissant le numéro de série de Tiering BlueXP et le compte NSS ou en téléchargeant le fichier de licence NLF. Les étapes ci-dessous montrent comment obtenir le fichier de licence NLF si vous prévoyez d'utiliser cette méthode.
 
 .Avant de commencer
-Vous devez disposer des informations suivantes avant de commencer :
-
-* Numéro de série du Tiering BlueXP
-+
-Recherchez ce numéro dans votre numéro de commande ou contactez l'équipe chargée du compte pour obtenir ces informations.
-
-* ID de compte BlueXP
-+
-Vous pouvez trouver votre identifiant de compte BlueXP en sélectionnant le menu déroulant *compte* en haut de BlueXP, puis en cliquant sur *gérer compte* en regard de votre compte. Votre ID de compte se trouve dans l'onglet vue d'ensemble.
-
-
+Vous aurez besoin de votre numéro de série BlueXP  Tiering. Recherchez ce numéro dans votre numéro de commande ou contactez l'équipe chargée du compte pour obtenir ces informations.
 
 .Étapes
+. Recherchez votre ID de compte BlueXP  :
++
+.. Dans le coin supérieur droit de la console BlueXP , sélectionnez image:icon-settings-option.png["L'icône des paramètres qui s'affiche en haut à droite de la console Web BlueXP ."] > *gestion des identités et des accès*.
+.. Sur la page Organisation, recherchez votre ID de compte et copiez-le.
++
+Si aucun ID de compte n'est répertorié et que vous avez juste un ID d'organisation, vous devrez copier les huit premiers caractères de l'ID d'organisation et l'ajouter à _account-_
+
++
+Par exemple, supposons qu'il s'agit de votre identifiant d'entreprise :
+
++
+ea10e1c6-80cc-4219-8e99-3c3e6b161ba5
+
++
+Votre identifiant de compte est le suivant :
+
++
+account-ea10e1c6
+
+
+
 . Connectez-vous au https://mysupport.netapp.com["Site de support NetApp"^] Et cliquez sur *systèmes > licences logicielles*.
 . Entrez le numéro de série de votre licence de Tiering BlueXP.
 +
 image:screenshot_cloud_tiering_license_step1.gif["Capture d'écran affichant une table de licences après une recherche par numéro de série."]
 
 . Dans la colonne *License Key*, cliquez sur *Get NetApp License File*.
-. Saisissez votre identifiant de compte BlueXP (il s'agit d'un identifiant de locataire sur le site d'assistance) et cliquez sur *Submit* pour télécharger le fichier de licence.
+. Entrez votre ID de compte BlueXP  (il s'agit d'un ID de locataire sur le site de support) et cliquez sur *soumettre* pour télécharger le fichier de licence.
 +
 image:screenshot_cloud_tiering_license_step2.gif["Une capture d'écran qui affiche la boîte de dialogue obtenir la licence dans laquelle vous entrez votre identifiant de locataire, puis cliquez sur soumettre pour télécharger le fichier de licence."]
 
@@ -192,7 +203,7 @@ image:screenshot_cloud_tiering_license_step2.gif["Une capture d'écran qui affic
 
 === Ajoutez les licences BYOL de Tiering BlueXP à votre compte
 
-Après avoir acheté une licence de Tiering BlueXP pour votre compte BlueXP, vous devez ajouter la licence à BlueXP pour utiliser le service de Tiering BlueXP.
+Après avoir acheté une licence de Tiering BlueXP , vous devez ajouter la licence à BlueXP  pour utiliser le service de Tiering BlueXP .
 
 .Étapes
 . Cliquez sur *gouvernance > portefeuille numérique > licences de services de données*.
