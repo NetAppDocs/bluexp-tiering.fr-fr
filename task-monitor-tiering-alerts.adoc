@@ -20,9 +20,10 @@ Le Centre de notification suit la progression des incidents de hiérarchisation 
 
 À ce stade, un événement de hiérarchisation apparaît sous la forme d'une notification :
 
-* Déplacez des données supplémentaires de cluster <name> vers le stockage objet pour améliorer l'efficacité du stockage
-
+Déplacez des données supplémentaires de cluster <name> vers le stockage objet pour améliorer l'efficacité du stockage
 
 Cette notification est une « recommandation » pour vous aider à rendre vos systèmes plus efficaces et à réduire vos coûts de stockage. Elle indique qu'un cluster hiérarchise moins de 20 % de ses données inactives, y compris les clusters qui ne hiérarchise pas les données. Il fournit un lien vers le https://bluexp.netapp.com/cloud-tiering-service-tco["Calculateur de coût total de possession et d'économies du Tiering BlueXP"^] pour vous aider à calculer vos économies.
+
+BlueXP  n'envoie pas d'e-mail pour cette notification.
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html["En savoir plus sur le Centre de notification"^].
