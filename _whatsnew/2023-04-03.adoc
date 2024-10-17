@@ -1,0 +1,15 @@
+= L'onglet licences a été supprimé
+:allow-uri-read: 
+
+
+
+
+=== L'onglet licences a été supprimé
+
+L'onglet Licensing a été supprimé de l'interface de Tiering BlueXP. Toutes les licences pour les abonnements PAYGO sont maintenant accessibles depuis le tableau de bord du Tiering BlueXP sur site. Il existe également un lien vers le portefeuille digital BlueXP depuis cette page pour afficher et gérer n'importe quel modèle de Tiering BlueXP BYOL (Bring Your Own License).
+
+
+
+=== Les onglets de hiérarchisation ont été renommés et mis à jour
+
+L'onglet « clusters » a été renommé « clusters » et l'onglet « Présentation sur site » a été renommé « Tableau de bord sur site ». Ces pages ont ajouté des informations qui vous aideront à déterminer si vous pouvez optimiser votre espace de stockage avec une configuration de hiérarchisation supplémentaire.

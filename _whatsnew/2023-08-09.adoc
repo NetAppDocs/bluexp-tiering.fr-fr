@@ -1,0 +1,15 @@
+= Utilisez un préfixe personnalisé pour le nom du compartiment
+:allow-uri-read: 
+
+
+
+
+=== Utilisez un préfixe personnalisé pour le nom du compartiment
+
+Auparavant, vous aviez besoin d'utiliser le préfixe par défaut « fabric-pool » lors de la définition du nom du compartiment, par exemple, _fabric-pool-bucket1_. Vous pouvez désormais utiliser un préfixe personnalisé pour nommer votre compartiment. Cette fonctionnalité n'est disponible que lors du Tiering des données vers Amazon S3. https://docs.netapp.com/us-en/bluexp-tiering/task-tiering-onprem-aws.html#prepare-your-aws-environment["En savoir plus >>"].
+
+
+
+=== Recherchez un cluster sur tous les connecteurs BlueXP
+
+Si vous utilisez plusieurs connecteurs pour gérer tous les systèmes de stockage de votre environnement, certains clusters sur lesquels vous souhaitez implémenter la hiérarchisation peuvent se trouver dans différents connecteurs. Si vous n'êtes pas sûr de quel connecteur gère un certain cluster, vous pouvez rechercher sur tous les connecteurs à l'aide du Tiering BlueXP. https://docs.netapp.com/us-en/bluexp-tiering/task-managing-tiering.html#search-for-a-cluster-across-all-bluexp-connectors["En savoir plus >>"].

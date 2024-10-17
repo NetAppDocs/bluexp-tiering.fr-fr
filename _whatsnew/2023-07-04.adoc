@@ -1,0 +1,17 @@
+= Réglez la bande passante pour transférer les données inactives
+:allow-uri-read: 
+
+
+
+
+=== Réglez la bande passante pour transférer les données inactives
+
+Lorsque vous activez le Tiering BlueXP, ONTAP peut utiliser une quantité illimitée de bande passante réseau pour transférer les données inactives des volumes du cluster vers le stockage objet. Si vous remarquez que le trafic de hiérarchisation affecte les charges de travail normales des utilisateurs, vous pouvez limiter la quantité de bande passante qui peut être utilisée pendant le transfert. https://docs.netapp.com/us-en/bluexp-tiering/task-managing-tiering.html#changing-the-network-bandwidth-available-to-upload-inactive-data-to-object-storage["En savoir plus >>"].
+
+
+
+=== Événement de hiérarchisation affiché dans le Centre de notification
+
+La fonctionnalité de Tiering « transférer des données supplémentaires d'une <name> de cluster vers un stockage objet pour améliorer votre efficacité du stockage » s'affiche désormais sous forme de notification lorsqu'un cluster effectue le Tiering de moins de 20 % de ses données inactives, y compris les clusters qui ne hiérarchise aucune donnée.
+
+Cette notification est une « recommandation » pour vous aider à rendre vos systèmes plus efficaces et à réduire vos coûts de stockage. Il fournit un lien vers le https://bluexp.netapp.com/cloud-tiering-service-tco["Calculateur de coût total de possession et d'économies du Tiering BlueXP"^] pour vous aider à calculer vos économies.

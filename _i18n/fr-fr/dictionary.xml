@@ -737,15 +737,11 @@
   <block id="5a4346a01828d72104a6540080377b25" category="section-title">6 novembre 2022</block>
   <block id="6586247c64ea3f20421ae518b26fc973" category="paragraph">Si la destination de Tiering Azure Blob, Google Cloud Storage ou StorageGRID existe en tant qu'environnement de travail sur la toile, vous pouvez faire glisser votre environnement de travail ONTAP sur site vers la destination pour lancer l'assistant d'installation de Tiering.</block>
   <block id="ab288ae4b4c50ebb9a997e0f0debbd15" category="section-title">19 septembre 2022</block>
-  <block id="c3d7ada1f42d9b916dd8624c5b5661c1" category="section-title">L'assistant de Tiering vous permet de configurer AWS PrivateLink lors du Tiering sur le stockage S3</block>
   <block id="905ecf204d0cf0b2ed497e63ae9324d0" category="inline-link">Configurez votre système pour une connexion privée à l'aide d'une interface de terminal VPC</block>
   <block id="883959b6b7ad90936b33d524655bc282" category="inline-link">Examinez les exigences et les étapes du Tiering des données inactives vers Amazon S3</block>
   <block id="84b50dc471c57455cf0359ad021a8c58" category="paragraph">Si la destination de Tiering Amazon S3 existe en tant qu'environnement de travail sur la Canvas, vous pouvez faire glisser votre environnement de travail ONTAP sur site vers la destination pour lancer l'assistant de configuration de Tiering.</block>
-  <block id="bf482155aab691ba59a0313f5628cbba" category="section-title">Choisissez le comportement de hiérarchisation lors de la suppression du magasin d'objets miroir dans une configuration MetroCluster</block>
   <block id="1f6fd3301ab6ce127efad422dec03d61" category="section-title">3 août 2022</block>
-  <block id="059c9f6829260507f53186d7191b058c" category="section-title">Capacité à configurer d'autres magasins d'objets pour d'autres agrégats de votre cluster</block>
   <block id="aa18b7b04ae6143c1d2f56b72718403e" category="inline-link">En savoir plus sur la nouvelle fonctionnalité de stockage objet.</block>
-  <block id="5c10257d843c1a8aa9e46f55d2064835" category="section-title">Prise en charge des licences Cloud Tiering dans les configurations MetroCluster</block>
   <block id="afacb33ad65bcd63eb15aeba04b4aed0" category="inline-link">Découvrez comment licences et configurer ces types de clusters.</block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">Mentions légales</block>
   <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="paragraph">Les mentions légales donnent accès aux déclarations de copyright, aux marques, aux brevets, etc.</block>
@@ -906,7 +902,6 @@
   <block id="d88bacf2a9fdcbbc844edcba97c34e30" category="section-title">Créez un dossier de demande de support auprès du support NetApp</block>
   <block id="08d96fdd1a845d80db99e6e1dffb8bc7" category="list-text">Sur la page *Ressources*, choisissez l'une des options disponibles sous support technique :</block>
   <block id="d0693e7bf28b7bbc94287cee0e4b0768" category="section-title">5 mars 2023</block>
-  <block id="b92f2131d3d225c3c3327daaa8862624" category="section-title">Vous pouvez désormais générer un rapport de hiérarchisation pour vos volumes</block>
   <block id="f86857f0a51fde5819da3a17258b5448" category="inline-link">Téléchargez le rapport sur la hiérarchisation</block>
   <block id="898e35e1a4bf4b025c3edec879439b08" category="section-title">Gestion de vos dossiers de demande de support (aperçu)</block>
   <block id="8b74b053fbeeff5c3b6f4991cb1d028d" category="paragraph">Vous pouvez afficher et gérer les dossiers de support actifs et résolus directement à partir de BlueXP. Vous pouvez gérer les dossiers associés à votre compte NSS et à votre entreprise.</block>
@@ -948,7 +943,6 @@
   <block id="78663d9137e3cc2c3049532938b4c70f" category="list-text">Sur la page _Détails et informations d'identification_, le nom du cluster est ajouté comme nom de l'environnement de travail, il suffit donc de cliquer sur *Go*.</block>
   <block id="102787ed6297b34a7504b527e91d01d3" category="section-title">3 avril 2023</block>
   <block id="2e79231a13ecf62585403e20da2dea4a" category="section-title">L'onglet licences a été supprimé</block>
-  <block id="66a0b4752150538292b81c073ca0b83b" category="section-title">Les onglets de hiérarchisation ont été renommés et le contenu a été mis à jour</block>
   <block id="c7f5c1a75acc58c6f004efc0ce1eba09" category="list-text">*Pièce jointe (facultatif)* : téléchargez jusqu'à cinq pièces jointes, une à la fois.</block>
   <block id="bfa80e7aaad6da353b431bff3a0e12d6" category="paragraph">Les pièces jointes sont limitées à 25 Mo par fichier. Les extensions de fichier suivantes sont prises en charge : txt, log, PDF, jpg/JPEG, rtf, doc/docx, xls/xlsx et csv.</block>
   <block id="8e6b52a532a4fbbfc98dca3ebfa5f1e6" category="list-text">*Mettre à jour les notes de cas* : fournir des détails supplémentaires sur votre problème ou sélectionner *Télécharger les fichiers* pour joindre jusqu'à cinq fichiers.</block>
@@ -1118,8 +1112,6 @@
   <block id="56273c1cb08574200c49973b9bc5c615" category="summary">Découvrez les nouveautés du Tiering BlueXP.</block>
   <block id="d423420066ca2ec630afe096f14eae4b" category="doc">Nouveautés du Tiering BlueXP</block>
   <block id="8c14896b1d1fc37f02aa2e6dfc06354a" category="paragraph">En raison d'une modification du Tiering BlueXP, vous devez modifier les terminaux suivants du connecteur pour assurer la réussite de l'opération de Tiering BlueXP :</block>
-  <block id="3afb7cae2b7c3e96c6a4e1df765d3dce" category="section-title">Effectuez un glisser-déposer pour activer le Tiering BlueXP vers Azure Blob, Google Cloud Storage et StorageGRID</block>
-  <block id="18cd1c130656412d8089667948bc48a2" category="section-title">Effectuez un glisser-déposer pour activer le Tiering BlueXP vers Amazon S3</block>
   <block id="a0396859c016deff163331729e87c6cf" category="summary">Le Tiering BlueXP prend en charge plusieurs classes de stockage Google Cloud et la plupart des régions.</block>
   <block id="58edb41c3cfab45408029ad69032402a" category="paragraph">Lorsque vous configurez une règle de cycle de vie de Tiering BlueXP, vous ne devez pas configurer de règles de cycle de vie lors de la configuration du compartiment dans votre compte Google.</block>
   <block id="2d5551329360393b3ea83aeec84cf519" category="paragraph">Le Tiering BlueXP prend en charge les régions suivantes.</block>
@@ -1249,10 +1241,8 @@
   <block id="2ebfeabed40c2270d9fa8325080a4b3e" category="paragraph">Il est nécessaire de fournir votre compte NSS afin que BlueXP puisse télécharger votre clé de licence et activer l'abonnement pour la durée que vous avez achetée. Cela inclut des mises à jour automatiques pour les renouvellements de contrats.</block>
   <block id="f5135b68b75a8404803a1eb438e40c5e" category="list-text">Mise à niveau du logiciel Cloud Volumes ONTAP vers la dernière version</block>
   <block id="28acda3f8bdb20220a5658f1cd81f226" category="section-title">4 juillet 2023</block>
-  <block id="f955a076eeae4df4466469593ff635ca" category="section-title">Vous pouvez désormais ajuster la bande passante utilisée pour télécharger les données inactives vers le stockage objet</block>
   <block id="d59048f21fd887ad520398ce677be586" category="inline-link">En savoir plus &gt;&gt;</block>
   <block id="1d59c82c13288b53f26d652175016f90" category="paragraph">Lorsque vous activez le Tiering BlueXP, ONTAP peut utiliser une quantité illimitée de bande passante réseau pour transférer les données inactives des volumes du cluster vers le stockage objet. Si vous remarquez que le trafic de hiérarchisation affecte les charges de travail normales des utilisateurs, vous pouvez limiter la quantité de bande passante qui peut être utilisée pendant le transfert.<block ref="bd661c8ba5ce12ee5a1adc1010618597" category="inline-link-rx"></block>.</block>
-  <block id="eb516d1f8f028dbd0333948ae6fc06a5" category="section-title">L'événement de hiérarchisation pour « niveau bas » s'affiche dans le Centre de notification</block>
   <block id="250f0923d20814211c14c5a6cd0e2643" category="paragraph">La fonctionnalité de Tiering « transférer des données supplémentaires d'une &lt;name&gt; de cluster vers un stockage objet pour améliorer votre efficacité du stockage » s'affiche désormais sous forme de notification lorsqu'un cluster effectue le Tiering de moins de 20 % de ses données inactives, y compris les clusters qui ne hiérarchise aucune donnée.</block>
   <block id="3c23988fbf7c203a2c811a5ce84251c0" category="inline-link">Calculateur de coût total de possession et d'économies du Tiering BlueXP</block>
   <block id="57f9b94b395c8e293b7f892fe5995ac7" category="paragraph">Cette notification est une « recommandation » pour vous aider à rendre vos systèmes plus efficaces et à réduire vos coûts de stockage. Il fournit un lien vers le<block ref="c9d262883689ef94201e8739cb50c7f6" category="inline-link-rx"></block> pour vous aider à calculer vos économies.</block>
@@ -1341,7 +1331,6 @@
   <block id="c0e0b7ff0de9558404e9b77ece42948a" category="list-text">Sélectionnez *gestion NSS &gt; Ajouter un compte NSS*.</block>
   <block id="85b9386ed443776127e099931d73448a" category="list-text">Lorsque vous y êtes invité, sélectionnez *Continuer* pour être redirigé vers une page de connexion Microsoft.</block>
   <block id="4bca0fdcdafed1e5f31435f4b19c8738" category="section-title">9 août 2023</block>
-  <block id="b839d32c555694a5245fa2fa33d17d88" category="section-title">Utilisez un préfixe personnalisé pour le nom du compartiment dans lequel les données hiérarchisées sont stockées</block>
   <block id="6eb4429639db75cb3b56cc38a3fb8785" category="paragraph">Auparavant, vous aviez besoin d'utiliser le préfixe par défaut « fabric-pool » lors de la définition du nom du compartiment, par exemple, _fabric-pool-bucket1_. Vous pouvez désormais utiliser un préfixe personnalisé pour nommer votre compartiment. Cette fonctionnalité n'est disponible que lors du Tiering des données vers Amazon S3.<block ref="3e8270d3bc816ce30c7c11fe6d073535" category="inline-link-rx"></block>.</block>
   <block id="6a3a27c0cd9c23985f6e8260846d58bc" category="paragraph">Si vous utilisez plusieurs connecteurs pour gérer tous les systèmes de stockage de votre environnement, certains clusters sur lesquels vous souhaitez implémenter la hiérarchisation peuvent se trouver dans différents connecteurs. Si vous n'êtes pas sûr de quel connecteur gère un certain cluster, vous pouvez rechercher sur tous les connecteurs à l'aide du Tiering BlueXP.<block ref="017b0207cc8469b6ea246adade89f8e1" category="inline-link-rx"></block>.</block>
   <block id="d441270e2d66b6759e1bbe07190e3d30" category="admonition">Si vous prévoyez de configurer le Tiering BlueXP pour utiliser un Tier d'accès moins coûteux vers lequel vos données hiérarchisées seront transférées au bout d'un certain nombre de jours, vous ne devez sélectionner aucune règle de cycle de vie lors de la configuration du conteneur dans votre compte Azure. Le Tiering BlueXP gère les transitions de cycle de vie.</block>
@@ -1446,4 +1435,15 @@
   <block id="7134f9d87483badec2f2028b49510a11" category="list-text"><block ref="7134f9d87483badec2f2028b49510a11" category="inline-link-rx"></block></block>
   <block id="e611f8473aa031238f45b544d113b51c" category="list-text">Aucune licence de Tiering BlueXP  n'est requise pour votre organisation BlueXP , ni FabricPool pour le cluster ONTAP lors du Tiering des données vers StorageGRID.</block>
   <block id="aca1d9b834f4ef7d5cdec1dd3d882bd0" category="paragraph">BlueXP  n'envoie pas d'e-mail pour cette notification.</block>
+  <block id="344a2fbdf46c3a4ef07e7c73566f42f3" category="section-title">Les onglets de hiérarchisation ont été renommés et mis à jour</block>
+  <block id="a4e53922ceec159164a3765ff05e1458" category="doc">Réglez la bande passante pour transférer les données inactives</block>
+  <block id="904ea3c3aba6edae61ba696b01808a11" category="section-title">Événement de hiérarchisation affiché dans le Centre de notification</block>
+  <block id="101e8e97885c05702335faecd0fb3f50" category="doc">Utilisez un préfixe personnalisé pour le nom du compartiment</block>
+  <block id="5f659aa043041b7c7bd07335ac62ca55" category="section-title">Générez un rapport de hiérarchisation pour les volumes</block>
+  <block id="02a02728987c939621edc3e2dc71d234" category="section-title">Effectuez un glisser-déposer pour activer le Tiering vers d'autres destinations</block>
+  <block id="dc7d0bd65a1626d3b5577529e98dab87" category="section-title">Configurez AWS PrivateLink lors du Tiering vers Amazon S3</block>
+  <block id="5b509c72bc50acb8c10c2952b7982420" category="section-title">Effectuez un glisser-déposer pour activer le Tiering vers Amazon S3</block>
+  <block id="e183a98351b41fa6323d79a2f03c328c" category="section-title">Choisissez un comportement de hiérarchisation lors de la suppression du magasin d'objets miroir</block>
+  <block id="847d8c6cf21c261bf367fb1c3c41bf62" category="section-title">Configurez des magasins d'objets supplémentaires pour d'autres agrégats</block>
+  <block id="ed16268923e9fecfd07bdd809ee9d213" category="section-title">Prise en charge de la licence pour les configurations MetroCluster</block>
 </blocks>
