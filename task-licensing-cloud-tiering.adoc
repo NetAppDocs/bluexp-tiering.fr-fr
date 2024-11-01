@@ -54,7 +54,8 @@ Abonnez-vous au Tiering BlueXP depuis AWS Marketplace pour souscrire un abonneme
 La vidéo suivante montre le processus :
 
 +
-video::video_subscribing_aws_tiering.mp4[width=848,height=480]
+.Abonnez-vous à BlueXP sur AWS Marketplace
+video::096e1740-d115-44cf-8c27-b051011611eb[panopto]
 
 
 
@@ -72,7 +73,8 @@ Abonnez-vous au Tiering BlueXP depuis Azure Marketplace pour définir un abonnem
 La vidéo suivante montre le processus :
 
 +
-video::video_subscribing_azure_tiering.mp4[width=848,height=480]
+.Abonnez-vous à BlueXP depuis Azure Marketplace
+video::b7e97509-2ecf-4fa0-b39b-b0510109a318[panopto]
 
 
 
@@ -90,7 +92,8 @@ Abonnez-vous au Tiering BlueXP depuis Google Cloud Marketplace pour définir un 
 La vidéo suivante montre le processus :
 
 +
-video::video_subscribing_gcp_tiering.mp4[width=848,height=480]
+.Abonnez-vous à BlueXP depuis Google Cloud Marketplace
+video::373b96de-3691-4d84-b3f3-b05101161638[panopto]
 
 
 

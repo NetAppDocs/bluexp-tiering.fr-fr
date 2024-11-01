@@ -818,8 +818,6 @@
   <block id="51ae64fb3620d7b88a6fc20148f0e2d7" category="sidebar">Classes et régions de stockage Amazon S3 prises en charge</block>
   <block id="483b947377ff3a8f0bfe2df65d4f5292" category="sidebar">Régions et tiers d'accès Azure pris en charge</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">Connaissances et support</block>
-  <block id="29fdfd7eb2f0e4bc1264e61841c1e15c" category="inline-link">Affichez les informations de hiérarchisation pour un cluster depuis Digital Advisor</block>
-  <block id="4beb855fa991422619d33c99b74d1365" category="paragraph">Vous pouvez également<block ref="ba21940cc7b1756c6b93b4daf8cfd4fb" category="inline-link-rx"></block> Si vous connaissez déjà ce produit NetApp, Il vous suffit de sélectionner *Cloud Recommendations* dans le volet de navigation de gauche.</block>
   <block id="d80d78ee61a9d0887caddafbd12776c6" category="inline-image-macro">Copie d'écran présentant les informations de FabricPool pour un cluster utilisant le conseiller FabricPool de Digital Advisor.</block>
   <block id="dc0605b8b2de4441cff5b013be511267" category="paragraph"><block ref="dc0605b8b2de4441cff5b013be511267" category="inline-image-macro-rx" type="image"></block></block>
   <block id="154756f3451aa7d3c9c0ff18e7159503" category="inline-link">Accédez à l'offre BlueXP Marketplace</block>
@@ -1446,4 +1444,9 @@
   <block id="e183a98351b41fa6323d79a2f03c328c" category="section-title">Choisissez un comportement de hiérarchisation lors de la suppression du magasin d'objets miroir</block>
   <block id="847d8c6cf21c261bf367fb1c3c41bf62" category="section-title">Configurez des magasins d'objets supplémentaires pour d'autres agrégats</block>
   <block id="ed16268923e9fecfd07bdd809ee9d213" category="section-title">Prise en charge de la licence pour les configurations MetroCluster</block>
+  <block id="8ddd07f4c199accad92d619cc396eaef" category="video-title">Abonnez-vous à BlueXP sur AWS Marketplace</block>
+  <block id="040832c90148c5bba767901a4a55ebe4" category="video-title">Abonnez-vous à BlueXP depuis Azure Marketplace</block>
+  <block id="c6e17aa071476599f5e5fc5b8bc42431" category="video-title">Abonnez-vous à BlueXP depuis Google Cloud Marketplace</block>
+  <block id="2e02ef063e4f9a11ed835693daa2e7d1" category="inline-link">Affichage des informations de Tiering pour un cluster depuis Active IQ Digital Advisor (également appelé Digital Advisor)</block>
+  <block id="aac4751e2e50c3f9d64afc60244ec854" category="paragraph">Vous pouvez également<block ref="ab766f8aad1f1b4bf567a28cf12cabcb" category="inline-link-rx"></block> connaître ce produit NetApp. Il vous suffit de sélectionner *Cloud Recommendations* dans le volet de navigation de gauche.</block>
 </blocks>
