@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-licensing-cloud-tiering.html 
-keywords: subscribe, trial, marketplace, subscription, paygo, pay as you go, byol, bring your own license, annual, tiering, cloud tiering 
+keywords: subscribe, digital wallet, trial, marketplace, subscription, paygo, pay as you go, byol, bring your own license, annual, tiering, cloud tiering 
 summary: 'Avant de configurer le Tiering à partir de votre premier cluster, commencez l"essai gratuit de 30 jours du Tiering BlueXP. Une fois la période d"essai gratuite terminée, vous devrez payer le Tiering BlueXP via un abonnement annuel ou à l"utilisation, disponible sur le marché de votre fournisseur cloud, une licence BYOL de NetApp, ou une combinaison des deux.' 
 ---
 = Configurez les licences pour le Tiering BlueXP
@@ -161,106 +161,11 @@ Voici quelques points que vous devez connaître sur les deux licences :
 |===
 
 
-=== Obtenez votre fichier de licence de Tiering BlueXP
+=== Gérez les licences de Tiering BlueXP 
 
-Après avoir acheté votre licence de Tiering BlueXP, vous activez la licence dans BlueXP en saisissant le numéro de série de Tiering BlueXP et le compte NSS ou en téléchargeant le fichier de licence NLF. Les étapes ci-dessous montrent comment obtenir le fichier de licence NLF si vous prévoyez d'utiliser cette méthode.
+Si votre période de licence approche la date d'expiration ou si votre capacité sous licence atteint la limite, vous serez informé dans la hiérarchisation BlueXP  ainsi que dans le portefeuille digital.
 
-.Avant de commencer
-Vous aurez besoin de votre numéro de série BlueXP  Tiering. Recherchez ce numéro dans votre numéro de commande ou contactez l'équipe chargée du compte pour obtenir ces informations.
-
-.Étapes
-. Recherchez votre ID de compte BlueXP  :
-+
-.. Dans le coin supérieur droit de la console BlueXP , sélectionnez image:icon-settings-option.png["L'icône des paramètres qui s'affiche en haut à droite de la console Web BlueXP ."] > *gestion des identités et des accès*.
-.. Sur la page Organisation, recherchez votre ID de compte et copiez-le.
-+
-Si aucun ID de compte n'est répertorié et que vous avez juste un ID d'organisation, vous devrez copier les huit premiers caractères de l'ID d'organisation et l'ajouter à _account-_
-
-+
-Par exemple, supposons qu'il s'agit de votre identifiant d'entreprise :
-
-+
-ea10e1c6-80cc-4219-8e99-3c3e6b161ba5
-
-+
-Votre identifiant de compte est le suivant :
-
-+
-account-ea10e1c6
-
-
-
-. Connectez-vous au https://mysupport.netapp.com["Site de support NetApp"^] Et cliquez sur *systèmes > licences logicielles*.
-. Entrez le numéro de série de votre licence de Tiering BlueXP.
-+
-image:screenshot_cloud_tiering_license_step1.gif["Capture d'écran affichant une table de licences après une recherche par numéro de série."]
-
-. Dans la colonne *License Key*, cliquez sur *Get NetApp License File*.
-. Entrez votre ID de compte BlueXP  (il s'agit d'un ID de locataire sur le site de support) et cliquez sur *soumettre* pour télécharger le fichier de licence.
-+
-image:screenshot_cloud_tiering_license_step2.gif["Une capture d'écran qui affiche la boîte de dialogue obtenir la licence dans laquelle vous entrez votre identifiant de locataire, puis cliquez sur soumettre pour télécharger le fichier de licence."]
-
-
-
-
-
-=== Ajoutez les licences BYOL de Tiering BlueXP à votre compte
-
-Après avoir acheté une licence de Tiering BlueXP , vous devez ajouter la licence à BlueXP  pour utiliser le service de Tiering BlueXP .
-
-.Étapes
-. Cliquez sur *gouvernance > portefeuille numérique > licences de services de données*.
-. Cliquez sur *Ajouter une licence*.
-. Dans la boîte de dialogue _Add License_, entrez les informations de licence et cliquez sur *Add License*:
-+
-** Si vous disposez du numéro de série de la licence de hiérarchisation et connaissez votre compte NSS, sélectionnez l'option *entrer le numéro de série* et saisissez ces informations.
-+
-Si votre compte sur le site de support NetApp n'est pas disponible dans la liste déroulante, https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-nss-accounts.html["Ajoutez le compte NSS à BlueXP"^].
-
-** Si vous disposez du fichier de licence de hiérarchisation, sélectionnez l'option *Télécharger le fichier de licence* et suivez les invites pour joindre le fichier.
-+
-image:screenshot_services_license_add.png["Copie d'écran montrant la page permettant d'ajouter la licence de Tiering BlueXP BYOL."]
-
-
-
-
-
-.Résultat
-BlueXP ajoute la licence pour que votre service de Tiering BlueXP soit actif.
-
-
-
-=== Mettez à jour une licence BYOL de Tiering BlueXP
-
-Si votre période de licence approche la date d'expiration ou si votre capacité sous licence atteint la limite, vous serez informé dans le Tiering BlueXP.
-
-image:screenshot_services_license_expire2.png["Copie d'écran montrant une licence arrivant à expiration dans la page de Tiering BlueXP."]
-
-Cet état apparaît également sur la page du portefeuille digital BlueXP.
-
-image:screenshot_services_license_expire1.png["Copie d'écran montrant une licence arrivant à expiration sur la page de portefeuille digital BlueXP."]
-
-Vous pouvez mettre à jour votre licence de Tiering BlueXP avant son expiration. Ainsi, vous pouvez hiérarchiser vos données dans le cloud sans interrompre votre activité.
-
-.Étapes
-. Cliquez sur l'icône de chat en bas à droite de BlueXP pour demander une extension de votre période ou de votre capacité supplémentaire à votre licence de Tiering BlueXP pour le numéro de série spécifique.
-+
-Une fois que vous avez payé la licence et qu'elle est enregistrée sur le site de support NetApp, BlueXP met automatiquement à jour la licence dans le portefeuille digital BlueXP. La page des licences des services de données reflète le changement en 5 à 10 minutes.
-
-. Si BlueXP ne peut pas mettre à jour automatiquement la licence, vous devrez charger manuellement le fichier de licence.
-+
-.. C'est possible <<Obtenez votre fichier de licence de Tiering BlueXP,Procurez-vous le fichier de licence sur le site de support NetApp>>.
-.. Sur la page du portefeuille digital BlueXP dans l'onglet _Data Services Licenses_, cliquez sur image:screenshot_horizontal_more_button.gif["Plus d'icône"] Pour le numéro de série de service que vous mettez à jour, cliquez sur *mettre à jour la licence*.
-+
-image:screenshot_services_license_update.png["Capture d'écran de la sélection du bouton mettre à jour la licence pour un service particulier."]
-
-.. Dans la page _Update License_, téléchargez le fichier de licence et cliquez sur *Update License*.
-
-
-
-
-.Résultat
-BlueXP met à jour la licence pour que votre service de Tiering BlueXP reste actif.
+Vous pouvez mettre à jour les licences existantes, afficher l'état des licences et ajouter de nouvelles licences via le portefeuille numérique BlueXP . https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-data-services-licenses.html["Découvrez comment gérer les licences dans le portefeuille digital"^].
 
 
 
