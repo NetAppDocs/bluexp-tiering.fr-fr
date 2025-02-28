@@ -42,7 +42,7 @@ Dans BlueXP, sélectionnez un environnement de travail ONTAP sur site, cliquez s
 
 [role="quick-margin-list"]
 * Pour vous abonner à Azure Marketplace, https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.cloud-manager?tab=Overview["Accédez à l'offre BlueXP Marketplace"^], Cliquez sur *s'abonner*, puis suivez les invites.
-* Pour payer avec une licence BYOL de Tiering BlueXP, mailto:ng-cloud-tiering@netapp.com?Subject=Licensing[contactez-nous si vous avez besoin d'en acheter un], puis link:task-licensing-cloud-tiering.html#add-bluexp-tiering-byol-licenses-to-your-account["Ajoutez-le à votre compte depuis le portefeuille digital BlueXP"].
+* Pour payer avec une licence BlueXP  Tiering BYOL, mailto:ng-cloud-tiering@netapp.com?Subject=Licensing[contactez-nous si vous avez besoin d'en acheter un], puis link:https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-data-services-licenses.html["Ajoutez-le à votre compte depuis le portefeuille digital BlueXP"].
 
 
 

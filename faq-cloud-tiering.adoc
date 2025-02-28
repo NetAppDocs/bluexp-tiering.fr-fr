@@ -130,9 +130,9 @@ Oui. Le Tiering BlueXP vous permet d'utiliser une licence BYOL, un abonnement PA
 
 
 
-=== Que se passe-t-il si la limite de capacité BYOL est atteinte ?
+=== Que se passe-t-il si j'ai atteint la limite de capacité BYOL ou si ma licence BYOL arrive à expiration ?
 
-Si vous atteignez la limite de capacité BYOL, le Tiering des nouvelles données inactives s'arrête. Toutes les données précédemment hiérarchisées restent accessibles. Vous pouvez donc les récupérer et les utiliser. Lorsqu'elles sont récupérées, elles sont replacées dans le Tier de performance du cloud.
+Si vous atteignez la limite de capacité BYOL ou si votre licence BYOL arrive à expiration, le Tiering des nouvelles données inactives s'arrête, le Tiering des nouvelles données inactives s'arrête. Toutes les données précédemment hiérarchisées restent accessibles. Vous pouvez donc les récupérer et les utiliser. Lorsqu'elles sont récupérées, elles sont replacées dans le Tier de performance du cloud.
 
 Toutefois, si vous avez souscrit un abonnement PAYGO Marketplace à _BlueXP - Deploy & Manage Cloud Data Services_, les nouvelles données inactives continueront d'être hiérarchisées vers le stockage objet et vous payez ces frais à l'utilisation.
 

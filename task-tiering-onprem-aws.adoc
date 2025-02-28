@@ -63,7 +63,7 @@ Sélectionnez un environnement de travail sur site, cliquez sur *Activer* pour l
 
 [role="quick-margin-list"]
 * Pour vous abonner à AWS Marketplace, https://aws.amazon.com/marketplace/pp/prodview-oorxakq6lq7m4?sr=0-8&ref_=beagle&applicationId=AWSMPContessa["Accédez à l'offre BlueXP Marketplace"^], Cliquez sur *s'abonner*, puis suivez les invites.
-* Pour payer avec une licence BYOL de Tiering BlueXP, mailto:ng-cloud-tiering@netapp.com?Subject=Licensing[contactez-nous si vous avez besoin d'en acheter un], puis link:task-licensing-cloud-tiering.html#add-bluexp-tiering-byol-licenses-to-your-account["Ajoutez-le à votre compte depuis le portefeuille digital BlueXP"].
+* Pour payer avec une licence BlueXP  Tiering BYOL, mailto:ng-cloud-tiering@netapp.com?Subject=Licensing[contactez-nous si vous avez besoin d'en acheter un], puis link:https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-data-services-licenses.html["Ajoutez-le à votre compte depuis le portefeuille digital BlueXP"].
 
 
 
