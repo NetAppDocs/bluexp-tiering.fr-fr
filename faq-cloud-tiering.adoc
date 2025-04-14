@@ -168,6 +168,12 @@ Pour obtenir une estimation, il vous suffit d'ajouter votre cluster ONTAP à Blu
 
 
 
+=== Comment la hiérarchisation est-elle facturée lorsque j'utilise une ONTAP MetroCluster ?
+
+Dans les environnements MetroCluster, la capacité sous licence de Tiering est appliquée aux compartiments en miroir de manière égale. Par exemple, si vous disposez d'une licence pour 100 Tio de Tiering, les deux compartiments peuvent être hiérarchisés jusqu'à 100 Tio. Il n'y a pas de frais supplémentaires pour les compartiments miroirs. Lors du Tiering à partir d'agrégats sans miroir dans des environnements MetroCluster, la licence de Tiering BlueXP  est appliquée normalement et la capacité totale hiérarchisée dans les deux compartiments est utilisée. Par exemple, si vous disposez d'une licence pour 100 Tio de Tiering, les deux compartiments peuvent être hiérarchisés jusqu'à 50 To.
+
+
+
 == ONTAP
 
 Les questions suivantes concernent ONTAP.

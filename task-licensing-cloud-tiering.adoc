@@ -208,7 +208,7 @@ Notez que comme les données sont hiérarchisées vers deux emplacements de stoc
 Ne configurez pas de hiérarchisation à ce stade.
 
 . link:task-licensing-cloud-tiering.html#use-a-bluexp-tiering-byol-license["Achetez une licence de Tiering BlueXP"] pour répondre aux besoins en capacité du nouveau cluster ou des nouveaux clusters.
-. Dans BlueXP, link:task-licensing-cloud-tiering.html#add-bluexp-tiering-byol-licenses-to-your-account["Ajoutez la licence au portefeuille digital BlueXP"].
+. Dans BlueXP , <<licenses,Ajoutez la licence au portefeuille digital BlueXP>>[ajoutez la licence au portefeuille digital BlueXP ].
 . Dans le Tiering BlueXP, link:task-managing-tiering.html#discovering-additional-clusters-from-bluexp-tiering["découvrir les nouveaux clusters"].
 . Dans la page clusters, cliquez sur image:screenshot_horizontal_more_button.gif["Plus d'icône"] Pour le cluster et sélectionnez *Deploy License*.
 +
