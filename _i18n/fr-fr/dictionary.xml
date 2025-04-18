@@ -1407,4 +1407,32 @@
   <block id="d3a48b6792b79f1932baa44071945c80" category="list-text">Dans BlueXP , <block ref="e5625abf9d60b2626bb47dbb5c12864c" category="inline-xref-macro-rx"></block>[ajoutez la licence au portefeuille digital BlueXP ].</block>
   <block id="af35d47e77f1b287fca9c2a638c644aa" category="paragraph">Lors de l'utilisation d'une configuration MetroCluster, il est recommandé d'utiliser des magasins d'objets dans le cloud public situés dans différentes zones de disponibilité.<block ref="8cdfadb67efe7ac0be1266ed1d493d6d" category="inline-link-rx"></block>. Au sein d'une MetroCluster, il n'est pas recommandé d'utiliser des agrégats sans miroir ; vous recevrez ainsi un message d'erreur.</block>
   <block id="437a34485fe2ce742e7d58f52bb6c1e5" category="paragraph">Si vous utilisez StorageGRID en tant que magasin d'objets dans une configuration MetroCluster, les deux systèmes ONTAP peuvent effectuer le Tiering FabricPool vers un seul système StorageGRID. Chaque système ONTAP doit transférer les données vers différents compartiments.</block>
+  <block id="aa43861a5e0a7fa90f107ba3b50f03cd" category="paragraph">Le Tiering BlueXP  prend en charge plusieurs régions Azure. Les régions Azure Chine ne sont pas prises en charge en tant que destinations de Tiering.</block>
+  <block id="f5cd262901883dff68d06b215fb0f28e" category="section-title">Afrique</block>
+  <block id="d5daca31a462e138266141f6d01ca814" category="list-text">Afrique du Sud Nord</block>
+  <block id="cee3f0213dd8b7eb15d7b31824e01754" category="list-text">Australie Est</block>
+  <block id="c2701212de431ec66277aeb9ec636184" category="list-text">Australie Sud-Est</block>
+  <block id="f74e1c0c8ee8410fa5bfe03676347257" category="list-text">Asie de l'Est</block>
+  <block id="12fd3aa0a9f080663613364badb43e93" category="list-text">Japon Est</block>
+  <block id="33e5ad3a780212ee47f127965a2dda72" category="list-text">Japon Ouest</block>
+  <block id="6da3164e9884fb44e54fda035450cfaa" category="list-text">Corée Centrale</block>
+  <block id="cbbf2ae44538816cc573fa3ad561a434" category="list-text">Corée du Sud</block>
+  <block id="ef005ab2b7187e0e4953a0abfdacad42" category="list-text">Asie du Sud-Est</block>
+  <block id="bea1bd3d23555c539dab5f3f5426184c" category="list-text">France centrale</block>
+  <block id="1dab3491cdeeb2a6d567b21ee3063ae4" category="list-text">Allemagne de l'ouest du centre</block>
+  <block id="85c1bd2190b5e1105a9c4e7e6a224a96" category="list-text">Allemagne du Nord</block>
+  <block id="d0fe0e3b6520479f718b98f0d471b7d0" category="list-text">Europe du Nord</block>
+  <block id="390a1a81c9b43f7d364b54144161673d" category="list-text">Royaume-Uni Sud</block>
+  <block id="23d58738c27b56ae980ce7b45716f6a5" category="list-text">Royaume-Uni Ouest</block>
+  <block id="8fb2033d01e3efa2825282a13f86c14e" category="list-text">Europe de l'Ouest</block>
+  <block id="ea7c65fe418bef9cfe86be4944b30bcb" category="list-text">Canada Est</block>
+  <block id="2e168141b8f719cbd37e6beec663b599" category="list-text">Centre DES ÉTATS-UNIS</block>
+  <block id="3c110de67497eb3f8d4c100e43101c81" category="list-text">Est-É.-U.</block>
+  <block id="7c61981f0be77fb7e4061ba5395ff02b" category="list-text">Est DES ÉTATS-UNIS 2</block>
+  <block id="e306e59ae933d5705ad58b576840cfb7" category="list-text">Centre-nord des États-Unis</block>
+  <block id="00a0c4ce62672ec36639c314d0d8e114" category="list-text">Centre-sud des États-Unis</block>
+  <block id="f3397c566fedcaa2f63145169ba345fc" category="list-text">Ouest des États-Unis</block>
+  <block id="c349d3a26cf4231660785a0c5b4cb007" category="list-text">Ouest des États-Unis 2</block>
+  <block id="e74523dfd57d69116c6dc03759fe0a7b" category="list-text">Centre Ouest des États-Unis</block>
+  <block id="47b9af39407829080e9cfeee3607c39c" category="list-text">Brésil Sud</block>
 </blocks>

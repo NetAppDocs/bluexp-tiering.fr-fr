@@ -32,4 +32,61 @@ https://docs.microsoft.com/en-us/azure/storage/blobs/access-tiers-overview["Déc
 
 == Régions Azure prises en charge
 
-Le Tiering BlueXP prend en charge le Tiering vers n'importe quel compte de stockage, dans n'importe quelle région, accessible via le connecteur.
+Le Tiering BlueXP  prend en charge plusieurs régions Azure. Les régions Azure Chine ne sont pas prises en charge en tant que destinations de Tiering.
+
+
+
+=== Afrique
+
+* Afrique du Sud Nord
+
+
+
+
+=== Asie Pacifique
+
+* Australie Est
+* Australie Sud-Est
+* Asie de l'Est
+* Japon Est
+* Japon Ouest
+* Corée Centrale
+* Corée du Sud
+* Asie du Sud-Est
+
+
+
+
+=== Europe
+
+* France centrale
+* Allemagne de l'ouest du centre
+* Allemagne du Nord
+* Europe du Nord
+* Royaume-Uni Sud
+* Royaume-Uni Ouest
+* Europe de l'Ouest
+
+
+
+
+=== Amérique du Nord
+
+* Canada Central
+* Canada Est
+* Centre DES ÉTATS-UNIS
+* Est-É.-U.
+* Est DES ÉTATS-UNIS 2
+* Centre-nord des États-Unis
+* Centre-sud des États-Unis
+* Ouest des États-Unis
+* Ouest des États-Unis 2
+* Centre Ouest des États-Unis
+
+
+
+
+=== Amérique du Sud
+
+* Brésil Sud
+
