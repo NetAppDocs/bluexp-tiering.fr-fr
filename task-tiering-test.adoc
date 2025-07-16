@@ -25,8 +25,8 @@ Il est recommandé d'exécuter ce contrôle lorsque le cluster est inférieur à
 
 .Étapes d'un cluster qui n'a pas été configuré pour la hiérarchisation
 . Dans le menu de navigation de gauche, sélectionnez *mobilité > hiérarchisation*.
-. Sur la page *clusters*, cliquez sur l'icône de menu d'un cluster et sélectionnez *Test de performances du Cloud*.
-. Vérifiez les détails et cliquez sur *Continuer*.
+. Depuis la page *Clusters*, sélectionnez l'icône de menu d'un cluster et sélectionnez *Test de performances du cloud*.
+. Vérifiez les détails et sélectionnez *Continuer*.
 . Suivez les invites pour fournir les informations requises.
 +
 Les informations que vous devez fournir sont les mêmes que si vous deviez configurer la hiérarchisation sur le cluster.
@@ -36,7 +36,7 @@ Les informations que vous devez fournir sont les mêmes que si vous deviez confi
 
 .Étapes d'un cluster qui a été configuré pour la hiérarchisation
 . Dans le menu de navigation de gauche, sélectionnez *mobilité > hiérarchisation*.
-. Sur la page *clusters*, cliquez sur l'icône de menu d'un cluster et sélectionnez *Test de performances du Cloud*.
+. Depuis la page *Clusters*, sélectionnez l'icône de menu d'un cluster et sélectionnez *Test de performances du cloud*.
 . Sélectionnez un nœud dans la liste déroulante.
 . Consultez les résultats ou revérifiez les performances.
 

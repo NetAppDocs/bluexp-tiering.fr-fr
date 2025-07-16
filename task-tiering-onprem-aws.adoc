@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-tiering-onprem-aws.html 
 keywords: data tiering, fabricpool, cloud tiering, tiering cold data, tiering inactive data, tiering aff, tiering fas, tiering ontap, tiering volumes, tier data, tier cold data, tier fas, tier aff, tier ontap, aws, amazon, s3 
-summary: 'Libérez de l"espace sur vos clusters ONTAP sur site grâce au Tiering des données inactives vers Amazon S3.' 
+summary: 'Libérez de l"espace sur vos clusters ONTAP sur site en hiérarchisant les données inactives sur Amazon S3.' 
 ---
 = Tiering des données depuis des clusters ONTAP sur site vers Amazon S3
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 'Libérez de l"espace sur vos clusters ONTAP sur site grâce au Tiering
 
 
 [role="lead"]
-Libérez de l'espace sur vos clusters ONTAP sur site grâce au Tiering des données inactives vers Amazon S3.
+Libérez de l'espace sur vos clusters ONTAP sur site en hiérarchisant les données inactives sur Amazon S3.
 
 
 
@@ -48,11 +48,11 @@ Découvrez votre cluster ONTAP dans BlueXP, vérifiez que le cluster répond à 
 Configurez les autorisations pour le connecteur afin de créer et de gérer le compartiment S3. Vous devez également configurer des autorisations pour le cluster ONTAP sur site afin qu'il puisse lire et écrire les données dans le compartiment S3.
 
 [role="quick-margin-para"]
-<<Configurez les autorisations S3,Découvrez comment configurer des autorisations pour le connecteur et pour votre cluster sur site.>>
+<<Configurez les autorisations S3,Découvrez comment configurer les autorisations pour le connecteur et pour votre cluster sur site.>>
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["Cinq"] Activez le Tiering BlueXP sur le système
 [role="quick-margin-para"]
-Sélectionnez un environnement de travail sur site, cliquez sur *Activer* pour le service Tiering, puis suivez les invites pour hiérarchiser les données vers Amazon S3.
+Sélectionnez un environnement de travail sur site, sélectionnez *Activer* pour le service de hiérarchisation et suivez les invites pour hiérarchiser les données vers Amazon S3.
 
 [role="quick-margin-para"]
 <<Déplacez les données inactives de votre premier cluster vers Amazon S3,Découvrez comment activer le Tiering pour vos volumes.>>
@@ -62,7 +62,7 @@ Sélectionnez un environnement de travail sur site, cliquez sur *Activer* pour l
 À la fin de votre essai gratuit, payez le Tiering BlueXP via un abonnement avec paiement à l'utilisation, une licence ONTAP BlueXP Tiering BYOL ou une combinaison des deux :
 
 [role="quick-margin-list"]
-* Pour vous abonner à AWS Marketplace, https://aws.amazon.com/marketplace/pp/prodview-oorxakq6lq7m4?sr=0-8&ref_=beagle&applicationId=AWSMPContessa["Accédez à l'offre BlueXP Marketplace"^], Cliquez sur *s'abonner*, puis suivez les invites.
+* Pour vous abonner depuis AWS Marketplace,  https://aws.amazon.com/marketplace/pp/prodview-oorxakq6lq7m4?sr=0-8&ref_=beagle&applicationId=AWSMPContessa["Accédez à l'offre BlueXP Marketplace"^] , sélectionnez *S'abonner*, puis suivez les instructions.
 * Pour payer avec une licence BlueXP  Tiering BYOL, mailto:ng-cloud-tiering@netapp.com?Subject=Licensing[contactez-nous si vous avez besoin d'en acheter un], puis link:https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-data-services-licenses.html["Ajoutez-le à votre compte depuis le portefeuille digital BlueXP"].
 
 
@@ -255,7 +255,7 @@ https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html
 
 Si vous prévoyez d'utiliser une connexion Internet publique standard, toutes les autorisations sont définies par le connecteur et rien d'autre n'est nécessaire. Ce type de connexion est indiqué dans le <<Schémas réseau pour les options de connexion,premier diagramme ci-dessus>>.
 
-Si vous voulez établir une connexion plus sécurisée via Internet entre votre data Center sur site et le VPC, vous pouvez choisir une connexion AWS PrivateLink dans l'assistant d'activation de Tiering. Elle est indispensable pour connecter votre système sur site à l'aide d'un VPN ou d'AWS Direct Connect via une interface de terminal VPC qui utilise une adresse IP privée. Ce type de connexion est indiqué dans le <<Schémas réseau pour les options de connexion,deuxième diagramme ci-dessus>>.
+Si vous souhaitez une connexion Internet plus sécurisée entre votre centre de données local et le VPC, vous pouvez sélectionner une connexion AWS PrivateLink dans l'assistant d'activation de la hiérarchisation. Elle est indispensable pour connecter votre système sur site à l'aide d'un VPN ou d'AWS Direct Connect via une interface de terminal VPC qui utilise une adresse IP privée. Ce type de connexion est indiqué dans la section <<Schémas réseau pour les options de connexion,deuxième diagramme ci-dessus>> .
 
 . Créez une configuration de point final de l'interface à l'aide de la console Amazon VPC ou de la ligne de commande. https://docs.aws.amazon.com/AmazonS3/latest/userguide/privatelink-interface-endpoints.html["Pour plus d'informations sur l'utilisation d'AWS PrivateLink pour Amazon S3, reportez-vous à la section"^].
 . Modifiez la configuration du groupe de sécurité associée au connecteur BlueXP. Vous devez modifier la règle en « personnalisé » (à partir de « accès complet ») et vous devez <<Configurez les autorisations S3,Ajoutez les autorisations de connecteur S3 requises>> comme indiqué précédemment.
@@ -313,31 +313,31 @@ Une fois votre environnement AWS prêt, commencez le Tiering des données inacti
 
 
 .Étapes
-. Sélectionnez l'environnement de travail ONTAP sur site.
+. Sélectionnez l’environnement de travail ONTAP sur site.
 . Cliquez sur *Activer* pour le service Tiering dans le panneau de droite.
 +
 Si la destination de Tiering Amazon S3 existe en tant qu'environnement de travail sur la Canvas, vous pouvez faire glisser le cluster vers l'environnement de travail pour lancer l'assistant d'installation.
 
 +
-image:screenshot_setup_tiering_onprem.png["Une capture d'écran montre l'option Activer qui s'affiche sur le côté droit de l'écran après avoir sélectionné un environnement de travail ONTAP sur site."]
+image:screenshot_setup_tiering_onprem.png["Une capture d’écran qui montre l’option Activer qui apparaît sur le côté droit de l’écran après avoir sélectionné un environnement de travail ONTAP sur site."]
 
 . *Définir le nom de stockage d'objet* : saisissez un nom pour ce stockage d'objet. Il doit être unique à partir de tout autre stockage objet que vous pouvez utiliser avec des agrégats sur ce cluster.
-. *Sélectionnez fournisseur* : sélectionnez *Amazon Web Services* et cliquez sur *Continuer*.
+. *Sélectionner le fournisseur* : Sélectionnez *Amazon Web Services* et sélectionnez *Continuer*.
 +
 image:screenshot_tiering_aws_s3_bucket.png["Copie d'écran montrant les données à fournir pour configurer le Tiering dans un compartiment S3."]
 
 . Complétez les sections de la page *Tiering Setup* :
 +
-.. *Compartiment S3* : ajoutez un nouveau compartiment S3 ou sélectionnez un compartiment S3 existant, sélectionnez la région du compartiment et cliquez sur *Continuer*.
+.. *Seau S3* : ajoutez un nouveau compartiment S3 ou sélectionnez un compartiment S3 existant, sélectionnez la région du compartiment et sélectionnez *Continuer*.
 +
-Lorsque vous utilisez un connecteur sur site, vous devez saisir l'ID de compte AWS qui donne accès au compartiment S3 existant ou au nouveau compartiment S3 à créer.
+Lorsque vous utilisez un connecteur sur site, vous devez saisir l'ID de compte AWS qui donne accès au compartiment S3 existant ou au nouveau compartiment S3 qui sera créé.
 
 +
 Le préfixe _fabric-pool_ est utilisé par défaut, car la règle IAM du connecteur permet à l'instance d'effectuer des actions S3 sur les compartiments nommés avec ce préfixe exact. Par exemple, vous pouvez nommer le compartiment S3 _fabric-pool-AFF1_, où AFF1 est le nom du cluster. Vous pouvez également définir le préfixe des compartiments utilisés pour la hiérarchisation. Voir <<Configurez les autorisations S3,Configuration des autorisations S3>> Garantir que vous disposez des autorisations AWS qui reconnaissent tout préfixe personnalisé que vous prévoyez d'utiliser.
 
 .. *Classe de stockage* : le Tiering BlueXP gère les transitions de cycle de vie de vos données hiérarchisées. Les données commencent dans la classe _Standard_, mais vous pouvez créer une règle pour appliquer une classe de stockage différente aux données après un certain nombre de jours.
 +
-Sélectionnez la classe de stockage S3 vers laquelle vous souhaitez transférer les données hiérarchisées et le nombre de jours avant l'attribution des données à cette classe, puis cliquez sur *Continuer*. Par exemple, la capture d'écran ci-dessous montre que des données hiérarchisées sont affectées à la classe _Standard-IA_ de la classe _Standard_ après 45 jours dans le stockage objet.
+Sélectionnez la classe de stockage S3 vers laquelle vous souhaitez transférer les données hiérarchisées et le nombre de jours avant que les données ne soient attribuées à cette classe, puis sélectionnez *Continuer*. Par exemple, la capture d'écran ci-dessous montre que des données hiérarchisées sont affectées à la classe _Standard-IA_ de la classe _Standard_ après 45 jours dans le stockage objet.
 
 +
 Si vous choisissez *conserver les données dans cette classe de stockage*, les données restent dans la classe de stockage _Standard_ et aucune règle n'est appliquée. link:reference-aws-support.html["Voir classes de stockage prises en charge"^].
@@ -348,11 +348,11 @@ image:screenshot_tiering_lifecycle_selection_aws.png["Capture d'écran montrant 
 +
 Notez que la règle de cycle de vie est appliquée à tous les objets du compartiment sélectionné.
 
-.. *Informations d'identification* : saisissez l'ID de clé d'accès et la clé secrète pour un utilisateur IAM disposant des autorisations S3 requises, puis cliquez sur *Continuer*.
+.. *Informations d'identification* : saisissez l'ID de clé d'accès et la clé secrète d'un utilisateur IAM disposant des autorisations S3 requises, puis sélectionnez *Continuer*.
 +
 L'utilisateur IAM doit se trouver dans le même compte AWS que le compartiment que vous avez sélectionné ou créé sur la page *compartiment S3*.
 
-.. *Réseau* : saisissez les détails de la mise en réseau et cliquez sur *Continuer*.
+.. *Réseau* : Saisissez les détails du réseau et sélectionnez *Continuer*.
 +
 Sélectionnez l'IPspace dans le cluster ONTAP où les volumes doivent résider. Les LIF intercluster de cet IPspace doivent disposer d'un accès Internet sortant afin que les utilisateurs puissent se connecter au stockage objet de votre fournisseur cloud.
 
@@ -366,15 +366,15 @@ Vous pouvez également définir la bande passante réseau disponible pour télé
 
 . Sur la page _Tier volumes_, sélectionnez les volumes que vous souhaitez configurer le Tiering et lancez la page Tiering Policy :
 +
-** Pour sélectionner tous les volumes, cochez la case dans la ligne de titre (image:button_backup_all_volumes.png[""]) Et cliquez sur *configurer les volumes*.
-** Pour sélectionner plusieurs volumes, cochez la case pour chaque volume (image:button_backup_1_volume.png[""]) Et cliquez sur *configurer les volumes*.
-** Pour sélectionner un seul volume, cliquez sur la ligne (ou image:screenshot_edit_icon.gif["modifier l'icône du crayon"] icône) du volume.
+** Pour sélectionner tous les volumes, cochez la case dans la ligne de titre ( image:button_backup_all_volumes.png[""] ) et sélectionnez *Configurer les volumes*.
+** Pour sélectionner plusieurs volumes, cochez la case pour chaque volume ( image:button_backup_1_volume.png[""] ) et sélectionnez *Configurer les volumes*.
+** Pour sélectionner un seul volume, sélectionnez la ligne (ou image:screenshot_edit_icon.gif["modifier l'icône du crayon"] icône) pour le volume.
 +
 image:screenshot_tiering_initial_volumes.png["Capture d'écran indiquant comment sélectionner un seul volume, plusieurs volumes ou tous les volumes et le bouton Modifier les volumes sélectionnés."]
 
 
 
-. Dans la boîte de dialogue _Tiering Policy_, sélectionnez une règle de hiérarchisation, vous pouvez éventuellement ajuster les jours de refroidissement des volumes sélectionnés, puis cliquez sur *Apply*.
+. Dans la boîte de dialogue _Politique de hiérarchisation_, sélectionnez une politique de hiérarchisation, ajustez éventuellement les jours de refroidissement pour les volumes sélectionnés et sélectionnez *Appliquer*.
 +
 link:concept-cloud-tiering.html#volume-tiering-policies["En savoir plus sur les règles de Tiering des volumes et les jours de refroidissement"].
 

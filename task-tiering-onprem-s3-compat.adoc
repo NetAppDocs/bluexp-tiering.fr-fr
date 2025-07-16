@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-tiering-onprem-s3-compat.html 
 keywords: data tiering, fabricpool, cloud tiering, tiering cold data, tiering inactive data, tiering aff, tiering fas, tiering ontap, tiering volumes, tier data, tier cold data, tier fas, tier aff, tier ontap, s3, tier to s3, minio 
-summary: 'Libérez de l"espace sur vos clusters ONTAP sur site en transférant les données inactives vers n"importe quel service de stockage objet qui utilise le protocole S3 (simple Storage Service).' 
+summary: 'Libérez de l"espace sur vos clusters ONTAP sur site en hiérarchisant les données inactives vers n"importe quel service de stockage d"objets qui utilise le protocole Simple Storage Service (S3).' 
 ---
 = Tiering des données depuis des clusters ONTAP sur site vers un stockage objet S3
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 'Libérez de l"espace sur vos clusters ONTAP sur site en transférant l
 
 
 [role="lead"]
-Libérez de l'espace sur vos clusters ONTAP sur site en transférant les données inactives vers n'importe quel service de stockage objet qui utilise le protocole S3 (simple Storage Service).
+Libérez de l'espace sur vos clusters ONTAP sur site en hiérarchisant les données inactives vers n'importe quel service de stockage d'objets qui utilise le protocole Simple Storage Service (S3).
 
 Le stockage objet MiniO a été qualifié pour l'instant.
 
@@ -36,7 +36,7 @@ Pour commencer rapidement, suivez ces étapes ou faites défiler jusqu'aux secti
 Il faut les éléments suivants :
 
 [role="quick-margin-list"]
-* Cluster ONTAP source sur site qui exécute ONTAP 9.8 ou version ultérieure et connexion via un port spécifié par l'utilisateur vers le stockage objet compatible S3 de destination. https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["Découvrez comment détecter un cluster"^].
+* Un cluster ONTAP source sur site exécutant ONTAP 9.8 ou une version ultérieure et une connexion via un port spécifié par l'utilisateur au stockage d'objets compatible S3 de destination.  https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["Découvrez comment détecter un cluster"^] .
 * Le FQDN, la clé d'accès et la clé secrète du serveur de stockage objet de sorte que le cluster ONTAP puisse accéder au compartiment.
 * Un connecteur installé sur votre site.
 * Mise en réseau du connecteur qui permet une connexion HTTPS sortante vers le cluster ONTAP source, vers le stockage objet compatible avec S3 et vers le service de Tiering BlueXP.
@@ -44,15 +44,15 @@ Il faut les éléments suivants :
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Deux"] Configurer le Tiering
 [role="quick-margin-para"]
-Dans BlueXP, sélectionnez un environnement de travail sur site, cliquez sur *Activer* pour le service Tiering, puis suivez les invites pour le Tiering des données vers un stockage objet compatible S3.
+Dans BlueXP, sélectionnez un environnement de travail sur site, sélectionnez *Activer* pour le service de hiérarchisation et suivez les invites pour hiérarchiser les données vers un stockage d'objets compatible S3.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Trois"] Configuration des licences
 [role="quick-margin-para"]
-Payez le Tiering BlueXP via un abonnement avec paiement à l'utilisation auprès de votre fournisseur cloud, un modèle de Tiering NetApp BlueXP avec Bring Your Own License ou une combinaison des deux :
+Payez pour la hiérarchisation via un abonnement à la carte auprès de votre fournisseur de cloud, une licence NetApp de hiérarchisation avec apport de votre propre licence ou une combinaison des deux :
 
 [role="quick-margin-list"]
-* Pour souscrire à l'offre BlueXP PAYGO à partir du https://aws.amazon.com/marketplace/pp/prodview-oorxakq6lq7m4?sr=0-8&ref_=beagle&applicationId=AWSMPContessa["AWS Marketplace"^], https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.cloud-manager?tab=Overview["Azure Marketplace"^], ou https://console.cloud.google.com/marketplace/details/netapp-cloudmanager/cloud-manager?supportedpurview=project&rif_reserved["Marketplace GCP"^], Cliquez sur *Abonnez-vous* et suivez les invites.
-* Pour payer avec une licence BlueXP  Tiering BYOL, mailto:ng-cloud-tiering@netapp.com?Subject=Licensing[contactez-nous si vous avez besoin d'en acheter un], puis link:https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-data-services-licenses.html["Ajoutez-le à votre compte depuis le portefeuille digital BlueXP"^]. .
+* Pour souscrire à l'offre BlueXP PAYGO depuis le  https://aws.amazon.com/marketplace/pp/prodview-oorxakq6lq7m4?sr=0-8&ref_=beagle&applicationId=AWSMPContessa["AWS Marketplace"^] ,  https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.cloud-manager?tab=Overview["Azure Marketplace"^] , ou  https://console.cloud.google.com/marketplace/details/netapp-cloudmanager/cloud-manager?supportedpurview=project&rif_reserved["Marketplace GCP"^] , sélectionnez *S'abonner* et suivez les instructions.
+* Pour payer en utilisant une licence BYOL à plusieurs niveaux, envoyez un e-mail à : ng-cloud-tiering@netapp.com?subject=Licensing [contactez-nous si vous devez en acheter une], puis link:https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-data-services-licenses.html["ajoutez-le à votre compte depuis le portefeuille numérique"^] . .
 
 
 
@@ -104,7 +104,7 @@ TIP: Le Tiering BlueXP prend en charge les volumes FlexVol et FlexGroup.
 
 === Détection d'un cluster ONTAP
 
-Vous devez créer un environnement de travail ONTAP sur site dans BlueXP Canvas avant de commencer le Tiering des données inactives.
+Vous devez créer un environnement de travail ONTAP sur site avant de pouvoir commencer à hiérarchiser les données froides.
 
 https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["Découvrez comment détecter un cluster"^].
 
@@ -171,18 +171,18 @@ Une fois votre environnement prêt, commencez le Tiering des données inactives 
 
 
 .Étapes
-. Sélectionnez l'environnement de travail ONTAP sur site.
-. Cliquez sur *Activer* pour le service Tiering dans le panneau de droite.
+. Sélectionnez l’environnement de travail ONTAP sur site.
+. Sélectionnez *Activer* pour le service de hiérarchisation dans le panneau de droite.
 +
-image:screenshot_setup_tiering_onprem.png["Capture d'écran affichant l'option Tiering, située sur la droite de l'écran, après avoir sélectionné un environnement de travail ONTAP sur site."]
+image:screenshot_setup_tiering_onprem.png["Une capture d’écran qui montre l’option de hiérarchisation qui apparaît sur le côté droit de l’écran après avoir sélectionné un environnement de travail ONTAP sur site."]
 
 . *Définir le nom de stockage d'objet* : saisissez un nom pour ce stockage d'objet. Il doit être unique à partir de tout autre stockage objet que vous pouvez utiliser avec des agrégats sur ce cluster.
-. *Sélectionnez fournisseur* : sélectionnez *compatible S3* et cliquez sur *Continuer*.
+. *Sélectionner le fournisseur* : Sélectionnez *Compatible S3* et sélectionnez *Continuer*.
 . Suivez les étapes des pages *Créer un stockage objet* :
 +
 .. *Serveur* : saisissez le FQDN du serveur de stockage objet compatible S3, le port que ONTAP doit utiliser pour la communication HTTPS avec le serveur, ainsi que la clé d'accès et la clé secrète pour un compte disposant des autorisations S3 requises.
-.. *Godet* : ajoutez un nouveau compartiment ou sélectionnez un compartiment existant et cliquez sur *Continuer*.
-.. *Cluster Network* : sélectionnez l'IPspace ONTAP à utiliser pour se connecter au stockage objet et cliquez sur *Continuer*.
+.. *Bucket* : ajoutez un nouveau bucket ou sélectionnez un bucket existant et sélectionnez *Continuer*.
+.. *Réseau de cluster* : sélectionnez l'espace IP ONTAP doit utiliser pour se connecter au stockage d'objets et sélectionnez *Continuer*.
 +
 La sélection de l'IPspace approprié permet de configurer le Tiering BlueXP depuis ONTAP vers votre stockage objet compatible S3.
 
@@ -191,18 +191,18 @@ Vous pouvez également définir la bande passante réseau disponible pour télé
 
 
 
-. Sur la page _Success_, cliquez sur *Continuer* pour configurer vos volumes maintenant.
-. Sur la page _Tier volumes_, sélectionnez les volumes pour lesquels vous souhaitez configurer le Tiering et cliquez sur *Continuer* :
+. Sur la page _Succès_, sélectionnez *Continuer* pour configurer vos volumes maintenant.
+. Sur la page _Volumes hiérarchisés_, sélectionnez les volumes pour lesquels vous souhaitez configurer la hiérarchisation et sélectionnez *Continuer* :
 +
-** Pour sélectionner tous les volumes, cochez la case dans la ligne de titre (image:button_backup_all_volumes.png[""]) Et cliquez sur *configurer les volumes*.
-** Pour sélectionner plusieurs volumes, cochez la case pour chaque volume (image:button_backup_1_volume.png[""]) Et cliquez sur *configurer les volumes*.
-** Pour sélectionner un seul volume, cliquez sur la ligne (ou image:screenshot_edit_icon.gif["modifier l'icône du crayon"] icône) du volume.
+** Pour sélectionner tous les volumes, cochez la case dans la ligne de titre ( image:button_backup_all_volumes.png[""] ) et sélectionnez *Configurer les volumes*.
+** Pour sélectionner plusieurs volumes, cochez la case pour chaque volume ( image:button_backup_1_volume.png[""] ) et sélectionnez *Configurer les volumes*.
+** Pour sélectionner un seul volume, sélectionnez la ligne (ou image:screenshot_edit_icon.gif["modifier l'icône du crayon"] icône) pour le volume.
 +
 image:screenshot_tiering_initial_volumes.png["Capture d'écran indiquant comment sélectionner un seul volume, plusieurs volumes ou tous les volumes et le bouton Modifier les volumes sélectionnés."]
 
 
 
-. Dans la boîte de dialogue _Tiering Policy_, sélectionnez une règle de hiérarchisation, vous pouvez éventuellement ajuster les jours de refroidissement des volumes sélectionnés, puis cliquez sur *Apply*.
+. Dans la boîte de dialogue _Politique de hiérarchisation_, sélectionnez une politique de hiérarchisation, ajustez éventuellement les jours de refroidissement pour les volumes sélectionnés et sélectionnez *Appliquer*.
 +
 link:concept-cloud-tiering.html#volume-tiering-policies["En savoir plus sur les règles de Tiering des volumes et les jours de refroidissement"].
 
@@ -210,9 +210,6 @@ link:concept-cloud-tiering.html#volume-tiering-policies["En savoir plus sur les 
 image:screenshot_tiering_initial_policy_settings.png["Capture d'écran affichant les paramètres de règle de Tiering configurables."]
 
 
-
-.Résultat
-Vous avez configuré le Tiering des données à partir de volumes du cluster vers un stockage objet compatible S3.
 
 .Et la suite ?
 link:task-licensing-cloud-tiering.html["N'oubliez pas de vous abonner au service de Tiering BlueXP"].

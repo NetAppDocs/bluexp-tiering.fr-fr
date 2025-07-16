@@ -14,13 +14,13 @@ summary: 'Le Tiering BlueXP offre une vue agrégée du Tiering des données à p
 
 
 [role="lead"]
-Le Tiering BlueXP offre une vue agrégée du Tiering des données à partir de chacun de vos clusters sur site. Cette vue d'ensemble fournit une image claire de votre environnement et vous permet de prendre les mesures appropriées.
+Le Tiering BlueXP offre une vue agrégée du Tiering des données à partir de chacun de vos clusters sur site.
 
-Cliquez simplement sur *Tiering > Tableau de bord sur site*. Le Tiering BlueXP fournit les informations suivantes sur votre environnement.
+Sélectionnez *Hiérarchie > Tableau de bord sur site*. Les informations suivantes sont incluses dans le tableau de bord.
 
 image:screenshot_tiering_onprem_dashboard.png["Capture d'écran de la page Tableau de bord sur site."]
 
-Clusters découverts:: Nombre de clusters sur site détectés par le Tiering BlueXP. Le graphique présente l'état de la hiérarchisation pour ces clusters.
+Clusters découverts:: Le nombre de clusters sur site qui ont été découverts. Le graphique présente l'état de la hiérarchisation pour ces clusters.
 +
 --
 * Tiering élevé : les clusters qui hiérarchissent plus de 20 % de leurs données inactives

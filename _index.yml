@@ -15,7 +15,7 @@ indexpage:
       url: whats-new.html
     - title: Configuration des licences
       url: task-licensing-cloud-tiering.html
-  - title: Déplacez les données ONTAP sur site vers le cloud
+  - title: Transférez les données ONTAP sur site vers le cloud
     links:
     - title: Tiering dans Amazon S3
       url: task-tiering-onprem-aws.html

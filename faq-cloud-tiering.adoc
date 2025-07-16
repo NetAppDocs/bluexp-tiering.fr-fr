@@ -144,7 +144,7 @@ Non, ce n'est pas le cas.
 
 
 
-=== La réhydratation des systèmes sur site est-elle soumise aux coûts de sortie facturés par les fournisseurs cloud ?
+=== La réhydratation des systèmes sur site est-elle soumise au coût de sortie facturé par les fournisseurs de cloud ?
 
 Oui. Toutes les lectures effectuées à partir du cloud public sont soumises à des frais de sortie.
 
@@ -156,7 +156,7 @@ Pour évaluer les frais d'hébergement de vos données par un fournisseur de clo
 
 
 
-=== Les fournisseurs cloud facture-ils des frais supplémentaires pour la lecture et la récupération des données depuis le stockage objet vers le stockage sur site ?
+=== Les fournisseurs de cloud facturent-ils des frais supplémentaires pour la lecture/récupération des données du stockage d'objets vers le stockage sur site ?
 
 Oui. Fait https://aws.amazon.com/s3/pricing/["Tarification Amazon S3"], https://azure.microsoft.com/en-us/pricing/details/storage/blobs/["Tarification Blob par bloc"], et https://cloud.google.com/storage/pricing["Tarifs du stockage cloud"] pour connaître les frais supplémentaires engagés pour la lecture/récupération des données.
 
@@ -170,7 +170,7 @@ Pour obtenir une estimation, il vous suffit d'ajouter votre cluster ONTAP à Blu
 
 === Comment la hiérarchisation est-elle facturée lorsque j'utilise une ONTAP MetroCluster ?
 
-Dans les environnements MetroCluster, la capacité sous licence de Tiering est appliquée aux compartiments en miroir de manière égale. Par exemple, si vous disposez d'une licence pour 100 Tio de Tiering, les deux compartiments peuvent être hiérarchisés jusqu'à 100 Tio. Il n'y a pas de frais supplémentaires pour les compartiments miroirs. Lors du Tiering à partir d'agrégats sans miroir dans des environnements MetroCluster, la licence de Tiering BlueXP  est appliquée normalement et la capacité totale hiérarchisée dans les deux compartiments est utilisée. Par exemple, si vous disposez d'une licence pour 100 Tio de Tiering, les deux compartiments peuvent être hiérarchisés jusqu'à 50 To.
+En environnement MetroCluster , la licence de hiérarchisation totale s'applique à l'utilisation des deux clusters. Par exemple, si vous disposez d'une licence pour 100 Tio de hiérarchisation, la capacité de hiérarchisation utilisée par chaque cluster contribue à la capacité totale de 100 Tio.
 
 
 
@@ -326,7 +326,7 @@ Depuis ONTAP 9.6, si l'agrégat de destination utilise le même Tier cloud que l
 
 
 
-=== Comment rapatrier les données hiérarchisées sur site vers le Tier de performance ?
+=== Comment puis-je ramener mes données hiérarchisées sur site au niveau de performance ?
 
 L'écriture différée est généralement effectuée sur les lectures et dépend du type de règle de hiérarchisation. Avant ONTAP 9.8, l'écriture du volume entier peut être effectuée avec une opération _volume Move_. À partir de ONTAP 9.8, l'interface utilisateur de Tiering dispose d'options permettant de *ramener toutes les données* ou *rétablir le système de fichiers actif*. link:task-managing-tiering.html#migrating-data-from-the-cloud-tier-back-to-the-performance-tier["Découvrez comment retransférer les données vers un Tier de performance"].
 

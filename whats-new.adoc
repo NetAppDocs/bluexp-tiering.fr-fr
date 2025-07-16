@@ -106,7 +106,7 @@ Consultez la liste complète des terminaux de votre https://docs.netapp.com/us-e
 
 === Effectuez un glisser-déposer pour activer le Tiering vers d'autres destinations
 
-Si la destination de Tiering Azure Blob, Google Cloud Storage ou StorageGRID existe en tant qu'environnement de travail sur la toile, vous pouvez faire glisser votre environnement de travail ONTAP sur site vers la destination pour lancer l'assistant d'installation de Tiering.
+Si la destination de hiérarchisation Azure Blob, Google Cloud Storage ou StorageGRID existe en tant qu’environnement de travail sur le canevas, vous pouvez faire glisser votre environnement de travail ONTAP local sur la destination pour lancer l’assistant de configuration de la hiérarchisation.
 
 
 
@@ -124,7 +124,7 @@ https://docs.netapp.com/us-en/bluexp-tiering/task-tiering-onprem-aws.html["Exami
 
 === Effectuez un glisser-déposer pour activer le Tiering vers Amazon S3
 
-Si la destination de Tiering Amazon S3 existe en tant qu'environnement de travail sur la Canvas, vous pouvez faire glisser votre environnement de travail ONTAP sur site vers la destination pour lancer l'assistant de configuration de Tiering.
+Si la destination de hiérarchisation Amazon S3 existe en tant qu'environnement de travail sur le canevas, vous pouvez faire glisser votre environnement de travail ONTAP sur site sur la destination pour lancer l'assistant de configuration de hiérarchisation.
 
 
 

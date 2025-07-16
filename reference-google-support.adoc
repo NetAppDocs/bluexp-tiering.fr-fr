@@ -20,7 +20,7 @@ Le Tiering BlueXP prend en charge plusieurs classes de stockage Google Cloud et 
 
 == Classes de stockage GCP prises en charge
 
-Lorsque vous configurez le Tiering des données vers Google Cloud Platform à partir de vos systèmes ONTAP sur site, le Tiering BlueXP utilise automatiquement la classe de stockage _Standard_ pour vos données inactives. Le Tiering BlueXP peut appliquer une règle de cycle de vie afin que les données puissent passer de la classe de stockage _Standard_ à d'autres classes de stockage après un certain nombre de jours. Vous pouvez choisir parmi les classes de stockage suivantes :
+Lorsque vous configurez la hiérarchisation des données vers le stockage Google Cloud depuis vos systèmes ONTAP sur site, la hiérarchisation utilise automatiquement la classe de stockage _Standard_ pour vos données inactives. La hiérarchisation peut appliquer une règle de cycle de vie afin que les données passent de la classe de stockage _Standard_ à d'autres classes de stockage après un certain nombre de jours. Vous pouvez choisir parmi les classes de stockage suivantes :
 
 * Nearline
 * Ligne de refroidissement
@@ -29,7 +29,7 @@ Lorsque vous configurez le Tiering des données vers Google Cloud Platform à pa
 
 Si vous ne choisissez pas une autre classe de stockage, les données restent dans la classe de stockage _Standard_ et aucune règle n'est appliquée.
 
-Lorsque vous configurez une règle de cycle de vie de Tiering BlueXP, vous ne devez pas configurer de règles de cycle de vie lors de la configuration du compartiment dans votre compte Google.
+Lorsque vous configurez une règle de cycle de vie de hiérarchisation, vous ne devez configurer aucune règle de cycle de vie lors de la configuration du bucket dans votre compte Google.
 
 https://cloud.google.com/storage/docs/storage-classes["Découvrez les classes de stockage Google Cloud"^].
 
@@ -37,7 +37,7 @@ https://cloud.google.com/storage/docs/storage-classes["Découvrez les classes de
 
 == Régions Google Cloud prises en charge
 
-Le Tiering BlueXP prend en charge les régions suivantes.
+La hiérarchisation prend en charge les régions suivantes.
 
 
 
