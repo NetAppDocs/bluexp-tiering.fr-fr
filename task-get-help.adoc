@@ -21,7 +21,7 @@ Pour obtenir de l'aide concernant un service de fichiers d'un fournisseur cloud,
 
 * link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/start/concept-fsx-aws.html#getting-help["Amazon FSX pour ONTAP"^]
 * link:https://docs.netapp.com/us-en/bluexp-azure-netapp-files/concept-azure-netapp-files.html#getting-help["Azure NetApp Files"^]
-* link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-service-gcp/concept-cvs-gcp.html#getting-help["Cloud Volumes Service pour Google Cloud"^]
+* link:https://docs.netapp.com/us-en/bluexp-google-cloud-netapp-volumes/concept-gcnv.html#getting-help["Google Cloud NetApp volumes"^]
 
 
 Pour bénéficier du support technique spécifique à BlueXP et à ses solutions et services de stockage, utilisez les options de support décrites ci-dessous.
